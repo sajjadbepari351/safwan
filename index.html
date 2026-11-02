@@ -11,7 +11,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .site-header{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 83% 14%,#22d3ee30,transparent 29%),radial-gradient(ellipse at 8% 100%,#2563eb30,transparent 35%),linear-gradient(120deg,#0a172b 0%,#102c50 58%,#123c63 100%);padding:22px max(5%,calc((100% - 1200px)/2)) 76px}
-.site-header:after{content:"";position:absolute;right:-120px;bottom:-270px;width:560px;height:560px;border:1px solid #ffffff12;border-radius:50%;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05;pointer-events:none}
+.site-header:before{content:"";position:absolute;inset:0;opacity:.16;pointer-events:none;background-image:linear-gradient(30deg,transparent 48%,#8bdcf5 49%,transparent 50%),linear-gradient(150deg,transparent 48%,#8bdcf5 49%,transparent 50%);background-size:76px 76px;background-position: right 22px top 12px;mask-image:linear-gradient(90deg,transparent 35%,#000 100%)}.site-header:after{content:"";position:absolute;right:-120px;bottom:-270px;width:560px;height:560px;border:1px solid #ffffff20;border-radius:50%;box-shadow:0 0 0 55px #ffffff0b,0 0 0 110px #ffffff08,0 0 0 165px #ffffff05;pointer-events:none}
 .site-nav{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:20px;max-width:1200px;margin:0 auto 68px}
 .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-.3px}.brand-mark{display:grid;place-items:center;width:44px;height:44px;border:1px solid #ffffff30;border-radius:14px;background:linear-gradient(145deg,#38bdf8,#2563eb);font-size:24px;box-shadow:0 9px 25px #02061755}
 .nav-links{display:flex;align-items:center;gap:27px;flex-wrap:wrap}.nav-links a{color:#c8d8eb;text-decoration:none;font-size:13px;font-weight:650}.nav-links a:hover{color:#fff}.nav-links a:last-child{padding:9px 14px;border:1px solid #ffffff40;border-radius:9px;background:#ffffff0c}
@@ -112,7 +112,7 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 <script>
 const categories = [
   "Industrial Engineering","Production","Operations","Planning",
-  "Supply Chain","OPEX","Quality","Procurement","Logistics"
+  "Supply Chain","Management Trainee (MTO)","OPEX","Quality","Procurement","Logistics"
 ];
 
 const officialSources = [
@@ -213,7 +213,7 @@ function renderCategories() {
   const counts = {};
 
   categories.forEach(c => {
-    counts[c] = all.filter(v => v.category === c).length;
+    counts[c] = all.filter(v => c === "Management Trainee (MTO)" ? /\\bMTO\\b|Management Trainee/i.test(v.title || "") : v.category === c).length;
   });
 
   document.getElementById("categories").innerHTML =
@@ -279,7 +279,7 @@ function renderJobs() {
         : loc.includes(location));
 
     return (
-      (selectedCategory === "All" || v.category === selectedCategory) &&
+      (selectedCategory === "All" || (selectedCategory === "Management Trainee (MTO)" ? /\\bMTO\\b|Management Trainee/i.test(v.title || "") : v.category === selectedCategory)) &&
       text.includes(q) &&
       locationMatch &&
       expMatch
