@@ -64,6 +64,11 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
     </select>
   </div>
 
+  <section class="source-area urgent-area" id="closingTomorrow" aria-live="polite">
+    <div class="section-heading"><div><h2>⏳ Closing Tomorrow</h2><p class="meta">Verified vacancies with an application deadline of tomorrow (Bangladesh time).</p></div><span class="lead-label">URGENT</span></div>
+    <div id="closingTomorrowList"><div class="empty">Checking urgent deadlines...</div></div>
+  </section>
+
   <div class="layout">
     <aside class="panel">
       <h3>Job Categories</h3>
@@ -171,6 +176,36 @@ function validVacancies() {
       (!v.deadline || v.deadline >= today)
     );
   });
+}
+
+function getDhakaDate(offsetDays = 0) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Dhaka", year: "numeric", month: "2-digit", day: "2-digit"
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(parts.map(p => [p.type, p.value]));
+  const date = new Date(Date.UTC(Number(values.year), Number(values.month)-1, Number(values.day)+offsetDays));
+  return date.toISOString().slice(0,10);
+}
+
+function renderClosingTomorrow() {
+  const area = document.getElementById("closingTomorrowList");
+  if (!area) return;
+  const tomorrow = getDhakaDate(1);
+  const urgent = validVacancies().filter(v => v.deadline === tomorrow);
+  if (!urgent.length) {
+    area.innerHTML = '<div class="empty">No verified vacancies are currently listed as closing tomorrow.</div>';
+    return;
+  }
+  area.innerHTML = '<div class="jobs-grid">' + urgent.map(v => {
+    const url = safeUrl(v.apply);
+    return `<article class="job urgent-job">
+      <span class="lead-label">DEADLINE TOMORROW</span>
+      <h3>${escapeHTML(v.title)}</h3>
+      <p class="company">${escapeHTML(v.company)}</p>
+      <p class="meta">${escapeHTML(v.location || "Location not specified")} · Deadline: ${escapeHTML(v.deadline)}</p>
+      <a class="apply" href="${url}" target="_blank" rel="noopener noreferrer">Apply now ↗</a>
+    </article>`;
+  }).join("") + '</div>';
 }
 
 function renderCategories() {
