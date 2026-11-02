@@ -4,415 +4,249 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Radar BD | Bangladesh Jobs</title>
-
+<title>Career Radar BD | IPE Jobs</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f3f6fb;color:#24344a;line-height:1.5}
-header{background:#10243a;color:white;padding:24px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-.logo{font-size:25px;font-weight:bold}
-.logo span{color:#55b5ff}
-header a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
-.hero{background:linear-gradient(120deg,#10243a,#245b88);color:white;padding:65px 7%}
-.hero h1{font-size:38px;margin-bottom:12px}
-.hero p{color:#d3e3f2;margin-bottom:22px}
-.search{display:flex;max-width:650px;gap:8px}
-input,select{padding:12px;border:1px solid #d5deea;border-radius:7px;background:white;color:#24344a;width:100%;font-size:14px}
-button{cursor:pointer;border:0;border-radius:7px;padding:12px 17px;font-weight:bold;background:#1875c9;color:white}
-button:hover{opacity:.88}
-.container{max-width:1200px;margin:auto;padding:35px 20px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-20px}
-.stat{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 15px #142c4810}
-.stat h2{color:#1875c9;font-size:25px}
-.stat p{font-size:13px;color:#738196}
-.layout{display:grid;grid-template-columns:250px 1fr;gap:25px;margin-top:35px}
-.filters,.job,.panel{background:white;border-radius:10px;padding:20px;box-shadow:0 3px 15px #142c480c}
-.filters h3{margin-bottom:18px}
-.field{margin-bottom:16px}
-.field label{display:block;font-size:13px;font-weight:bold;margin-bottom:7px}
-.jobs-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;gap:10px}
-.jobs-head h2{font-size:22px}
-.job{margin-bottom:15px;border:1px solid #e8edf4}
-.job-top{display:flex;justify-content:space-between;gap:12px}
-.job h3{font-size:18px;color:#173d61;margin-bottom:5px}
-.company{color:#68798c;font-size:14px}
-.tags{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}
-.tag{background:#edf5fc;color:#245b87;padding:5px 9px;border-radius:5px;font-size:12px}
-.job p{font-size:13px;color:#64748b;margin:5px 0}
-.job-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.job-actions a,.job-actions button{font-size:12px;padding:9px 13px;text-decoration:none;border-radius:6px}
-.apply{background:#1875c9;color:white}
-.save{background:#e9f2fc;color:#18598e}
-.applied{background:#e8f6ed;color:#247344}
-.delete{background:#fff0ef;color:#b13a35}
-.badge{font-size:11px;padding:5px 8px;border-radius:5px;background:#eaf6ed;color:#258044;height:max-content}
-.empty{text-align:center;padding:40px;color:#77869a;background:white;border-radius:10px}
-.panel{margin-top:30px}
-.panel h2{margin-bottom:15px}
-.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.form-grid .full{grid-column:1/-1}
-.panel button{margin-top:12px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-.tabs button{background:#e7eef6;color:#29445f}
-.tabs button.active{background:#1875c9;color:white}
-footer{text-align:center;background:#10243a;color:#b9c9d9;padding:25px;margin-top:40px;font-size:13px}
+:root {
+  --navy:#10213b;
+  --blue:#2855d9;
+  --bg:#f4f7fc;
+  --text:#192438;
+  --muted:#68758a;
+  --border:#e2e8f0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(120deg,#10213b,#2855d9);color:white;padding:35px 6%}
+.container{max-width:1150px;margin:auto}
+.brand{font-size:23px;font-weight:bold}
+.hero h1{font-size:38px;margin:35px 0 10px}
+.hero p{color:#dce6ff;line-height:1.6}
+main{max-width:1150px;margin:25px auto;padding:0 16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.stat,.filterbox,.job,.info{background:white;border:1px solid var(--border);border-radius:13px;padding:17px}
+.stat strong{display:block;color:var(--blue);font-size:23px}
+.stat span{font-size:12px;color:var(--muted)}
+.filters{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px}
+input,select{width:100%;padding:12px;border:1px solid #d4dce8;border-radius:8px;font-size:14px;background:white}
+.section{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:25px 0 14px;flex-wrap:wrap}
+.section h2{margin:0;font-size:21px}
+.jobs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.job{display:flex;flex-direction:column;gap:10px}
+.job h3{margin:0;font-size:19px}
+.company{font-weight:bold;color:#34445e}
+.tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{background:#edf2ff;color:#294eb1;border-radius:20px;padding:6px 9px;font-size:11px}
+.details{font-size:13px;color:#586579;line-height:1.8}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+button,.apply{border:0;border-radius:8px;padding:10px 13px;font-weight:bold;cursor:pointer;font-size:13px;text-decoration:none}
+.apply{background:var(--blue);color:white}
+.save{background:#edf1f7;color:#26354d}
+.empty{background:white;border:1px dashed #cbd5e1;border-radius:12px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
+.info{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.7}
+footer{text-align:center;padding:30px;color:#8490a3;font-size:12px}
 @media(max-width:750px){
- .layout{grid-template-columns:1fr}
- .stats{grid-template-columns:repeat(3,1fr)}
+ .filters{grid-template-columns:1fr 1fr}
+ .jobs{grid-template-columns:1fr}
  .hero h1{font-size:29px}
- .form-grid{grid-template-columns:1fr}
- .form-grid .full{grid-column:auto}
- header{padding:20px}
- .search{flex-direction:column}
+}
+@media(max-width:430px){
+ .filters{grid-template-columns:1fr}
+ .stats{gap:6px}
+ .stat{padding:11px}
+ .stat strong{font-size:18px}
 }
 </style>
 </head>
-
 <body>
 
 <header>
- <div class="logo">CAREER <span>RADAR</span> BD</div>
- <nav>
-  <a href="#jobs">Find Jobs</a>
-  <a href="#add">Add Vacancy</a>
-  <a href="#about">About</a>
- </nav>
+ <div class="container">
+  <div class="brand">🎯 CAREER RADAR BD</div>
+  <div class="hero">
+   <h1>Find Your Next Career Opportunity</h1>
+   <p>Bangladesh job opportunities for Industrial & Production Engineering graduates.<br>
+   MNCs • Large Groups • Production • Planning • Supply Chain</p>
+  </div>
+ </div>
 </header>
 
-<section class="hero">
- <h1>Find Your Next Career.</h1>
- <p>Discover MNC and leading corporate job opportunities in Bangladesh.</p>
- <div class="search">
-  <input id="search" placeholder="Search job, company or designation...">
-  <button onclick="renderJobs()">Search Jobs</button>
- </div>
-</section>
-
-<main class="container">
-
-<div class="stats">
- <div class="stat"><h2 id="total">0</h2><p>Total vacancies</p></div>
- <div class="stat"><h2 id="savedCount">0</h2><p>Saved jobs</p></div>
- <div class="stat"><h2 id="appliedCount">0</h2><p>Applied jobs</p></div>
-</div>
-
-<div class="layout" id="jobs">
-
-<aside class="filters">
- <h3>Filter Vacancies</h3>
-
- <div class="field">
-  <label>Company Type</label>
-  <select id="type">
-   <option value="">All companies</option>
-   <option>MNC</option>
-   <option>Large Group</option>
-  </select>
+<main>
+ <div class="stats">
+  <div class="stat"><strong id="total">0</strong><span>VACANCIES</span></div>
+  <div class="stat"><strong>All Bangladesh</strong><span>JOB LOCATIONS</span></div>
+  <div class="stat"><strong>IPE Focus</strong><span>CAREER CATEGORIES</span></div>
  </div>
 
- <div class="field">
-  <label>Job Function</label>
-  <select id="function">
-   <option value="">All functions</option>
-   <option>Production</option>
-   <option>Planning</option>
-   <option>Supply Chain</option>
-   <option>Industrial Engineering</option>
-   <option>Operations Excellence</option>
-   <option>Quality</option>
-   <option>Procurement</option>
-   <option>Logistics</option>
-  </select>
- </div>
-
- <div class="field">
-  <label>Location</label>
-  <select id="location">
-   <option value="">All locations</option>
-   <option>Dhaka</option>
-   <option>Gazipur</option>
-   <option>Savar</option>
-   <option>Narayanganj</option>
-   <option>Other</option>
-  </select>
- </div>
-
- <div class="field">
-  <label>Experience</label>
-  <select id="experience">
-   <option value="">All experience</option>
-   <option>Fresher</option>
-   <option>0-2 years</option>
-   <option>0-3 years</option>
-   <option>1-3 years</option>
-   <option>2-5 years</option>
-  </select>
- </div>
-
- <div class="field">
-  <label>Minimum Salary (BDT)</label>
-  <select id="salary">
-   <option value="0">Any salary</option>
-   <option value="20000">20,000+</option>
-   <option value="25000">25,000+</option>
-   <option value="30000">30,000+</option>
-   <option value="35000">35,000+</option>
-   <option value="40000">40,000+</option>
-  </select>
- </div>
-
- <button onclick="clearFilters()" style="width:100%">Clear Filters</button>
-</aside>
-
-<section>
- <div class="jobs-head">
-  <h2>Job Opportunities</h2>
-  <select id="view" style="width:145px">
-   <option value="all">All Jobs</option>
-   <option value="saved">Saved Jobs</option>
-   <option value="applied">Applied Jobs</option>
-  </select>
- </div>
-
- <div class="tabs">
-  <button class="active" onclick="setTab('all',this)">All</button>
-  <button onclick="setTab('MNC',this)">MNC</button>
-  <button onclick="setTab('Large Group',this)">Large Groups</button>
- </div>
-
- <div id="jobList"></div>
-</section>
-
-</div>
-
-<section class="panel" id="add">
- <h2>+ Add a New Vacancy</h2>
- <p style="color:#718096;font-size:13px;margin-bottom:17px">
- Add a verified vacancy with its original application link.
- </p>
-
- <form id="jobForm">
- <div class="form-grid">
-
-  <div class="field">
-   <label>Job Title *</label>
-   <input name="title" required placeholder="e.g. Production Officer">
-  </div>
-
-  <div class="field">
-   <label>Company *</label>
-   <input name="company" required placeholder="Company name">
-  </div>
-
-  <div class="field">
-   <label>Company Type</label>
-   <select name="type">
-    <option>MNC</option>
-    <option>Large Group</option>
-   </select>
-  </div>
-
-  <div class="field">
-   <label>Job Function</label>
-   <select name="function">
+ <div class="filterbox">
+  <div class="filters">
+   <input id="search" placeholder="Search job, company or keyword...">
+   <select id="category">
+    <option value="">All functions</option>
+    <option>Industrial Engineering</option>
     <option>Production</option>
     <option>Planning</option>
     <option>Supply Chain</option>
-    <option>Industrial Engineering</option>
-    <option>Operations Excellence</option>
+    <option>OPEX</option>
     <option>Quality</option>
     <option>Procurement</option>
     <option>Logistics</option>
    </select>
-  </div>
-
-  <div class="field">
-   <label>Location</label>
-   <select name="location">
+   <select id="experience">
+    <option value="">All experience levels</option>
+    <option>Fresher</option>
+    <option>0-2 Years</option>
+    <option>3-5 Years</option>
+    <option>6+ Years</option>
+   </select>
+   <select id="location">
+    <option value="">All locations</option>
     <option>Dhaka</option>
     <option>Gazipur</option>
     <option>Savar</option>
     <option>Narayanganj</option>
-    <option>Other</option>
+    <option>Chattogram</option>
+    <option>Other Bangladesh</option>
    </select>
   </div>
-
-  <div class="field">
-   <label>Experience</label>
-   <select name="experience">
-    <option>Fresher</option>
-    <option>0-2 years</option>
-    <option>0-3 years</option>
-    <option>1-3 years</option>
-    <option>2-5 years</option>
-   </select>
-  </div>
-
-  <div class="field">
-   <label>Minimum Salary (BDT)</label>
-   <input name="salary" type="number" min="0" placeholder="30000">
-  </div>
-
-  <div class="field">
-   <label>Application Deadline</label>
-   <input name="deadline" type="date">
-  </div>
-
-  <div class="field full">
-   <label>Original Apply Link *</label>
-   <input name="link" type="url" required placeholder="https://...">
-  </div>
-
  </div>
- <button type="submit">Add Vacancy</button>
- </form>
-</section>
 
-<section class="panel" id="about">
- <h2>About Career Radar BD</h2>
- <p style="color:#718096">
- Career Radar BD is a personal job-search portal focused on
- Industrial and Production Engineering graduates and early-career
- professionals in Bangladesh. It helps organize opportunities in
- manufacturing, production, planning, supply chain and operations.
- </p>
-</section>
+ <div class="section">
+  <h2>Latest Matching Vacancies</h2>
+  <span id="resultCount" style="font-size:12px;color:#68758a"></span>
+ </div>
 
+ <div class="jobs" id="jobList"></div>
+
+ <div class="info">
+  <b>About Career Radar BD</b><br>
+  This platform is designed to identify opportunities relevant to IPE graduates at multinational companies and established business groups.
+  Vacancy information should be checked against the original employer or job portal before applying.
+  <br><br>
+  <b>Data policy:</b> Job titles, company names, deadlines and other factual details may be displayed with source attribution. Full advertisements, logos and copyrighted images are not reproduced without permission.
+  <br><br>
+  <b>Update policy:</b> This is a static website. Its vacancy list must be updated through the job data below or a permitted external data feed. It does not automatically crawl job portals.
+ </div>
 </main>
 
-<footer>
- CAREER RADAR BD | Bangladesh Career Opportunities
- <br>Personal job tracking portal
-</footer>
+<footer>CAREER RADAR BD © 2026 | Bangladesh IPE Career Portal</footer>
 
 <script>
-const STORAGE_KEY = "careerRadarJobsV1";
+/*
+  ADD VERIFIED VACANCIES HERE.
 
-let jobs = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-let tab = "all";
+  Each vacancy needs:
+  title, company, companyType, category, location,
+  experience, education, deadline, source, sourceUrl,
+  applicationUrl, description and verifiedDate.
 
-function saveData(){
- localStorage.setItem(STORAGE_KEY,JSON.stringify(jobs));
-}
+  Use original short descriptions, not copied advertisements.
+*/
 
-function setTab(value,button){
- tab=value;
- document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("active"));
- button.classList.add("active");
- renderJobs();
-}
+const vacancies = [
+  // Example structure (replace with verified vacancies):
+  // {
+  //   title: "Executive - Industrial Engineering",
+  //   company: "Example Group",
+  //   companyType: "Large Group",
+  //   category: "Industrial Engineering",
+  //   location: "Savar",
+  //   experience: "0-2 Years",
+  //   education: "BSc in IPE",
+  //   deadline: "20 November 2026",
+  //   source: "Official Career Page",
+  //   sourceUrl: "https://example.com/careers",
+  //   applicationUrl: "https://example.com/apply",
+  //   description: "Production efficiency, time study and process improvement.",
+  //   verifiedDate: "3 November 2026"
+  // }
+];
 
-function clearFilters(){
- ["search","type","function","location","experience","salary"].forEach(id=>{
-  document.getElementById(id).value="";
- });
- document.getElementById("salary").value="0";
- document.getElementById("view").value="all";
- tab="all";
- document.querySelectorAll(".tabs button").forEach((b,i)=>b.classList.toggle("active",i===0));
- renderJobs();
-}
+let saved = JSON.parse(localStorage.getItem("careerRadarSaved") || "[]");
 
 function renderJobs(){
- const q=document.getElementById("search").value.toLowerCase();
- const type=document.getElementById("type").value;
- const fn=document.getElementById("function").value;
- const loc=document.getElementById("location").value;
- const exp=document.getElementById("experience").value;
- const sal=Number(document.getElementById("salary").value);
- const view=document.getElementById("view").value;
+ const search = document.getElementById("search").value.toLowerCase();
+ const category = document.getElementById("category").value;
+ const experience = document.getElementById("experience").value;
+ const location = document.getElementById("location").value;
 
- let filtered=jobs.filter(j=>{
-  const matchText=(j.title+" "+j.company+" "+j.function).toLowerCase().includes(q);
-  return matchText &&
-   (!type||j.type===type) &&
-   (!fn||j.function===fn) &&
-   (!loc||j.location===loc) &&
-   (!exp||j.experience===exp) &&
-   (!sal||Number(j.salary||0)>=sal) &&
-   (tab==="all"||j.type===tab) &&
-   (view==="all"||(view==="saved"&&j.saved)||(view==="applied"&&j.applied));
+ const filtered = vacancies.filter(job=>{
+  const text = [
+   job.title,job.company,job.category,job.location,
+   job.description,job.education
+  ].join(" ").toLowerCase();
+
+  return text.includes(search) &&
+   (!category || job.category === category) &&
+   (!experience || job.experience === experience) &&
+   (!location || job.location.includes(location));
  });
 
- document.getElementById("total").textContent=jobs.length;
- document.getElementById("savedCount").textContent=jobs.filter(j=>j.saved).length;
- document.getElementById("appliedCount").textContent=jobs.filter(j=>j.applied).length;
+ document.getElementById("total").textContent = vacancies.length;
+ document.getElementById("resultCount").textContent =
+  filtered.length + " matching vacancies";
 
- const list=document.getElementById("jobList");
+ const list = document.getElementById("jobList");
 
  if(!filtered.length){
-  list.innerHTML='<div class="empty"><h3>No vacancies found</h3><p>Add verified job listings using the form below.</p></div>';
+  list.innerHTML = `
+   <div class="empty">
+    <h3>No matching vacancies yet</h3>
+    <p>New verified vacancies will appear here when the vacancy data is updated.</p>
+   </div>`;
   return;
  }
 
- list.innerHTML=filtered.map(j=>`
-  <article class="job">
-   <div class="job-top">
-    <div>
-     <h3>${escapeHTML(j.title)}</h3>
-     <div class="company">${escapeHTML(j.company)}</div>
+ list.innerHTML = filtered.map((job,index)=>{
+  const isSaved = saved.includes(job.id);
+  return `
+   <article class="job">
+    <div class="tags">
+     <span class="tag">${job.companyType}</span>
+     <span class="tag">${job.category}</span>
     </div>
-    <span class="badge">${escapeHTML(j.type)}</span>
-   </div>
-   <div class="tags">
-    <span class="tag">${escapeHTML(j.function)}</span>
-    <span class="tag">${escapeHTML(j.location)}</span>
-    <span class="tag">${escapeHTML(j.experience)}</span>
-   </div>
-   <p>Minimum salary: ${j.salary?Number(j.salary).toLocaleString()+" BDT":"Not disclosed"}</p>
-   <p>Deadline: ${j.deadline||"Not specified"}</p>
-   <div class="job-actions">
-    <a class="apply" href="${escapeHTML(j.link)}" target="_blank" rel="noopener noreferrer">Apply Now ↗</a>
-    <button class="save" onclick="toggleJob(${j.id},'saved')">${j.saved?"★ Saved":"☆ Save Job"}</button>
-    <button class="applied" onclick="toggleJob(${j.id},'applied')">${j.applied?"✓ Applied":"Mark Applied"}</button>
-    <button class="delete" onclick="deleteJob(${j.id})">Delete</button>
-   </div>
-  </article>
- `).join("");
+    <h3>${escapeHTML(job.title)}</h3>
+    <div class="company">${escapeHTML(job.company)}</div>
+    <div class="details">
+     <b>Location:</b> ${escapeHTML(job.location)}<br>
+     <b>Experience:</b> ${escapeHTML(job.experience)}<br>
+     <b>Education:</b> ${escapeHTML(job.education)}<br>
+     <b>Deadline:</b> ${escapeHTML(job.deadline)}<br>
+     <b>Source:</b> <a href="${safeURL(job.sourceUrl)}" target="_blank" rel="noopener">${escapeHTML(job.source)}</a><br>
+     <b>Last verified:</b> ${escapeHTML(job.verifiedDate)}
+    </div>
+    <div class="details">${escapeHTML(job.description)}</div>
+    <div class="actions">
+     <a class="apply" href="${safeURL(job.applicationUrl)}" target="_blank" rel="noopener">View / Apply ↗</a>
+     <button class="save" onclick="toggleSave('${job.id}')">${isSaved?"★ Saved":"☆ Save job"}</button>
+    </div>
+   </article>`;
+ }).join("");
 }
 
 function escapeHTML(value){
- return String(value??"").replace(/[&<>"']/g,c=>({
+ return String(value ?? "").replace(/[&<>"']/g,c=>({
   "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
  }[c]));
 }
 
-function toggleJob(id,key){
- const j=jobs.find(x=>x.id===id);
- if(j){j[key]=!j[key];saveData();renderJobs();}
+function safeURL(value){
+ try{
+  const url=new URL(value);
+  return ["https:","http:"].includes(url.protocol)?url.href:"#";
+ }catch(e){return "#";}
 }
 
-function deleteJob(id){
- if(confirm("Delete this vacancy?")){
-  jobs=jobs.filter(j=>j.id!==id);
-  saveData();renderJobs();
+function toggleSave(id){
+ if(saved.includes(id)){
+  saved=saved.filter(x=>x!==id);
+ }else{
+  saved.push(id);
  }
-}
-
-document.getElementById("jobForm").addEventListener("submit",function(e){
- e.preventDefault();
- const data=Object.fromEntries(new FormData(this).entries());
-
- if(!/^https?:\/\//i.test(data.link)){
-  alert("Please enter a valid http or https application link.");
-  return;
- }
-
- jobs.unshift({
-  ...data,
-  id:Date.now(),
-  saved:false,
-  applied:false
- });
-
- saveData();
- this.reset();
+ localStorage.setItem("careerRadarSaved",JSON.stringify(saved));
  renderJobs();
- alert("Vacancy added successfully!");
- document.getElementById("jobs").scrollIntoView({behavior:"smooth"});
-});
+}
 
-["search","type","function","location","experience","salary","view"].forEach(id=>{
+["search","category","experience","location"].forEach(id=>{
  document.getElementById(id).addEventListener(
   id==="search"?"input":"change",renderJobs
  );
@@ -420,6 +254,5 @@ document.getElementById("jobForm").addEventListener("submit",function(e){
 
 renderJobs();
 </script>
-
 </body>
 </html>
