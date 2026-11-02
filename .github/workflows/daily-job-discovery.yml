@@ -1,8 +1,8 @@
-name: Daily vacancy discovery
+name: Frequent vacancy discovery
 
 on:
   schedule:
-    - cron: "30 2 * * *" # 08:30 Bangladesh time (UTC+6)
+    - cron: "*/15 * * * *" # Every 15 minutes (GitHub Actions schedule; may be delayed)
   workflow_dispatch:
 
 permissions:
