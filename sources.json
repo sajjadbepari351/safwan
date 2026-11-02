@@ -1,9 +1,22 @@
 {
   "feeds": [
-    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+production+officer+deadline&hl=en-BD&gl=BD&ceid=BD:en",
-    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+supply+chain+planning+officer+deadline&hl=en-BD&gl=BD&ceid=BD:en",
-    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+industrial+engineer+OPEX+quality+deadline&hl=en-BD&gl=BD&ceid=BD:en",
-    " https://news.google.com/rss/search?q=site%3Abdjobs.com+Bangladesh+production+planning+supply+chain+job&hl=en-BD&gl=BD&ceid=BD:en",
-    "https://news.google.com/rss/search?q=site%3Adohaj.com+Bangladesh+production+planning+logistics+job&hl=en-BD&gl=BD&ceid=BD:en"
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+production+manufacturing+officer&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+production+executive+supervisor&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+production+planning+PPC&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+industrial+engineer+IPE&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+supply+chain+procurement+purchase&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+logistics+warehouse+store+inventory&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+OPEX+operations+process+improvement&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+quality+assurance+quality+control+QA+QC&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+vacancy+maintenance+engineering+plant&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Abdjobs.com+Bangladesh+production+manufacturing+job&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Abdjobs.com+Bangladesh+planning+PPC+industrial+engineer+job&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Abdjobs.com+Bangladesh+supply+chain+procurement+logistics+job&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Adohaj.com+Bangladesh+production+planning+quality+job&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Alinkedin.com%2Fjobs+Bangladesh+production+planning+supply+chain&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=site%3Ajobs.com.bd+Bangladesh+production+planning+procurement&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+MNC+career+vacancy+engineer+production+operations&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+group+of+companies+career+vacancy+planning+supply+chain&hl=en-BD&gl=BD&ceid=BD:en",
+    "https://news.google.com/rss/search?q=Bangladesh+job+circular+deadline+production+engineering+procurement&hl=en-BD&gl=BD&ceid=BD:en"
   ]
 }
