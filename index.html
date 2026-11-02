@@ -4,396 +4,422 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sajjad | Industrial Engineer</title>
+<title>Career Radar BD | Bangladesh Jobs</title>
 
 <style>
-:root {
-    --navy: #10243a;
-    --blue: #2878d0;
-    --light: #f4f7fb;
-    --white: #ffffff;
-    --text: #26364a;
-    --muted: #66768a;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: var(--light);
-    color: var(--text);
-    line-height: 1.7;
-}
-
-nav {
-    background: var(--navy);
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.logo {
-    color: white;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-nav a {
-    color: #dce7f4;
-    text-decoration: none;
-    margin-left: 22px;
-    font-size: 14px;
-}
-
-nav a:hover {
-    color: #65b5ff;
-}
-
-.hero {
-    background: linear-gradient(120deg, #10243a, #1c4e78);
-    color: white;
-    padding: 105px 8%;
-}
-
-.hero .tag {
-    color: #7ec4ff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 13px;
-}
-
-.hero h1 {
-    font-size: clamp(38px, 6vw, 65px);
-    margin: 15px 0;
-}
-
-.hero h2 {
-    color: #b8d8f5;
-    font-size: 22px;
-    font-weight: normal;
-}
-
-.hero p {
-    max-width: 650px;
-    margin: 20px 0 30px;
-    color: #d4e0ed;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: var(--blue);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-right: 10px;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid white;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 75px 25px;
-}
-
-.section-title {
-    font-size: 30px;
-    color: var(--navy);
-    margin-bottom: 12px;
-}
-
-.underline {
-    width: 55px;
-    height: 4px;
-    background: var(--blue);
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
-.about-text {
-    max-width: 850px;
-    color: var(--muted);
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
-}
-
-.card {
-    background: white;
-    padding: 27px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    border: 1px solid #e9eef5;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
-}
-
-.card h3 {
-    color: var(--navy);
-    margin-bottom: 12px;
-}
-
-.card p, .card li {
-    color: var(--muted);
-    font-size: 14px;
-}
-
-.card ul {
-    padding-left: 20px;
-}
-
-.date {
-    color: var(--blue);
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skills span {
-    background: white;
-    border: 1px solid #dce6f0;
-    color: #24557d;
-    padding: 10px 17px;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-.contact {
-    background: var(--navy);
-    color: white;
-    text-align: center;
-    padding: 65px 20px;
-}
-
-.contact h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-
-.contact p {
-    color: #c4d3e3;
-    margin-bottom: 25px;
-}
-
-.contact a {
-    color: #82c5ff;
-    text-decoration: none;
-    margin: 10px;
-}
-
-footer {
-    background: #0b1a2a;
-    text-align: center;
-    padding: 20px;
-    color: #a9b9c9;
-    font-size: 13px;
-}
-
-@media(max-width: 700px) {
-    nav {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    nav a {
-        margin: 0 7px;
-        font-size: 12px;
-    }
-
-    .hero {
-        padding: 75px 7%;
-    }
-
-    .container {
-        padding: 55px 20px;
-    }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f3f6fb;color:#24344a;line-height:1.5}
+header{background:#10243a;color:white;padding:24px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo{font-size:25px;font-weight:bold}
+.logo span{color:#55b5ff}
+header a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
+.hero{background:linear-gradient(120deg,#10243a,#245b88);color:white;padding:65px 7%}
+.hero h1{font-size:38px;margin-bottom:12px}
+.hero p{color:#d3e3f2;margin-bottom:22px}
+.search{display:flex;max-width:650px;gap:8px}
+input,select{padding:12px;border:1px solid #d5deea;border-radius:7px;background:white;color:#24344a;width:100%;font-size:14px}
+button{cursor:pointer;border:0;border-radius:7px;padding:12px 17px;font-weight:bold;background:#1875c9;color:white}
+button:hover{opacity:.88}
+.container{max-width:1200px;margin:auto;padding:35px 20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:-20px}
+.stat{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 15px #142c4810}
+.stat h2{color:#1875c9;font-size:25px}
+.stat p{font-size:13px;color:#738196}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:25px;margin-top:35px}
+.filters,.job,.panel{background:white;border-radius:10px;padding:20px;box-shadow:0 3px 15px #142c480c}
+.filters h3{margin-bottom:18px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:bold;margin-bottom:7px}
+.jobs-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;gap:10px}
+.jobs-head h2{font-size:22px}
+.job{margin-bottom:15px;border:1px solid #e8edf4}
+.job-top{display:flex;justify-content:space-between;gap:12px}
+.job h3{font-size:18px;color:#173d61;margin-bottom:5px}
+.company{color:#68798c;font-size:14px}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin:13px 0}
+.tag{background:#edf5fc;color:#245b87;padding:5px 9px;border-radius:5px;font-size:12px}
+.job p{font-size:13px;color:#64748b;margin:5px 0}
+.job-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.job-actions a,.job-actions button{font-size:12px;padding:9px 13px;text-decoration:none;border-radius:6px}
+.apply{background:#1875c9;color:white}
+.save{background:#e9f2fc;color:#18598e}
+.applied{background:#e8f6ed;color:#247344}
+.delete{background:#fff0ef;color:#b13a35}
+.badge{font-size:11px;padding:5px 8px;border-radius:5px;background:#eaf6ed;color:#258044;height:max-content}
+.empty{text-align:center;padding:40px;color:#77869a;background:white;border-radius:10px}
+.panel{margin-top:30px}
+.panel h2{margin-bottom:15px}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.form-grid .full{grid-column:1/-1}
+.panel button{margin-top:12px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tabs button{background:#e7eef6;color:#29445f}
+.tabs button.active{background:#1875c9;color:white}
+footer{text-align:center;background:#10243a;color:#b9c9d9;padding:25px;margin-top:40px;font-size:13px}
+@media(max-width:750px){
+ .layout{grid-template-columns:1fr}
+ .stats{grid-template-columns:repeat(3,1fr)}
+ .hero h1{font-size:29px}
+ .form-grid{grid-template-columns:1fr}
+ .form-grid .full{grid-column:auto}
+ header{padding:20px}
+ .search{flex-direction:column}
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-    <div class="logo">SAJJAD.</div>
-    <div>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<header class="hero">
-    <div class="tag">INDUSTRIAL & PRODUCTION ENGINEER</div>
-    <h1>Hello, I'm Sajjad.</h1>
-    <h2>Operations Excellence | Process Improvement | Data Analysis</h2>
-    <p>
-        Passionate about improving manufacturing performance,
-        optimizing processes and transforming operational data
-        into actionable insights.
-    </p>
-    <a class="btn" href="#experience">Explore My Journey</a>
-    <a class="btn btn-outline"
-       href="https://www.linkedin.com/in/sajjad62/">
-       LinkedIn Profile
-    </a>
+<header>
+ <div class="logo">CAREER <span>RADAR</span> BD</div>
+ <nav>
+  <a href="#jobs">Find Jobs</a>
+  <a href="#add">Add Vacancy</a>
+  <a href="#about">About</a>
+ </nav>
 </header>
 
-<section class="container" id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="underline"></div>
-
-    <p class="about-text">
-        I am an Industrial and Production Engineering graduate
-        from Shahjalal University of Science and Technology (SUST).
-        Currently working in Operations Excellence at Akij Cement
-        Company Limited.
-
-        My professional interests include production performance
-        monitoring, Lean Manufacturing, process standardization,
-        root cause analysis and data-driven operational improvement.
-    </p>
+<section class="hero">
+ <h1>Find Your Next Career.</h1>
+ <p>Discover MNC and leading corporate job opportunities in Bangladesh.</p>
+ <div class="search">
+  <input id="search" placeholder="Search job, company or designation...">
+  <button onclick="renderJobs()">Search Jobs</button>
+ </div>
 </section>
 
-<section class="container" id="experience">
-    <h2 class="section-title">Professional Experience</h2>
-    <div class="underline"></div>
+<main class="container">
 
-    <div class="card">
-        <div class="date">AUGUST 2025 – PRESENT</div>
-        <h3>Assistant Officer – Operations Excellence (OPEX)</h3>
-        <p><strong>Akij Cement Company Limited</strong></p>
-        <br>
-        <ul>
-            <li>Monitor production performance against operational plans.</li>
-            <li>Develop and maintain live production performance dashboards.</li>
-            <li>Analyze OEE, NPT, cycle time and operational KPIs.</li>
-            <li>Coordinate Root Cause Analysis and corrective actions.</li>
-            <li>Support SOP development and process standardization.</li>
-            <li>Coordinate 5S and continuous improvement initiatives.</li>
-        </ul>
-    </div>
+<div class="stats">
+ <div class="stat"><h2 id="total">0</h2><p>Total vacancies</p></div>
+ <div class="stat"><h2 id="savedCount">0</h2><p>Saved jobs</p></div>
+ <div class="stat"><h2 id="appliedCount">0</h2><p>Applied jobs</p></div>
+</div>
+
+<div class="layout" id="jobs">
+
+<aside class="filters">
+ <h3>Filter Vacancies</h3>
+
+ <div class="field">
+  <label>Company Type</label>
+  <select id="type">
+   <option value="">All companies</option>
+   <option>MNC</option>
+   <option>Large Group</option>
+  </select>
+ </div>
+
+ <div class="field">
+  <label>Job Function</label>
+  <select id="function">
+   <option value="">All functions</option>
+   <option>Production</option>
+   <option>Planning</option>
+   <option>Supply Chain</option>
+   <option>Industrial Engineering</option>
+   <option>Operations Excellence</option>
+   <option>Quality</option>
+   <option>Procurement</option>
+   <option>Logistics</option>
+  </select>
+ </div>
+
+ <div class="field">
+  <label>Location</label>
+  <select id="location">
+   <option value="">All locations</option>
+   <option>Dhaka</option>
+   <option>Gazipur</option>
+   <option>Savar</option>
+   <option>Narayanganj</option>
+   <option>Other</option>
+  </select>
+ </div>
+
+ <div class="field">
+  <label>Experience</label>
+  <select id="experience">
+   <option value="">All experience</option>
+   <option>Fresher</option>
+   <option>0-2 years</option>
+   <option>0-3 years</option>
+   <option>1-3 years</option>
+   <option>2-5 years</option>
+  </select>
+ </div>
+
+ <div class="field">
+  <label>Minimum Salary (BDT)</label>
+  <select id="salary">
+   <option value="0">Any salary</option>
+   <option value="20000">20,000+</option>
+   <option value="25000">25,000+</option>
+   <option value="30000">30,000+</option>
+   <option value="35000">35,000+</option>
+   <option value="40000">40,000+</option>
+  </select>
+ </div>
+
+ <button onclick="clearFilters()" style="width:100%">Clear Filters</button>
+</aside>
+
+<section>
+ <div class="jobs-head">
+  <h2>Job Opportunities</h2>
+  <select id="view" style="width:145px">
+   <option value="all">All Jobs</option>
+   <option value="saved">Saved Jobs</option>
+   <option value="applied">Applied Jobs</option>
+  </select>
+ </div>
+
+ <div class="tabs">
+  <button class="active" onclick="setTab('all',this)">All</button>
+  <button onclick="setTab('MNC',this)">MNC</button>
+  <button onclick="setTab('Large Group',this)">Large Groups</button>
+ </div>
+
+ <div id="jobList"></div>
 </section>
 
-<section class="container" id="projects">
-    <h2 class="section-title">Projects & Contributions</h2>
-    <div class="underline"></div>
+</div>
 
-    <div class="cards">
+<section class="panel" id="add">
+ <h2>+ Add a New Vacancy</h2>
+ <p style="color:#718096;font-size:13px;margin-bottom:17px">
+ Add a verified vacancy with its original application link.
+ </p>
 
-        <div class="card">
-            <h3>Production Performance Dashboard</h3>
-            <p>
-                Developed an 18-KPI performance monitoring dashboard
-                covering production, OEE, NPT and operational performance.
-            </p>
-        </div>
+ <form id="jobForm">
+ <div class="form-grid">
 
-        <div class="card">
-            <h3>Root Cause Analysis</h3>
-            <p>
-                Participated in 80+ breakdown and process problem-solving
-                sessions with Production and Maintenance teams.
-            </p>
-        </div>
+  <div class="field">
+   <label>Job Title *</label>
+   <input name="title" required placeholder="e.g. Production Officer">
+  </div>
 
-        <div class="card">
-            <h3>SOP Development</h3>
-            <p>
-                Contributed to developing and standardizing 50+ SOPs
-                to improve operational consistency.
-            </p>
-        </div>
+  <div class="field">
+   <label>Company *</label>
+   <input name="company" required placeholder="Company name">
+  </div>
 
-        <div class="card">
-            <h3>5S & Employee Training</h3>
-            <p>
-                Supported 5S and Lean training initiatives for
-                100+ employees through 15+ training sessions.
-            </p>
-        </div>
+  <div class="field">
+   <label>Company Type</label>
+   <select name="type">
+    <option>MNC</option>
+    <option>Large Group</option>
+   </select>
+  </div>
 
-    </div>
+  <div class="field">
+   <label>Job Function</label>
+   <select name="function">
+    <option>Production</option>
+    <option>Planning</option>
+    <option>Supply Chain</option>
+    <option>Industrial Engineering</option>
+    <option>Operations Excellence</option>
+    <option>Quality</option>
+    <option>Procurement</option>
+    <option>Logistics</option>
+   </select>
+  </div>
+
+  <div class="field">
+   <label>Location</label>
+   <select name="location">
+    <option>Dhaka</option>
+    <option>Gazipur</option>
+    <option>Savar</option>
+    <option>Narayanganj</option>
+    <option>Other</option>
+   </select>
+  </div>
+
+  <div class="field">
+   <label>Experience</label>
+   <select name="experience">
+    <option>Fresher</option>
+    <option>0-2 years</option>
+    <option>0-3 years</option>
+    <option>1-3 years</option>
+    <option>2-5 years</option>
+   </select>
+  </div>
+
+  <div class="field">
+   <label>Minimum Salary (BDT)</label>
+   <input name="salary" type="number" min="0" placeholder="30000">
+  </div>
+
+  <div class="field">
+   <label>Application Deadline</label>
+   <input name="deadline" type="date">
+  </div>
+
+  <div class="field full">
+   <label>Original Apply Link *</label>
+   <input name="link" type="url" required placeholder="https://...">
+  </div>
+
+ </div>
+ <button type="submit">Add Vacancy</button>
+ </form>
 </section>
 
-<section class="container" id="skills">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="underline"></div>
-
-    <div class="skills">
-        <span>Advanced Excel</span>
-        <span>Power BI</span>
-        <span>Google Sheets</span>
-        <span>Looker Studio</span>
-        <span>ERP Support</span>
-        <span>SQL Basics</span>
-        <span>Lean Manufacturing</span>
-        <span>Root Cause Analysis</span>
-        <span>5S</span>
-        <span>Process Improvement</span>
-        <span>Production Monitoring</span>
-        <span>Data Analysis</span>
-    </div>
+<section class="panel" id="about">
+ <h2>About Career Radar BD</h2>
+ <p style="color:#718096">
+ Career Radar BD is a personal job-search portal focused on
+ Industrial and Production Engineering graduates and early-career
+ professionals in Bangladesh. It helps organize opportunities in
+ manufacturing, production, planning, supply chain and operations.
+ </p>
 </section>
 
-<section class="container" id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="underline"></div>
-
-    <div class="card">
-        <h3>BSc in Industrial and Production Engineering</h3>
-        <p>Shahjalal University of Science and Technology (SUST)</p>
-        <p>February 2020 – July 2025</p>
-        <p><strong>CGPA: 3.25 / 4.00</strong></p>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Let's Connect</h2>
-    <p>
-        Interested in manufacturing, operational excellence
-        and continuous improvement.
-    </p>
-
-    <a href="https://www.linkedin.com/in/sajjad62/">
-        LinkedIn
-    </a>
-
-    <a href="https://github.com/Sajjadbepari351">
-        GitHub
-    </a>
-</section>
+</main>
 
 <footer>
-    © 2026 Sajjad | Personal Portfolio
+ CAREER RADAR BD | Bangladesh Career Opportunities
+ <br>Personal job tracking portal
 </footer>
+
+<script>
+const STORAGE_KEY = "careerRadarJobsV1";
+
+let jobs = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+let tab = "all";
+
+function saveData(){
+ localStorage.setItem(STORAGE_KEY,JSON.stringify(jobs));
+}
+
+function setTab(value,button){
+ tab=value;
+ document.querySelectorAll(".tabs button").forEach(b=>b.classList.remove("active"));
+ button.classList.add("active");
+ renderJobs();
+}
+
+function clearFilters(){
+ ["search","type","function","location","experience","salary"].forEach(id=>{
+  document.getElementById(id).value="";
+ });
+ document.getElementById("salary").value="0";
+ document.getElementById("view").value="all";
+ tab="all";
+ document.querySelectorAll(".tabs button").forEach((b,i)=>b.classList.toggle("active",i===0));
+ renderJobs();
+}
+
+function renderJobs(){
+ const q=document.getElementById("search").value.toLowerCase();
+ const type=document.getElementById("type").value;
+ const fn=document.getElementById("function").value;
+ const loc=document.getElementById("location").value;
+ const exp=document.getElementById("experience").value;
+ const sal=Number(document.getElementById("salary").value);
+ const view=document.getElementById("view").value;
+
+ let filtered=jobs.filter(j=>{
+  const matchText=(j.title+" "+j.company+" "+j.function).toLowerCase().includes(q);
+  return matchText &&
+   (!type||j.type===type) &&
+   (!fn||j.function===fn) &&
+   (!loc||j.location===loc) &&
+   (!exp||j.experience===exp) &&
+   (!sal||Number(j.salary||0)>=sal) &&
+   (tab==="all"||j.type===tab) &&
+   (view==="all"||(view==="saved"&&j.saved)||(view==="applied"&&j.applied));
+ });
+
+ document.getElementById("total").textContent=jobs.length;
+ document.getElementById("savedCount").textContent=jobs.filter(j=>j.saved).length;
+ document.getElementById("appliedCount").textContent=jobs.filter(j=>j.applied).length;
+
+ const list=document.getElementById("jobList");
+
+ if(!filtered.length){
+  list.innerHTML='<div class="empty"><h3>No vacancies found</h3><p>Add verified job listings using the form below.</p></div>';
+  return;
+ }
+
+ list.innerHTML=filtered.map(j=>`
+  <article class="job">
+   <div class="job-top">
+    <div>
+     <h3>${escapeHTML(j.title)}</h3>
+     <div class="company">${escapeHTML(j.company)}</div>
+    </div>
+    <span class="badge">${escapeHTML(j.type)}</span>
+   </div>
+   <div class="tags">
+    <span class="tag">${escapeHTML(j.function)}</span>
+    <span class="tag">${escapeHTML(j.location)}</span>
+    <span class="tag">${escapeHTML(j.experience)}</span>
+   </div>
+   <p>Minimum salary: ${j.salary?Number(j.salary).toLocaleString()+" BDT":"Not disclosed"}</p>
+   <p>Deadline: ${j.deadline||"Not specified"}</p>
+   <div class="job-actions">
+    <a class="apply" href="${escapeHTML(j.link)}" target="_blank" rel="noopener noreferrer">Apply Now ↗</a>
+    <button class="save" onclick="toggleJob(${j.id},'saved')">${j.saved?"★ Saved":"☆ Save Job"}</button>
+    <button class="applied" onclick="toggleJob(${j.id},'applied')">${j.applied?"✓ Applied":"Mark Applied"}</button>
+    <button class="delete" onclick="deleteJob(${j.id})">Delete</button>
+   </div>
+  </article>
+ `).join("");
+}
+
+function escapeHTML(value){
+ return String(value??"").replace(/[&<>"']/g,c=>({
+  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+ }[c]));
+}
+
+function toggleJob(id,key){
+ const j=jobs.find(x=>x.id===id);
+ if(j){j[key]=!j[key];saveData();renderJobs();}
+}
+
+function deleteJob(id){
+ if(confirm("Delete this vacancy?")){
+  jobs=jobs.filter(j=>j.id!==id);
+  saveData();renderJobs();
+ }
+}
+
+document.getElementById("jobForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const data=Object.fromEntries(new FormData(this).entries());
+
+ if(!/^https?:\/\//i.test(data.link)){
+  alert("Please enter a valid http or https application link.");
+  return;
+ }
+
+ jobs.unshift({
+  ...data,
+  id:Date.now(),
+  saved:false,
+  applied:false
+ });
+
+ saveData();
+ this.reset();
+ renderJobs();
+ alert("Vacancy added successfully!");
+ document.getElementById("jobs").scrollIntoView({behavior:"smooth"});
+});
+
+["search","type","function","location","experience","salary","view"].forEach(id=>{
+ document.getElementById(id).addEventListener(
+  id==="search"?"input":"change",renderJobs
+ );
+});
+
+renderJobs();
+</script>
 
 </body>
 </html>
