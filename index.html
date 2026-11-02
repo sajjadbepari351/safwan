@@ -1,13 +1,228 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Radar BD | Verified Jobs</title>
+<style>
+:root {
+  --navy:#10233f;
+  --blue:#2563eb;
+  --bg:#f4f7fb;
+  --muted:#64748b;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:#172033;
+}
+header {
+  background:var(--navy);
+  color:white;
+  padding:28px 6%;
+}
+header h1 { margin:0; font-size:28px; }
+header p { color:#cbd5e1; margin-bottom:0; }
+.container {
+  max-width:1200px;
+  margin:28px auto;
+  padding:0 18px;
+}
+.search,.filter {
+  width:100%;
+  padding:14px;
+  border:1px solid #d8e0eb;
+  border-radius:9px;
+  font-size:15px;
+  background:white;
+}
+.search { margin-bottom:14px; }
+.filters {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+  margin-bottom:22px;
+}
+.layout {
+  display:grid;
+  grid-template-columns:250px 1fr;
+  gap:22px;
+}
+.panel,.job,.source {
+  background:white;
+  border:1px solid #e4eaf2;
+  border-radius:12px;
+  padding:17px;
+}
+.panel h3 { margin-top:0; }
+.category {
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  padding:11px 9px;
+  border:0;
+  background:white;
+  border-radius:7px;
+  cursor:pointer;
+  text-align:left;
+  font-size:14px;
+}
+.category:hover,.category.active {
+  background:#eaf1ff;
+  color:var(--blue);
+}
+.count {
+  background:#edf1f6;
+  padding:3px 8px;
+  border-radius:20px;
+}
+.topline {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.topline h2 { margin:0 0 15px; }
+.job { margin-bottom:14px; }
+.job h3 { color:var(--navy); margin:0 0 8px; }
+.meta {
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.9;
+}
+.tag {
+  display:inline-block;
+  background:#edf3ff;
+  color:#2455a5;
+  padding:5px 9px;
+  border-radius:20px;
+  font-size:12px;
+  margin-top:9px;
+}
+.apply {
+  display:inline-block;
+  margin-top:12px;
+  background:var(--blue);
+  color:white;
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:7px;
+  font-size:13px;
+}
+.empty {
+  background:white;
+  border:1px dashed #cbd5e1;
+  border-radius:12px;
+  padding:35px;
+  text-align:center;
+  color:var(--muted);
+}
+.source-area { margin-top:35px; }
+.sources {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+}
+.source h3 { margin-top:0; font-size:16px; }
+.source a { color:var(--blue); text-decoration:none; }
+.notice {
+  background:#fff8e7;
+  border:1px solid #f3dfaa;
+  padding:13px;
+  border-radius:9px;
+  color:#73520b;
+  font-size:13px;
+  line-height:1.6;
+  margin-top:20px;
+}
+footer {
+  text-align:center;
+  color:var(--muted);
+  padding:30px 10px;
+  font-size:12px;
+}
+@media(max-width:700px) {
+  .layout { grid-template-columns:1fr; }
+  .filters { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Career Radar BD</h1>
+  <p>Discover verified career opportunities across Bangladesh</p>
+</header>
+
+<main class="container">
+
+  <input id="search" class="search"
+    placeholder="Search job title, company, location or skill...">
+
+  <div class="filters">
+    <select id="locationFilter" class="filter">
+      <option value="">All Locations</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Gazipur">Gazipur</option>
+      <option value="Savar">Savar</option>
+      <option value="Narayanganj">Narayanganj</option>
+      <option value="Other">Other locations</option>
+    </select>
+
+    <select id="experienceFilter" class="filter">
+      <option value="">All Experience Levels</option>
+      <option value="fresher">Fresher</option>
+      <option value="0-1">0–1 years</option>
+      <option value="1-2">1–2 years</option>
+      <option value="2-3">2–3 years</option>
+      <option value="3+">3+ years</option>
+    </select>
+  </div>
+
+  <div class="layout">
+    <aside class="panel">
+      <h3>Job Categories</h3>
+      <div id="categories"></div>
+    </aside>
+
+    <section>
+      <div class="topline">
+        <h2 id="heading">All Vacancies</h2>
+        <span id="total" class="meta">Loading...</span>
+      </div>
+      <div id="jobs">
+        <div class="empty">Loading vacancies...</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="source-area">
+    <h2>Official Career Pages</h2>
+    <p class="meta">Visit employers' official websites to check openings.</p>
+    <div class="sources" id="sources"></div>
+  </section>
+
+  <div class="notice">
+    <strong>Verification policy:</strong>
+    Vacancies are published only after checking the employer's
+    official recruitment source. Always confirm eligibility and
+    deadlines on the original application page.
+  </div>
+</main>
+
+<footer>
+  Career Radar BD · Independent job information directory ·
+  Not affiliated with listed employers
+</footer>
+
+<script>
 const categories = [
-  "Industrial Engineering",
-  "Production",
-  "Planning",
-  "Supply Chain",
-  "OPEX",
-  "Quality",
-  "Procurement",
-  "Logistics"
+  "Industrial Engineering","Production","Planning",
+  "Supply Chain","OPEX","Quality","Procurement","Logistics"
 ];
 
 const officialSources = [
@@ -26,8 +241,8 @@ let selectedCategory = "All";
 
 function safeUrl(value) {
   try {
-    const u = new URL(value);
-    return u.protocol === "https:" ? u.href : null;
+    const url = new URL(value);
+    return url.protocol === "https:" ? url.href : null;
   } catch {
     return null;
   }
@@ -35,13 +250,13 @@ function safeUrl(value) {
 
 function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, c => ({
-    "&":"&amp;", "<":"&lt;", ">":"&gt;",
-    '"':"&quot;", "'":"&#39;"
+    "&":"&amp;","<":"&lt;",">":"&gt;",
+    '"':"&quot;","'":"&#39;"
   }[c]));
 }
 
 function validVacancies() {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toISOString().slice(0,10);
 
   return vacancies.filter(v =>
     v.title &&
@@ -63,13 +278,13 @@ function renderCategories() {
   });
 
   document.getElementById("categories").innerHTML =
-    `<button class="category ${selectedCategory === "All" ? "active" : ""}" data-cat="All">
-      <span>▦ &nbsp; All Vacancies</span>
+    `<button class="category ${selectedCategory==="All"?"active":""}" data-cat="All">
+      <span>▦ All Vacancies</span>
       <span class="count">${all.length}</span>
     </button>` +
     categories.map(c => `
-      <button class="category ${selectedCategory === c ? "active" : ""}" data-cat="${escapeHTML(c)}">
-        <span>▸ &nbsp; ${escapeHTML(c)}</span>
+      <button class="category ${selectedCategory===c?"active":""}" data-cat="${escapeHTML(c)}">
+        <span>▸ ${escapeHTML(c)}</span>
         <span class="count">${counts[c]}</span>
       </button>
     `).join("");
@@ -84,20 +299,38 @@ function renderCategories() {
 
 function renderJobs() {
   const q = document.getElementById("search").value.toLowerCase().trim();
-  const location = document.getElementById("locationFilter").value;
-  const experience = document.getElementById("experienceFilter").value;
+  const location = document.getElementById("locationFilter").value.toLowerCase();
+  const experience = document.getElementById("experienceFilter").value.toLowerCase();
 
   const filtered = validVacancies().filter(v => {
     const text = [
-      v.title, v.company, v.location,
-      v.category, v.summary, v.experience
+      v.title,v.company,v.location,v.category,
+      v.summary,v.experience
     ].join(" ").toLowerCase();
+
+    const loc = (v.location || "").toLowerCase();
+    const exp = (v.experience || "").toLowerCase();
+
+    let expMatch = true;
+    if (experience === "fresher") {
+      expMatch = /fresh|no experience|entry level/i.test(exp);
+    } else if (experience === "3+") {
+      expMatch = /3\+|3 years|4 years|5 years/i.test(exp);
+    } else if (experience) {
+      expMatch = exp.includes(experience);
+    }
+
+    const locationMatch =
+      !location ||
+      (location === "other"
+        ? !/dhaka|gazipur|savar|narayanganj/i.test(loc)
+        : loc.includes(location));
 
     return (
       (selectedCategory === "All" || v.category === selectedCategory) &&
       text.includes(q) &&
-      (!location || (v.location || "").toLowerCase().includes(location.toLowerCase())) &&
-      (!experience || (v.experience || "").toLowerCase().includes(experience.toLowerCase()))
+      locationMatch &&
+      expMatch
     );
   });
 
@@ -105,7 +338,7 @@ function renderJobs() {
     selectedCategory === "All" ? "All Vacancies" : selectedCategory;
 
   document.getElementById("total").textContent =
-    `${filtered.length} vacancy/vacancies`;
+    filtered.length + " vacancy/vacancies";
 
   const area = document.getElementById("jobs");
 
@@ -113,8 +346,8 @@ function renderJobs() {
     area.innerHTML = `
       <div class="empty">
         <h3>No verified vacancies found</h3>
-        <p>New listings will appear after verification.</p>
-        <p>Check the official career pages below.</p>
+        <p>There are currently no published listings matching your filters.</p>
+        <p>Check the official career pages below for openings.</p>
       </div>`;
     return;
   }
@@ -131,28 +364,35 @@ function renderJobs() {
       </div>
       <span class="tag">${escapeHTML(v.category)}</span>
       <p>${escapeHTML(v.summary || "")}</p>
-      <a class="apply" href="${safeUrl(v.apply)}" target="_blank" rel="noopener noreferrer">
-        Apply at Official Website ↗
+      <a class="apply" href="${safeUrl(v.apply)}"
+         target="_blank" rel="noopener noreferrer">
+         Apply at Official Website ↗
       </a>
       <div class="meta">
         Source:
-        <a href="${safeUrl(v.source)}" target="_blank" rel="noopener noreferrer">
-          Employer career page
-        </a>
+        <a href="${safeUrl(v.source)}" target="_blank"
+           rel="noopener noreferrer">Employer career page</a>
       </div>
     </article>
   `).join("");
 }
 
 function renderSources() {
-  document.getElementById("sources").innerHTML = officialSources.map(s => `
-    <div class="source">
-      <h3>${escapeHTML(s.name)}</h3>
-      <a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">
-        Visit official career page ↗
-      </a>
-    </div>
-  `).join("");
+  document.getElementById("sources").innerHTML =
+    officialSources.map(s => `
+      <div class="source">
+        <h3>${escapeHTML(s.name)}</h3>
+        <a href="${safeUrl(s.url)}" target="_blank"
+           rel="noopener noreferrer">
+          Visit official career page ↗
+        </a>
+      </div>
+    `).join("");
+}
+
+function render() {
+  renderCategories();
+  renderJobs();
 }
 
 async function loadVacancies() {
@@ -160,26 +400,20 @@ async function loadVacancies() {
     const response = await fetch("./vacancies.json");
 
     if (!response.ok) {
-      throw new Error("Could not load vacancy database");
+      throw new Error("Database unavailable");
     }
 
     const data = await response.json();
     vacancies = Array.isArray(data.vacancies) ? data.vacancies : [];
+    render();
   } catch (error) {
-    vacancies = [];
     document.getElementById("jobs").innerHTML = `
       <div class="empty">
         <h3>Unable to load vacancy database</h3>
-        <p>Please try again later.</p>
+        <p>Please check the vacancies.json file and try again.</p>
       </div>`;
+    document.getElementById("total").textContent = "Database error";
   }
-
-  render();
-}
-
-function render() {
-  renderCategories();
-  renderJobs();
 }
 
 document.getElementById("search").addEventListener("input", renderJobs);
@@ -188,3 +422,7 @@ document.getElementById("experienceFilter").addEventListener("change", renderJob
 
 renderSources();
 loadVacancies();
+</script>
+
+</body>
+</html>
