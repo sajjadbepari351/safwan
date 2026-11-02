@@ -128,6 +128,10 @@ header p { color:#cbd5e1; margin-bottom:0; }
   gap:12px;
 }
 .source h3 { margin-top:0; font-size:16px; }
+.lead { background:#fff; border:1px solid #e4eaf2; border-radius:10px; padding:14px; margin-bottom:10px; }
+.lead h3 { margin:0 0 7px; color:var(--navy); font-size:16px; }
+.lead a { color:var(--blue); }
+.lead-label { display:inline-block; font-size:11px; padding:4px 8px; border-radius:20px; background:#fff3d6; color:#805500; margin-bottom:8px; }
 .source a { color:var(--blue); text-decoration:none; }
 .notice {
   background:#fff8e7;
@@ -199,6 +203,12 @@ footer {
       </div>
     </section>
   </div>
+
+  <section class="source-area">
+    <h2>New Vacancy Leads (Not Yet Verified)</h2>
+    <p class="meta">Recently discovered job-related posts from RSS feeds. These are leads, not confirmed vacancies; check the original notice before applying.</p>
+    <div id="leads"><div class="empty">Loading new leads...</div></div>
+  </section>
 
   <section class="source-area">
     <h2>Official Career Pages</h2>
@@ -406,6 +416,23 @@ function render() {
   renderJobs();
 }
 
+async function loadLeads() {
+  const area = document.getElementById('leads');
+  try {
+    const response = await fetch('./pending-vacancies.json?v=' + Date.now());
+    if (!response.ok) throw new Error('No discovery file yet');
+    const data = await response.json();
+    const leads = Array.isArray(data.candidates) ? data.candidates.slice(0, 30) : [];
+    if (!leads.length) { area.innerHTML = '<div class="empty">No new leads found yet. The discovery scan will check again automatically.</div>'; return; }
+    area.innerHTML = leads.map(item => {
+      const url = safeUrl(item.feedUrl);
+      return '<article class="lead"><span class="lead-label">Unverified lead · ' + escapeHTML(item.feedSource || 'RSS') + '</span><h3>' + escapeHTML(item.title || 'Untitled job-related post') + '</h3><div class="meta">Published: ' + escapeHTML(item.publishedAt || 'Date not available') + '</div><p>' + escapeHTML(item.summary || '') + '</p>' + (url ? '<a href="' + url + '" target="_blank" rel="noopener noreferrer">Open original news result ↗</a>' : '') + '</article>';
+    }).join('');
+    const checked = data.lastChecked ? new Date(data.lastChecked).toLocaleString() : 'Not available';
+    area.insertAdjacentHTML('afterbegin', '<p class="meta">Last scan: ' + escapeHTML(checked) + ' · ' + Number(data.feedsChecked || 0) + ' feeds checked</p>');
+  } catch (error) { area.innerHTML = '<div class="empty">Automatic discovery has not published its first scan yet.</div>'; }
+}
+
 async function loadVacancies() {
   try {
     const response = await fetch("./vacancies.json?v=" + Date.now());
@@ -439,6 +466,8 @@ document.getElementById("experienceFilter").addEventListener("change", renderJob
 
 renderSources();
 loadVacancies();
+loadLeads();
+setInterval(() => { loadVacancies(); loadLeads(); }, 5 * 60 * 1000);
 </script>
 
 </body>
