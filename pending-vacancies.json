@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-02T22:35:12.758171+00:00",
+  "lastChecked": "2026-11-02T23:22:32.665755+00:00",
   "feedsChecked": 58,
   "feedErrors": [],
   "note": "RSS results are discovery leads only. They are not verified vacancies and are never published to vacancies.json automatically.",
@@ -104,11 +104,38 @@
       "verified": false
     },
     {
-      "title": "Assistant Executive (Store), Bashundhara LP Gas Ltd : Sanvir Bashundhara Group - Bdjobs.com",
+      "title": "Mechanical Engineering jobs in United States - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ZMXR1SEpNSGVsX2lkWGIzM1hPTU5TVzZZMTB0ZU5kSTBCcDFVTHROTndoZzJuRmRNR3NQbzJudmloMVhYZE5SSW1IN0pOc1dYbTFucXROb0N0U2JNRkd6eE01Wk1SMWlCdTQzRFdiYjNacFBGcHV4SQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 28 Oct 2026 08:04:45 GMT",
+      "summary": " Mechanical Engineering jobs in United States &nbsp;&nbsp; SWE Career Center ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Sr Manufacturing Engineer Dexter MI - Planet Pharma",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdTZEWHBiYVBpeWYwemdVakExSjl5ZW1yYVE3T0RCd1IwSTJPRlBfOUVhblE0RDFpSWllNmVMU1gzbHllbTlxV09ZX2JNT1JPOTFfWWhRYWlNLTBEcnNOTzBKaTdxRmdjUFZIRjBxY1ExU1ZCQk4zaWUtRWs4MFdkVDdyUkozdGhr?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 28 Oct 2026 07:00:00 GMT",
+      "summary": " Sr Manufacturing Engineer Dexter MI &nbsp;&nbsp; Planet Pharma ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Sr Manufacturing Engineer Irvine CA - Planet Pharma",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYUhMbTFEWDJLdDVDaGRqSFFBUHllaG8xX05MRHFJc2ZEbUJXWXphQ0c0X0RxVmdBTDBKbkVhemF4NV9SQV9qT2otUVdYb25zcTlGbkJZdUwtOVRRc05xeDNrYzZFMTAyTmoxNU8zS1k0c1p1MnhsaGJPY2NIWlpzSGt0Y0V2aExa?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 28 Oct 2026 07:00:00 GMT",
+      "summary": " Sr Manufacturing Engineer Irvine CA &nbsp;&nbsp; Planet Pharma ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Assistant Executive (Store), Bashundhara LP Gas Ltd : Sanvir Bashundhara Group - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5tZ2pSRFRlemh1YTkwWjF5OGRIZXg1MVh1bEVXcEdxanRyX254ajVZMnFHZVVWclloZExfX0ZJVFNvZGFjYjVzODBhdTg0SVdtQkNR?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 28 Oct 2026 05:24:04 GMT",
-      "summary": " Assistant Executive (Store), Bashundhara LP Gas Ltd : Sanvir Bashundhara Group &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " Assistant Executive (Store), Bashundhara LP Gas Ltd : Sanvir Bashundhara Group &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -176,6 +203,15 @@
       "verified": false
     },
     {
+      "title": "Manufacturing Engineer - Manitou Group",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9uNlkySmZZdlVCa3FuNGN0MmVIeVdPZDNNdTBVa3RjVXZaNjZqeFdlTkRmVmlKcm9iN0FXa0NYdnVzS0VjanQ4UXRQZEYyYV92UnNtdUF0ajRiaGZFSm5UTGQ1SXRyVllpZncwaTRUem9mR1lWUHFKTEh3?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "summary": " Manufacturing Engineer &nbsp;&nbsp; Manitou Group ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Manager- Store at Fakir Knitwears Ltd. - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4xb2FTVS1nUXRJSW9XMC1zVF9Tc1JEelpOREdCcEFqRkdiNzMtd3hrZDNQcldHSG9UMG1HUkVVdnZ2VG5YRjlhcUFvRDQ4WkNkZE5rTVpRSWUyOVFEcDdZYnFJVkloR1BkZ1VabVl6N2l3VzZJT1ZyZ0VB?oc=5",
       "feedSource": "Google News RSS",
@@ -217,6 +253,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 23 Mar 2022 20:15:25 GMT",
       "summary": " Procurement Management &nbsp;&nbsp; Bdjobs eLearning ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Monitoring and Evaluation Officer at Bangla-German Sampreeti (BGS) - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc1ZvZXdVU3c2X0tUOGxNWVItV09YelBvOUdVZ0lLZ0d4bFZ0R2stU3FiVkhuTHZnbFlGVjEyR08welE4b0Q3QjJreUczcWFMWFJaS1BXQ0R2dXVmRF9taThCX0tCUVBFcm9JRFpST3JWaF8xaGtOTTFOT3FEYklJSGd0QXY2TzBWbW5idkh0SERrSVZwblVhSTF3SkVmekU?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 22 Oct 2025 07:00:00 GMT",
+      "summary": " Monitoring and Evaluation Officer at Bangla-German Sampreeti (BGS) &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -289,6 +334,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 21 Oct 2026 07:00:30 GMT",
       "summary": " General Manager (GM) at Akter Ispat Industries Limited &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Quality Assurance Engineer job with Abbott | 85379034 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXTnRZem5xVHlCc0hKcVhrRlNUV2N4cHV0cVZnWlMtNGZuTlJiQ1dXaTNzRmIzeGhFYzA5VHNtNTVtZEJPdGxJcmd6UXJwQW1hS1NkTlA4NnRvbVdpZjlsTWFNY3ZpOHhhaE9RNzdKV3BEdw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 21 Oct 2026 07:00:00 GMT",
+      "summary": " Quality Assurance Engineer job with Abbott | 85379034 &nbsp;&nbsp; SWE Career Center ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -419,6 +473,15 @@
       "verified": false
     },
     {
+      "title": "Composites Manufacturing Engineer (Swindon) - ICOMAT",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTUo4TUhKcFFMR0FFaE44Q2g4LU1RbGpvZDgyM3dsTWgtWEtjWUpYTUhoNmZydGQ1c2FEeW5jXzBmZ19YVi1meDdSdTFKeXViVEt5ZlhMNnlPc3c5NmFiVmV0VS1KdUtnT1FJdV9tTVR1TTNDUHNhRUw1LWFEeldfMXlPbGJxSjFOZHdr?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 15 Apr 2026 02:50:42 GMT",
+      "summary": " Composites Manufacturing Engineer (Swindon) &nbsp;&nbsp; ICOMAT ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Admin And Accounts Officer at Revive-Bangladesh - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQai1kRHZ4VDVwaXRsQTYyWnJBbXMyMUJiX1lqV0hMXzNNMHMzWkdNS0dIZEY5VktxalJ6QUpvQi1hRVp4eDQ0by02LS1yYkxQQ0x0dG5QR0xDWVNBZUM2eFlwTmhheEpMRFgtdkk5OGdnS0dUc0tiSWQ2aXZxVnQyMzJIckk1NThC?oc=5",
       "feedSource": "Google News RSS",
@@ -505,6 +568,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 13 Dec 2023 21:57:15 GMT",
       "summary": " Shelaidah Dairy &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Education Lead at World Vision Bangladesh - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaE9URkNKNl8xazE3aWgwV2VQbGZIWHFZRWxMMGZMU1RHaVFzS2JaVUdwLUd4cWd5U3RqbGtmb0twWDFYTHJjR2VHR1dDamdqVTdZRDVSQU1zZkRJZ3ZVLV9rYkE3ZGp5TXJRNkUzMjYxLWxiNF9CMkE2SG1UeFdIcw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 13 Aug 2025 07:00:00 GMT",
+      "summary": " Education Lead at World Vision Bangladesh &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -671,6 +743,15 @@
       "verified": false
     },
     {
+      "title": "Senior / Principal Engineer Manufacturing Systems Engineering ( RTD Engineer ) job with GlobalFoundries | 85370835 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbXVOVEpwZUJXOWtzVjhOWGl1NkpqQ29Va2RSbkZXMkotY2pXWEVaRDZYNmdWeEFRT18wNWFaekpLYlZLQUFEaHpuS2ZhWURhRThTOXAwMWpHOXFQUlRRNE5yeFdLOTRKQmhqdG81Z0RrX2k2d0l5aC1Sb0dhZ0pJNUpyOUlROE44ZFl6dUdFdHhqdkEtcXEzSXNLcDh1U2JtSmpMOFEzSC1YdTZPTmRiSQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 07 Oct 2026 07:00:00 GMT",
+      "summary": " Senior / Principal Engineer Manufacturing Systems Engineering ( RTD Engineer ) job with GlobalFoundries | 85370835 &nbsp;&nbsp; SWE Career Center ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Procurement & Logistics Officer : RTM International - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80VmtjNWdvdjFiTlQ2Mjc4Rm9YT2wxMHlrRHloRXlxcjd3VXdfOGR3OV9ndmE0czRzRm0ybERBaV9CRVJvS05XRXE3TDV6cm5HOUtXRGx5U0dDMlNvNVhwQllLX0xBUG9HVk5Dc1FB?oc=5",
       "feedSource": "Google News RSS",
@@ -770,6 +851,15 @@
       "verified": false
     },
     {
+      "title": "Quality Control Engineer (QC Engineer) Job Description (Updated 2026 With Examples) - Society of Exploration Geophysicists",
+      "feedUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOT1REVjVRdHJEYmJwMzZCaXllQU9sZ2pCMUYxU2d6akZqSUpkMklqTDg3VnNiMnEwQkMzTW0yOGhtRXh2ZUFRRnpodXZJdGgtTXFRckJDOC1INU1NZEZ4dEJESndNckZaLTYxQTJmRlFEYWRWbmc2Yi1mOTNHSVEzMFkxbnJvLWtfSjVxUw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 02 Oct 2024 06:23:17 GMT",
+      "summary": " Quality Control Engineer (QC Engineer) Job Description (Updated 2026 With Examples) &nbsp;&nbsp; Society of Exploration Geophysicists ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "ACI Logistics Ltd. - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBOXhkVE0wZVBWSnNyaHBpeFdPOWRGWDJHRXNjMmprNk9MMGdCUlBMZm9hVzBabTZtZ2Q4Ylc0MDR1c2JWRTZiU1NJUkc1SWpIZk5VUDNXaVBWeUlTZzVaczR0X0RJbVE1QTQxZlh3N2dxZVk?oc=5",
       "feedSource": "Google News RSS",
@@ -797,11 +887,11 @@
       "verified": false
     },
     {
-      "title": "Manager, Supply Chain : HF Food Service - BD Jobs",
+      "title": "Manager, Supply Chain : HF Food Service - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZM3NibjFlMUtWRjFrRU8xbXMwUVN0ekpYcUNnZy0yM3dua2FvRU9lX0ZWNG9nY2hoWTE3Wm40YUM1N0tVa0hUWnpRQlZ5YzV3amRR?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 29 Sep 2026 07:00:00 GMT",
-      "summary": " Manager, Supply Chain : HF Food Service &nbsp;&nbsp; BD Jobs ",
+      "summary": " Manager, Supply Chain : HF Food Service &nbsp;&nbsp; Bdjobs.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -905,11 +995,20 @@
       "verified": false
     },
     {
-      "title": "Lead - Strategic Projects & Indirect Procurement : ACI Godrej Agrovet Private Ltd. - Bdjobs.com",
+      "title": "Lead - Strategic Projects & Indirect Procurement : ACI Godrej Agrovet Private Ltd. - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBMRWoyWTRUZUZJallaUGFDMURlR0hzQXRVc2FYSUNqWmRoNVFrZ0VWSVV1RXJhUVNHNDhQaG5hRkVialBDT3NEZFByTEd3QnRyUE53?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 27 Oct 2026 14:14:32 GMT",
-      "summary": " Lead - Strategic Projects & Indirect Procurement : ACI Godrej Agrovet Private Ltd. &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " Lead - Strategic Projects & Indirect Procurement : ACI Godrej Agrovet Private Ltd. &nbsp;&nbsp; BD Jobs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Advanced Manufacturing Process Engineering Intern, Junior (Summer 2027) job with GlobalFoundries | 85383654 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWERqOGFITGFQUGNiczRjOWFTR0taeU9vT1g1enZndmRQNEdLX0J3RHNxUzlPczhMQzg1cVdiel9OVmdEWk9qN1ZHQnRKX3NHOTV6YUdsWklKUVFldGdCRm1RWHI5emkzR2pnQ3BNS1E1eG41WDJKeXhOWlhOSzRMMl91Ml9Qbmo0cGFJYUxPU2xCYU1CalR4YXp0Um5STFFQcWZzRm1KNXRCSjQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 14:12:17 GMT",
+      "summary": " Advanced Manufacturing Process Engineering Intern, Junior (Summer 2027) job with GlobalFoundries | 85383654 &nbsp;&nbsp; SWE Career Center ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -932,11 +1031,38 @@
       "verified": false
     },
     {
-      "title": "Manager- Import and Export : KhyGen - BD Jobs",
+      "title": "Officer – Website Maintenance & Digital Media Management at FCI (BD) Ltd - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUmlHSWxDM2Z4cE5sb1JQRmw5bTNHWHQ1UkhXb2JPeEpBX0RhcjM3WXZFcVdBdmFBVjc4QUJXWUstekFwT25CVndSaXEydFFOZDk5cXZ0MUd5VWVwaTM4dFFJeXpXYXl0VzlaOEpZYlRGcVJjeDFIX3E5OHZGNjR0U1c0ek5Sd2E5ZlNaNWpraGF3WVJTV2UzbEtod180OE5xZkE?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 12:12:43 GMT",
+      "summary": " Officer – Website Maintenance & Digital Media Management at FCI (BD) Ltd &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Principal Engineer Yield / Integration Engineering job with GlobalFoundries | 85383707 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeVJwdmdFQXhlWmtxVkJ6bGl5Q0x4Q3RqZjNDMzYzNWRTb0lURE5LeVVodjBGWnBTYWJBZ1Z0bGtFR3RLVjNWaVNhbzBsUEJEeGFSRTlTbUpWdHRQM1kyYzhQNmVHcTdBc19wYldRcEFnLTZxVmtDNWFSWTRwWDhCSzllT2tXUFhTNzkyVzAxaw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 11:45:53 GMT",
+      "summary": " Principal Engineer Yield / Integration Engineering job with GlobalFoundries | 85383707 &nbsp;&nbsp; SWE Career Center ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Title: Manager - Industrial Engineering - Brandix",
+      "feedUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUFA2Vm1VZmdDd21QYnBEUnRFcElqVFh6RHM3QTBHUmFMTXhLUlVBNWpOcHRWdmZTVC1rTDI2M19FcTdlMkdyM0hxa0pCdmlKVjBjMFgwbGRkdFdndTFyUUQ1dThqTEx6UU1QMlRLdERHNXpBQ1dEUmRKcTdHTUJ0ajJVN2stMUpYWXJoSDI2WjRHMjAybHc?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 10:21:52 GMT",
+      "summary": " Title: Manager - Industrial Engineering &nbsp;&nbsp; Brandix ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Manager- Import and Export : KhyGen - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE81YWc4TURpLVBRNUFvMGhqcUM3ODQwdjBfWFRRMHdvS3JiNTBMNTBYMTdScDhNNmZ2WGRrRXg0Q1FtbU9pMUhpeWlEWlBSX1htSldR?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 27 Oct 2026 09:21:43 GMT",
-      "summary": " Manager- Import and Export : KhyGen &nbsp;&nbsp; BD Jobs ",
+      "summary": " Manager- Import and Export : KhyGen &nbsp;&nbsp; Bdjobs.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -946,6 +1072,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 27 Oct 2026 07:03:43 GMT",
       "summary": " Senior Manager / Manager - Supply Chain Management (SCM) : A Reputed Leading Manufacturing Company &nbsp;&nbsp; BD Jobs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Engineering Manager (Supplier Manufacturing) job with Abbott | 85383054 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbVp0eTBFRU5aeVBaalI5Mk1aNXZTdmxIU1FNTlhTQ1ByRDJTNVNUcVVMUDhYcGFMSmgzbE5YMW52Tkw2T3ZQSlpQTEQ2TnpRVDdUcDVhaFpyVFlOQlE4N2dqQWpKRHdDNkRGLUk1RGgzUk9yMXM2ZWlTWElTMHp6clNrNTltU2hx?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT",
+      "summary": " Engineering Manager (Supplier Manufacturing) job with Abbott | 85383054 &nbsp;&nbsp; SWE Career Center ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1000,6 +1135,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 24 Jan 2017 08:00:00 GMT",
       "summary": " Testing water quality: When labs don’t work &nbsp;&nbsp; World Bank Blogs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Asst. Manager/ Deputy Manager, Accessories Procurement, Supply Chain : Masco Group - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8yYmlKTGpDTEtsdzFlbGZiRUFlcFVyYURFTGZVTjlWamZ6bmJaOEFPUGFzRjZONkJseUtOOTE2ajhWRWlGdUgydVpnTHJfUWVQbGlF?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "summary": " Asst. Manager/ Deputy Manager, Accessories Procurement, Supply Chain : Masco Group &nbsp;&nbsp; Bdjobs.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1081,6 +1225,24 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 20 Oct 2026 07:00:00 GMT",
       "summary": " Assistant Manager-Store, Meghna Noodles and Biscuit Factory Limited : Meghna Group of Industries. &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Quality Technician, Electronics/Manufacturing job with Jabil | 85378844 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUHlBWWZPVm92ZXVSSjhmZXhIQWd1dEJwTFJ2RndxanBycHBnMVp2MkV6a2djSkkxc2NjUDhDdjhRWEVoTzhQMTY0SVR1VHFqWGt0aTRkZ0twMDY3ZllDaDM5cENWWTg0Ynd4Tm9qWnlidFlNY0VNUk84Z1BpejlHRGpNYnNRSEd2MkE?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 20 Oct 2026 07:00:00 GMT",
+      "summary": " Quality Technician, Electronics/Manufacturing job with Jabil | 85378844 &nbsp;&nbsp; SWE Career Center ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Engineer, Process Engineering job with GlobalFoundries | 85378759 - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1ZR3RpRThJWkI1Tm5aLXFxX1l2TXpTeGp3cXVpZy1DTDB6Nk5EYmNMNmRsR3VORXdEWFdqSUQ1T1ZuY1RfWUh3MTFHdzJiS2VhR1FrWm5zMy1oM2tRYzY5bjZZeXRKemV3NTZ1NE1zWEFsemhJ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 20 Oct 2026 07:00:00 GMT",
+      "summary": " Engineer, Process Engineering job with GlobalFoundries | 85378759 &nbsp;&nbsp; SWE Career Center ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1202,6 +1364,15 @@
       "verified": false
     },
     {
+      "title": "Most In-Demand Job Opportunities in Qatar - Y-Axis Overseas Careers",
+      "feedUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04LTVILWxIa01tNXV1NXVHMUNSZ1NxVUZhdTlMaFJrQWNGUkhpY3p3aTkwa2ctQjZTN1h4Z20yQXlpWEdUTTFMbGhoaXN5eDNZMnh3UDI0Ul9hNDdLUzBfVzc3Q3ZOYU8zRUxpQnJsdjZfc2pG?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 16 Dec 2025 10:32:16 GMT",
+      "summary": " Most In-Demand Job Opportunities in Qatar &nbsp;&nbsp; Y-Axis Overseas Careers ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Next decade market challenges for Bangladesh textile and apparel industry - Textile Today",
       "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaGNBNHJ3bjBnbmRiNWpJTUI4MkRDd2FMZlI0SlVzbjZ5NnhCbFFKblhNejNYbFpweDNyc1d5QmdwT0FWY0xOUkJKVXV2ZmhvLXhYci16amxBRXRfQ0tOS0RTVHZVMkxnTHdhenNtT0QxajhBMVBRazhiV2VUSWcxMTV4Ul9Jc2gxU01wUDVscjZyS0ZQNUhDOU1UWlI1bkVkaFdPcmRvQXg?oc=5",
       "feedSource": "Google News RSS",
@@ -1283,11 +1454,11 @@
       "verified": false
     },
     {
-      "title": "We are hiring! Job Position: Junior Operations Assistant (60%) Job details Junior Operations Assistant (60%), Dhaka, Bangladesh - Bdjobs.com",
+      "title": "Junior Operations Assistant (60%) - Dhaka - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9DbG5uM2JUUUJpT1JIZ1MzTFJHVWlPVWRqZWR2bkJoN0F4cVJOMkFFamV1N19NdDNZazZZRE9Oa0pyRklPTWNFNXhnOXpDNnk2M2pVN2szMXBoeThiWGVYRnA1VQ?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 13 Oct 2026 16:29:07 GMT",
-      "summary": " We are hiring! Job Position: Junior Operations Assistant (60%) Job details Junior Operations Assistant (60%), Dhaka, Bangladesh &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " Junior Operations Assistant (60%) - Dhaka &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1481,6 +1652,15 @@
       "verified": false
     },
     {
+      "title": "Production Manager at Expose Furniture - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Bb1lmM2o4Z01RTDFVZ3NYRE91Z0hFZGg3aFhDckF1a0tFZGZ3Tl95ZHdXOHluNVVsT1l0eTRfN293dnNnX0ItYU5Vdm9uTnJiaEtoV3I5UnhZbWticHJ0N1JJc0NIWUEtbzVuNXB5dHg3MmRTYnB6ZUhtU1Q?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 07 Apr 2026 07:00:00 GMT",
+      "summary": " Production Manager at Expose Furniture &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "How Supply Chain Management is Changing - Nexford University",
       "feedUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TcjFrRlZGQkhNZXBZaTIyLTRWQVlkN3kxeUhIRTBkRnNEbzNOaUdzVTB5bW1QMkVGdmR0ZHhHSXJLZ2c1MkRGVldfZ1Qza1M0ejg4eWJodjBaZTFXYXFvNTFRai1wbFlXemdqQ2daUjFMWTlPSmfSAYYBQVVfeXFMTVFMdXVQVjB0cU5MZUhRT2V4YWVraUwzc3RQRzR2N29FUHljT1VBOFF2LUlKU29SYW56aU5qUjJpNWlPM1NnUlZBdkpPcWp6S0JqS0VfdXRFMGZJOXU2eDVHb2lQLW1MZWRaNDg3dDVhMlZEMTlfd3Q0eDhvWWZwUFFrWmEwZEE?oc=5",
       "feedSource": "Google News RSS",
@@ -1562,6 +1742,15 @@
       "verified": false
     },
     {
+      "title": "Industrial Engineering jobs in Singapore - SWE Career Center",
+      "feedUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5uUms0SF9EWGI0SnJ2SjdJdkpKZUVDMzFwandfZkh0ejJNNlAtaTdJb0dMUkNSOEh5a2FKVmFtSEV0UElseDFfdkg1cDZTNXV6UUtWbUhqT3RaYTU5X0NMUFVCSUVDTkI1RHM1Um5Pdw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 06 Oct 2026 05:00:47 GMT",
+      "summary": " Industrial Engineering jobs in Singapore &nbsp;&nbsp; SWE Career Center ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Officer - C F S Operation at KDS Logistics Ltd. - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTBiazlKXzQ3SXlwQjZ0QlJHcmZXQUFteWpRX0JYb2Q1YmdlVmVTbDA5QjY4elNIQkVZWjROMFFNdXFMSnRLY3hwSjE3RjFOSWhFbDNjcHpkY1EwSmRUV282d0FaYllMYlF4bjJTOXJaSVhGbU42RmgwVWZhbktGY0RHOWU?oc=5",
       "feedSource": "Google News RSS",
@@ -1612,195 +1801,6 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Thu, 31 Dec 2020 08:00:00 GMT",
       "summary": " 12 people honoured in Bangladesh Supply Chain Excellence Awards 2020 &nbsp;&nbsp; The Daily Star ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Factory Culture: The new competitive advantage for Bangladesh's RMG industry - Textile Today",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcURvYXRmYnlZNHR6TnBLN3RZcHVKdnY4c1ZlaFY5cXlHYUJrSWc1SDBGR0lleEVpM3FlNVY2YmFncVhkSnlyaFd2U3N3bGFxZ3ZELW55WmNjMW9vV3hpeXBQdlFLZEcxb3EzRUV4V1hJX2tqRXN1QUNtQkFfSDlQNUtlNFZFdXVVXzE2T083dk5KZmFIM3d1QzFxbVNhY2R6YUdWUnBVWnk3QQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 30 Jul 2026 07:00:00 GMT",
-      "summary": " Factory Culture: The new competitive advantage for Bangladesh's RMG industry &nbsp;&nbsp; Textile Today ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Sr. Executive / Asst. Manager / Manager (Marketing) – Dhaka at Green Granite & Marble Ltd. - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPODBDLUxBOHhVN1dlSHlJN2ktZEJvM2c1VFlydXc2aWlWZUltcnlhLWtyaG8wYjV2LVVzRXlneGNsZlVRaFdNSlltS3A0TFhrcXdTWUllcTNGUUJ2bnpFZkE4MTBaaDlYRWRRbWNDMHhTT3huRG82bEY1WnhnbFEyNENVMTdvcDRPUUhjazE3a044eGRnTzRVUi1taTR6Rk8wTzBqanEtUlJTa29uNEpOYw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 30 Apr 2026 23:43:10 GMT",
-      "summary": " Sr. Executive / Asst. Manager / Manager (Marketing) – Dhaka at Green Granite & Marble Ltd. &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Premier Inn owner Whitbread to cut up to 3,800 jobs in strategy shift - Reuters",
-      "feedUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZjBMOHFaNHBBUHVDanMyUTE4Z3ZaTVA3Mm5qZHVRNGRKT3ViME1DYkl6b1pOMXdlVUtUMlQ3dDZHMjBzMkZUdHZFR2gwNmpVSkZPTVctM1QyN2R2WGFQaU84TDNsWGVKYmtvSkRZNl9hWk54YXROTkdzam1aTUpLR2t5aDRKclozdDJudmNTS1lrN19SWUN2ejZ1cDF4N1VxeGVDQTJzZGlib3poUDNVYlFUWVprVThSR25ISlFIaUloUnJiVGhXZDdJQ2ZWbUxrWG5WdnRrUTYxR0c0enFsUVU4bGYwcVBpMDk0N3Ryc2dWdw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 30 Apr 2026 07:00:00 GMT",
-      "summary": " Premier Inn owner Whitbread to cut up to 3,800 jobs in strategy shift &nbsp;&nbsp; Reuters ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "View all jobs at ICON plc - ICON Plc Careers",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBOLVdFRW9SZzZKLUQzVy1GVmt4cWxVTmtJYWtTWjZsZVB0M25YMlVoWDlNRURDX0hMN0dQam83R09pN3NhSlFR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Sep 2022 00:30:54 GMT",
-      "summary": " View all jobs at ICON plc &nbsp;&nbsp; ICON Plc Careers ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "ACI invests Tk 1.1b in plant expansion - The Financial Express",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUh4MWhwcXI1WHhYb1hTcUE0VXF6cXhWRHZFQm5pVDBVZjdHM2xraTh0WWx1c010Z2hOT1lWZDh3LTVtTUdYWmhyNGNWN2E2MzJsUG9XSWFwcjQ3NUFmV0k0VVNxZzE0VDJLUUU0TDNuQmEwcHpyQzdqWVctNnhNekVfY1ZPVjJXNDNMX2Njdzdwa2xWUHFzeTVB0gGmAUFVX3lxTE1Qb1hGY3FDWFUxNHY1Nm03dF9BR0ZZZC00QTd1SkJjYUpHOHN6MzMxcTRDTzdsU1JMSzJmNTN5X3NueGlXRVowSTg0d3NMVVNoS095ZEV4ZjNyY1JIVlgxUVZYRE1XV29kMUlCVUpvRzJnRHpsR2NMeW0yVTVYSk9KOThzYm4tRndWN3dBdW9LWE1JVW55TkNDTHNpV1UwRGU2WGU0LVE?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Sep 2011 07:00:00 GMT",
-      "summary": " ACI invests Tk 1.1b in plant expansion &nbsp;&nbsp; The Financial Express ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Maintenance & Utilities Engineer - HEINEKEN Careers",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZjJqVmt6NHFzc1lLQ3FmTHBCb2J3YS1HM3FxQS1vZzYwSjNFMXEtN2Q0Mmx3U29KN0lPXzljSDhPN3ExUzh4UUJybHo5OXJ5M0o1aGhrOEtmS2ZwSWpPM3dIS0w3WjB0WXdQTUVwT0g5cE9XM3hvS2paczZKa3gzYVgzRVlmZDM4S3I2ZkUzX2hXcExneTcxSnhYWVc4TDRhOTBkTFVGSHk?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Oct 2026 14:31:44 GMT",
-      "summary": " Maintenance & Utilities Engineer &nbsp;&nbsp; HEINEKEN Careers ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Officer / Senior Officer (Supply Chain Management) : Kiam Metal Industries Limited - BD Jobs",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjdF9BLWs3VDJrMUJWUEEteGh4M3dtYUpqWkNDcmN1SHhTQlRacUZQOFUzTnE5NUx0VHBDV2pVZDIwbEhhRzUtQ0h0SkZaZGdRcGVN?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Oct 2026 12:55:12 GMT",
-      "summary": " Officer / Senior Officer (Supply Chain Management) : Kiam Metal Industries Limited &nbsp;&nbsp; BD Jobs ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group - BD Jobs",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ua2t6VXBWazFVYXhfMUx2VDl6VmQ0YkhZNXhLNnpBd2RZaXA5em5KTUYtSU43bFQ5VWxfSms4dnZSZnpvSjlmbTBvWU9seW9QMDN3?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Oct 2026 06:24:43 GMT",
-      "summary": " Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group &nbsp;&nbsp; BD Jobs ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Executive / Sr. Executive, VAT & Customs - Factory Complex : Meghna Group of Industries. - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44T1ltbUhZMUQzd0lPVmNsWE5QaTRQUUJiQ2RaVkVIYkNYUWNCYW1GM0EtTnJWM3l4SDlVN3NpZ0pIWVJwRzQ3UnE4WjBycGVOWWRB?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Oct 2026 04:06:00 GMT",
-      "summary": " Executive / Sr. Executive, VAT & Customs - Factory Complex : Meghna Group of Industries. &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Saudi Arabia tightens job rules, expats can no longer work in these four professions - The Times of India",
-      "feedUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNdXFqY2hpN2xlMW51b0ZnMkZReXh4TmRHYXlLSkNQaUNYZVY5YU1zVklBZDlXdWxqUlVDejlfdjJBQ2x1Ql9tZ1ZBMk9xMzQwYUtwWHFuV0dMVmp1ZHZBQldLdlQtWjc1R2cwbnlMNWFSQmpQTVp4TWpSdHVMZm1Ha0poQ2NzOUdRYXA1NlFjUG5reHNGN2hKQUY5Tmp3RWxINHRVS0RUUUhZbDZCckZrZjl4M1BhXzFpVDNVaWJ6X1hfRlY4LVJGb3JOVGZ2bkUtYUoyenBTSmtycy16bS1McmdidTdSc0dtU3JHRklqRWw5dnBFNXfSAfsBQVVfeXFMT3VFZTFiMEZlVTNNeVdFM2RGcTRkQzVYeW1NVV9fSlFtQnQ0N2ZWNFhPR2NlSS1DNzJta2E5dGNUT0tTc0tRNnJDaXpORDE1cjFxLV9wci13UlNNUmhWTGFDZ1B1QTZGeDdJTXFmNmRyWmR0Ul9XeE8wYVpWSGtycnJ5VFhNYkFJMVBjRHVtNEJ3aXBmNklxRXFOM1RnUWZBTFFPdVJWdmlVZUk2QnJaOGFqLVBzVGI0YmdBYkFYUjBoeXc0b0JBVWE5VnNia1lOejdBS05vT1lHYlRvRE9yd1I1ZEVNZVU5MWlnd2M0NHNNZFM3VUhDeko1OWc?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 29 Jan 2026 08:00:00 GMT",
-      "summary": " Saudi Arabia tightens job rules, expats can no longer work in these four professions &nbsp;&nbsp; The Times of India ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Formal job market shows signs of rebound after year-long slowdown - The Business Standard",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTTJyRFdPU0tJNEZXVm56MG02NFUxRGJNZlRMeHJORFJ0SHk5TE5VNFhPdFBBX04wdEx1blIwS1Q4TWJPVEs5emdrUzVYcm52ekhRZUZpcnhZNlFrRXE4eFBqZDRzS3B4LWhiTjh3SDJqM0UtYnMwc0RSMWpGRENQM0FOWVJyVTBPTGtWSFpodHR6Qk9tbXlQMk5VeFVYMTVfMWJXTkFEcEI?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 28 Aug 2025 07:00:00 GMT",
-      "summary": " Formal job market shows signs of rebound after year-long slowdown &nbsp;&nbsp; The Business Standard ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "BCIC proposes 11 new ventures to restore profitability, create jobs - The Business Standard",
-      "feedUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWXI0SGczVWJ0R0tJOUQyWF8yaUNqa0tES2JjX2UwNHpQVFhMY1Nla3pZbFdpTjY0TVlmZ0l0RmdmTmFiUERkMkM0X0NEa2dnM3VqRE5qMHRYZXVxV3pfaE9qSUtITzB4TUh6TVRZY25Ic0RsWXhvQ2dUQzVtSmRacTFZV0ZseHNTZlY2Skd2Vkw0ZjJmQk8yRnVuQ3dpOGZmWUdubndB?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 27 Nov 2025 08:00:00 GMT",
-      "summary": " BCIC proposes 11 new ventures to restore profitability, create jobs &nbsp;&nbsp; The Business Standard ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Developing Competitiveness: Creating Jobs and Reducing Inequality - World Bank Group",
-      "feedUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd01DWmhGOVk0RUl6T21zRURPak9rSHI2T0pZNndQaE1QQXBTaHMzQ3F5WkVpQTVINTF4S3ZFYzkxWjlSdGhHUS1RSDdWZUU2cWYwZl9SN0VCNUI3Mi1yV0dEeGxSZTFRWDBRWDM0RUREcVdCZkozRkE5RGpCYTV0UzBTVFZtY0JzdEVNMy1iTlNqRWE1WEtFb09SWGpyalhLRHc1ZTBSSXI5eXdnSE5TWHllc1lMaGdIbzB3UnR6eFdnTjdMcXJPeW9JYVg4Yk02alE?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 27 Feb 2014 08:00:00 GMT",
-      "summary": " Developing Competitiveness: Creating Jobs and Reducing Inequality &nbsp;&nbsp; World Bank Group ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Procurement - UN World Food Programme",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1ZdzVEcUlRUXJxdXA4U29LMjFDelNFbHVuZWRNUzRYRVQzampla1h0Y2pYbGhaN1RScy0tbDQycDRiYTRBQWc?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 27 Aug 2009 07:51:54 GMT",
-      "summary": " Procurement &nbsp;&nbsp; UN World Food Programme ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Mitsui & Co. Asia Pacific inks strategic partnership with ACI Logistics (Shwapno) - Aci-bd.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLTJORDR0dXIxeVZCT25XYTBfXzZ1dG9JSDY3TkVsMnVKWVNJeFlHa09JbEprRVFMTHBYT05VSFVWUEl1V1pfbkx4eUx4bnNleWxSVGZRUVZjMFRUTE9BNktmdzU1M3NYVEVBck5BSk9XT0RQS21zdjBWVUJaUVZtSU5vQ21SeXZyY3hTREZuUFh4THVJbjNSdXBQQXY2SHM3UU5CU0FSbU5NaXBsbUVEZUU0WU4?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 25 Jun 2026 08:47:16 GMT",
-      "summary": " Mitsui & Co. Asia Pacific inks strategic partnership with ACI Logistics (Shwapno) &nbsp;&nbsp; Aci-bd.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "LC Management for Procurement, Commercial and Supply Chain Professionals - Bdjobs eLearning",
-      "feedUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nTkFmVlMyZTMxTGRGQWZvM1o5VF9vaHBWcW5SZlowc2U0VWFhMGhpNFYxQm9TRHBZNW5kcHRNSjlaREpiaDU0b2dXQVB3NG9QR09YNE1RNVNwQzk2OHg5VEZ2S0RLbVNxZk9GakluUEV5YkU?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 24 Sep 2026 23:19:15 GMT",
-      "summary": " LC Management for Procurement, Commercial and Supply Chain Professionals &nbsp;&nbsp; Bdjobs eLearning ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Incorporating Supply Chain Management into Basic Education: Determining the Ideal Level for Developing Countries - Bangladesh Post",
-      "feedUrl": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNThyQ2ZmM2RZRDctZGRGZmdvYkhIX2IyMFctN0tkQzFvd3UtaGV4bkV0N29xbWNiN1NTeGs4VndsTlpIRllkaFdxVkl2N0d5bzhEWDRzemhKVDVndW54ajBlaVByOTdPX0QxT25NMlVjQ0tCMHNhY1RsNGQ3N1pRcmZtOEplRl9GRk8wbEhZc0Z5SU5jNHFXSUxNYTNITEltbDUzWklBWjdXRUphd1Z2ODA4dE94TTV1R1c5ZEZIZzA4aWlsZ0FUQ1NFTlhWQi16c2tieWpBeEVrUm9ycjVYZDk0LV95dw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 24 Sep 2026 07:00:00 GMT",
-      "summary": " Incorporating Supply Chain Management into Basic Education: Determining the Ideal Level for Developing Countries &nbsp;&nbsp; Bangladesh Post ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Junior Engineer - Fan factory at XXW Sourcing - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTlZnNDQzMm5rWlpxbUF2N1VEQjBDb3lHeWJjUEM5cDVyY3VXRmVFb0g2SXlSZVY1UTl2cUx1VUJHcnZ6QjZCdGNRNk1HT2VHZm5VSjNlWDdrd3FhMWVGNXpnODNTSnNrNk5rdnh6dEJEV1BXQnNEVTBLYVp6YmxuaE0yUQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 23 Oct 2025 07:00:00 GMT",
-      "summary": " Junior Engineer - Fan factory at XXW Sourcing &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Store In-charge, Ranks ITT at Rancon Holdings Limited - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSWE2WnJpLVZxbVBFaDhodDlRX3lvcklhaU8yN1hfZFI5RXN6RmM5RXhCYVFEYXVtWmMzXzRkZVpPOTExWGFnTGdaN09BSWZvNFYzOW1JdTV3b3hhOEdOXy1DWjRJRUt6RkNqeDVMdzZjZXhPVnBnNDhEbDkyaFVtYTNrQTA1ZUROOEs0aWNqbw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 23 Oct 2025 07:00:00 GMT",
-      "summary": " Store In-charge, Ranks ITT at Rancon Holdings Limited &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Production Planning & Control in Garments industry - Bdjobs eLearning",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUkVrc3JPaU5OSFNvSmpWU0dITmZWQzQwNVdQb1MxOWwwVHpqMmNUZDdkSzIwcFhaaENrbWFQaEVyOEVIbHhPV3ZyZ1phZDJxTGtpN0VrUjJQTmU2YnB4OWp6NnRqaGtNNG9FR0daZTliQU5iM2JZaXV4RmFJdXptRDVB?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 23 Jun 2022 12:05:38 GMT",
-      "summary": " Production Planning & Control in Garments industry &nbsp;&nbsp; Bdjobs eLearning ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) - BD Jobs",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9aNDh2ZDlaQm5CR0QxT09xdU05alFNeExpQVRabTVQbHYyTHZDQWhieVlzQkk0THVxMGlicUlSTEpYX2QyOVVYTDFrNG15WWZfNmhV?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 23 Apr 2026 06:43:38 GMT",
-      "summary": " Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     }
