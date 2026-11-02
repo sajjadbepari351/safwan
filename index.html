@@ -2,170 +2,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sajjad | Industrial Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sajjad | Industrial Engineer</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+:root {
+    --navy: #10243a;
+    --blue: #2878d0;
+    --light: #f4f7fb;
+    --white: #ffffff;
+    --text: #26364a;
+    --muted: #66768a;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #263445;
-            line-height: 1.7;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-        header {
-            background: #102a43;
-            color: white;
-            padding: 65px 20px;
-            text-align: center;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
 
-        header h1 {
-            font-size: 38px;
-            margin-bottom: 10px;
-        }
+nav {
+    background: var(--navy);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
-        header p {
-            color: #cbd5e1;
-        }
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
 
-        nav {
-            background: #183b56;
-            padding: 15px;
-            text-align: center;
-        }
+nav a {
+    color: #dce7f4;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+nav a:hover {
+    color: #65b5ff;
+}
 
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 12px;
-        }
+.hero {
+    background: linear-gradient(120deg, #10243a, #1c4e78);
+    color: white;
+    padding: 105px 8%;
+}
 
-        h2 {
-            color: #1261a0;
-            margin-bottom: 15px;
-        }
+.hero .tag {
+    color: #7ec4ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
 
-        .skills span {
-            display: inline-block;
-            background: #e4f0fa;
-            color: #174a70;
-            padding: 8px 14px;
-            margin: 5px;
-            border-radius: 20px;
-        }
+.hero h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 15px 0;
+}
 
-        footer {
-            text-align: center;
-            background: #102a43;
-            color: white;
-            padding: 22px;
-        }
+.hero h2 {
+    color: #b8d8f5;
+    font-size: 22px;
+    font-weight: normal;
+}
 
-        a {
-            color: #1261a0;
-        }
+.hero p {
+    max-width: 650px;
+    margin: 20px 0 30px;
+    color: #d4e0ed;
+}
 
-        nav a {
-            color: white;
-        }
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
 
-        @media(max-width: 600px) {
-            header h1 {
-                font-size: 28px;
-            }
-            nav a {
-                margin: 0 7px;
-            }
-        }
-    </style>
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.section-title {
+    font-size: 30px;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.underline {
+    width: 55px;
+    height: 4px;
+    background: var(--blue);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.about-text {
+    max-width: 850px;
+    color: var(--muted);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 1px solid #e9eef5;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.09);
+}
+
+.card h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.card p, .card li {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.date {
+    color: var(--blue);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: white;
+    border: 1px solid #dce6f0;
+    color: #24557d;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.contact {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    color: #c4d3e3;
+    margin-bottom: 25px;
+}
+
+.contact a {
+    color: #82c5ff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer {
+    background: #0b1a2a;
+    text-align: center;
+    padding: 20px;
+    color: #a9b9c9;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .container {
+        padding: 55px 20px;
+    }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Sajjad</h1>
-    <p>Industrial Engineer | Operations Excellence | Process Improvement</p>
-    <p>Production Performance | Lean | Data Analysis</p>
-</header>
-
 <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">SAJJAD.</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<section id="about">
-    <h2>About Me</h2>
+<header class="hero">
+    <div class="tag">INDUSTRIAL & PRODUCTION ENGINEER</div>
+    <h1>Hello, I'm Sajjad.</h1>
+    <h2>Operations Excellence | Process Improvement | Data Analysis</h2>
     <p>
+        Passionate about improving manufacturing performance,
+        optimizing processes and transforming operational data
+        into actionable insights.
+    </p>
+    <a class="btn" href="#experience">Explore My Journey</a>
+    <a class="btn btn-outline"
+       href="https://www.linkedin.com/in/sajjad62/">
+       LinkedIn Profile
+    </a>
+</header>
+
+<section class="container" id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="underline"></div>
+
+    <p class="about-text">
         I am an Industrial and Production Engineering graduate
-        passionate about operational excellence, production performance,
-        process improvement and data-driven decision-making.
+        from Shahjalal University of Science and Technology (SUST).
+        Currently working in Operations Excellence at Akij Cement
+        Company Limited.
+
+        My professional interests include production performance
+        monitoring, Lean Manufacturing, process standardization,
+        root cause analysis and data-driven operational improvement.
     </p>
 </section>
 
-<section id="experience">
-    <h2>Professional Experience</h2>
-    <h3>Assistant Officer – OPEX</h3>
-    <p><strong>Akij Cement Company Limited</strong></p>
-    <p>August 2025 – Present</p>
-    <ul>
-        <li>Production performance monitoring and live dashboarding.</li>
-        <li>Production KPI tracking and performance analysis.</li>
-        <li>Root Cause Analysis (RCA) and corrective action coordination.</li>
-        <li>Process improvement, SOP development and standardization.</li>
-        <li>5S implementation and operational excellence initiatives.</li>
-    </ul>
+<section class="container" id="experience">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="underline"></div>
+
+    <div class="card">
+        <div class="date">AUGUST 2025 – PRESENT</div>
+        <h3>Assistant Officer – Operations Excellence (OPEX)</h3>
+        <p><strong>Akij Cement Company Limited</strong></p>
+        <br>
+        <ul>
+            <li>Monitor production performance against operational plans.</li>
+            <li>Develop and maintain live production performance dashboards.</li>
+            <li>Analyze OEE, NPT, cycle time and operational KPIs.</li>
+            <li>Coordinate Root Cause Analysis and corrective actions.</li>
+            <li>Support SOP development and process standardization.</li>
+            <li>Coordinate 5S and continuous improvement initiatives.</li>
+        </ul>
+    </div>
 </section>
 
-<section id="skills">
-    <h2>Skills & Expertise</h2>
+<section class="container" id="projects">
+    <h2 class="section-title">Projects & Contributions</h2>
+    <div class="underline"></div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Production Performance Dashboard</h3>
+            <p>
+                Developed an 18-KPI performance monitoring dashboard
+                covering production, OEE, NPT and operational performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Root Cause Analysis</h3>
+            <p>
+                Participated in 80+ breakdown and process problem-solving
+                sessions with Production and Maintenance teams.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>SOP Development</h3>
+            <p>
+                Contributed to developing and standardizing 50+ SOPs
+                to improve operational consistency.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>5S & Employee Training</h3>
+            <p>
+                Supported 5S and Lean training initiatives for
+                100+ employees through 15+ training sessions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="container" id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="underline"></div>
+
     <div class="skills">
         <span>Advanced Excel</span>
         <span>Power BI</span>
         <span>Google Sheets</span>
         <span>Looker Studio</span>
-        <span>ERP</span>
+        <span>ERP Support</span>
         <span>SQL Basics</span>
         <span>Lean Manufacturing</span>
         <span>Root Cause Analysis</span>
         <span>5S</span>
         <span>Process Improvement</span>
+        <span>Production Monitoring</span>
+        <span>Data Analysis</span>
     </div>
 </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <h3>BSc in Industrial and Production Engineering</h3>
-    <p>Shahjalal University of Science and Technology (SUST)</p>
-    <p>2020 – 2025 | CGPA: 3.25/4.00</p>
+<section class="container" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="underline"></div>
+
+    <div class="card">
+        <h3>BSc in Industrial and Production Engineering</h3>
+        <p>Shahjalal University of Science and Technology (SUST)</p>
+        <p>February 2020 – July 2025</p>
+        <p><strong>CGPA: 3.25 / 4.00</strong></p>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sajjad62/">LinkedIn Profile</a></p>
-    <p>GitHub: <a href="https://github.com/Sajjad">GitHub Profile</a></p>
+<section class="contact" id="contact">
+    <h2>Let's Connect</h2>
+    <p>
+        Interested in manufacturing, operational excellence
+        and continuous improvement.
+    </p>
+
+    <a href="https://www.linkedin.com/in/sajjad62/">
+        LinkedIn
+    </a>
+
+    <a href="https://github.com/Sajjadbepari351">
+        GitHub
+    </a>
 </section>
 
 <footer>
-    <p>© 2026 Sajjad | Personal Portfolio</p>
+    © 2026 Sajjad | Personal Portfolio
 </footer>
 
 </body>
