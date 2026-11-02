@@ -4,59 +4,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Radar BD | IPE Jobs</title>
+<title>Career Radar BD | Live Jobs</title>
+
 <style>
 :root {
   --navy:#10213b;
-  --blue:#2855d9;
+  --blue:#315be8;
   --bg:#f4f7fc;
-  --text:#192438;
-  --muted:#68758a;
-  --border:#e2e8f0;
+  --text:#172338;
+  --muted:#718096;
+  --border:#e3e9f2;
 }
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
-header{background:linear-gradient(120deg,#10213b,#2855d9);color:white;padding:35px 6%}
-.container{max-width:1150px;margin:auto}
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+header{
+  background:linear-gradient(120deg,#10213b,#315be8);
+  color:white;
+  padding:35px 6%;
+}
+.container{max-width:1200px;margin:auto}
 .brand{font-size:23px;font-weight:bold}
 .hero h1{font-size:38px;margin:35px 0 10px}
-.hero p{color:#dce6ff;line-height:1.6}
-main{max-width:1150px;margin:25px auto;padding:0 16px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
-.stat,.filterbox,.job,.info{background:white;border:1px solid var(--border);border-radius:13px;padding:17px}
-.stat strong{display:block;color:var(--blue);font-size:23px}
+.hero p{color:#dce6ff;line-height:1.7}
+main{max-width:1200px;margin:25px auto;padding:0 16px}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-bottom:20px;
+}
+.stat,.filters,.job{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:13px;
+  padding:17px;
+}
+.stat strong{
+  display:block;
+  color:var(--blue);
+  font-size:24px;
+}
 .stat span{font-size:12px;color:var(--muted)}
-.filters{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px}
-input,select{width:100%;padding:12px;border:1px solid #d4dce8;border-radius:8px;font-size:14px;background:white}
-.section{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:25px 0 14px;flex-wrap:wrap}
+.filters{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:10px;
+}
+input,select{
+  width:100%;
+  padding:12px;
+  border:1px solid #d5deea;
+  border-radius:8px;
+  background:white;
+  font-size:14px;
+}
+.section{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin:25px 0 14px;
+  flex-wrap:wrap;
+}
 .section h2{margin:0;font-size:21px}
-.jobs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.job{display:flex;flex-direction:column;gap:10px}
-.job h3{margin:0;font-size:19px}
+.status{font-size:12px;color:var(--muted)}
+.jobs{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.job{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.job h3{margin:0;font-size:18px;line-height:1.4}
 .company{font-weight:bold;color:#34445e}
-.tags{display:flex;gap:7px;flex-wrap:wrap}
-.tag{background:#edf2ff;color:#294eb1;border-radius:20px;padding:6px 9px;font-size:11px}
-.details{font-size:13px;color:#586579;line-height:1.8}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
-button,.apply{border:0;border-radius:8px;padding:10px 13px;font-weight:bold;cursor:pointer;font-size:13px;text-decoration:none}
-.apply{background:var(--blue);color:white}
-.save{background:#edf1f7;color:#26354d}
-.empty{background:white;border:1px dashed #cbd5e1;border-radius:12px;padding:35px;text-align:center;color:var(--muted);grid-column:1/-1}
-.info{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.7}
-footer{text-align:center;padding:30px;color:#8490a3;font-size:12px}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{
+  background:#edf2ff;
+  color:#294eb1;
+  padding:6px 9px;
+  border-radius:20px;
+  font-size:11px;
+}
+.details{
+  color:#586579;
+  font-size:13px;
+  line-height:1.7;
+}
+.actions{margin-top:auto;padding-top:5px}
+.apply{
+  display:inline-block;
+  background:var(--blue);
+  color:white;
+  text-decoration:none;
+  padding:11px 14px;
+  border-radius:8px;
+  font-weight:bold;
+  font-size:13px;
+}
+.empty{
+  grid-column:1/-1;
+  background:white;
+  border:1px dashed #cbd5e1;
+  border-radius:12px;
+  padding:35px;
+  text-align:center;
+  color:var(--muted);
+}
+.notice{
+  margin-top:20px;
+  padding:15px;
+  border-radius:10px;
+  background:#fff8e9;
+  border:1px solid #f1dfb9;
+  font-size:12px;
+  line-height:1.7;
+  color:#75551b;
+}
+footer{
+  text-align:center;
+  padding:30px;
+  color:#8490a3;
+  font-size:12px;
+}
 @media(max-width:750px){
- .filters{grid-template-columns:1fr 1fr}
- .jobs{grid-template-columns:1fr}
- .hero h1{font-size:29px}
+  .filters{grid-template-columns:1fr 1fr}
+  .jobs{grid-template-columns:1fr}
+  .hero h1{font-size:29px}
 }
 @media(max-width:430px){
- .filters{grid-template-columns:1fr}
- .stats{gap:6px}
- .stat{padding:11px}
- .stat strong{font-size:18px}
+  .filters{grid-template-columns:1fr}
+  .stats{gap:6px}
+  .stat{padding:11px}
+  .stat strong{font-size:18px}
 }
 </style>
 </head>
+
 <body>
 
 <header>
@@ -64,195 +155,339 @@ footer{text-align:center;padding:30px;color:#8490a3;font-size:12px}
   <div class="brand">🎯 CAREER RADAR BD</div>
   <div class="hero">
    <h1>Find Your Next Career Opportunity</h1>
-   <p>Bangladesh job opportunities for Industrial & Production Engineering graduates.<br>
-   MNCs • Large Groups • Production • Planning • Supply Chain</p>
+   <p>
+    Live job discovery for Industrial & Production Engineering graduates.<br>
+    MNCs • Large Groups • Production • Planning • Supply Chain
+   </p>
   </div>
  </div>
 </header>
 
 <main>
- <div class="stats">
-  <div class="stat"><strong id="total">0</strong><span>VACANCIES</span></div>
-  <div class="stat"><strong>All Bangladesh</strong><span>JOB LOCATIONS</span></div>
-  <div class="stat"><strong>IPE Focus</strong><span>CAREER CATEGORIES</span></div>
- </div>
 
- <div class="filterbox">
-  <div class="filters">
-   <input id="search" placeholder="Search job, company or keyword...">
-   <select id="category">
-    <option value="">All functions</option>
-    <option>Industrial Engineering</option>
-    <option>Production</option>
-    <option>Planning</option>
-    <option>Supply Chain</option>
-    <option>OPEX</option>
-    <option>Quality</option>
-    <option>Procurement</option>
-    <option>Logistics</option>
-   </select>
-   <select id="experience">
-    <option value="">All experience levels</option>
-    <option>Fresher</option>
-    <option>0-2 Years</option>
-    <option>3-5 Years</option>
-    <option>6+ Years</option>
-   </select>
-   <select id="location">
-    <option value="">All locations</option>
-    <option>Dhaka</option>
-    <option>Gazipur</option>
-    <option>Savar</option>
-    <option>Narayanganj</option>
-    <option>Chattogram</option>
-    <option>Other Bangladesh</option>
-   </select>
+ <div class="stats">
+  <div class="stat">
+   <strong id="total">0</strong>
+   <span>JOB RESULTS</span>
+  </div>
+  <div class="stat">
+   <strong>Bangladesh</strong>
+   <span>SEARCH LOCATION</span>
+  </div>
+  <div class="stat">
+   <strong id="lastUpdate">--</strong>
+   <span>LAST UPDATED</span>
   </div>
  </div>
 
+ <div class="filters">
+  <input id="search" placeholder="Search job, company or keyword...">
+
+  <select id="category">
+   <option value="">All IPE functions</option>
+   <option>Industrial Engineering</option>
+   <option>Production</option>
+   <option>Planning</option>
+   <option>Supply Chain</option>
+   <option>OPEX</option>
+   <option>Quality</option>
+   <option>Procurement</option>
+   <option>Logistics</option>
+  </select>
+
+  <select id="company">
+   <option value="">All target companies</option>
+   <option>Unilever</option>
+   <option>Nestle</option>
+   <option>BAT</option>
+   <option>Marico</option>
+   <option>Berger</option>
+   <option>Akij</option>
+   <option>PRAN</option>
+   <option>Meghna</option>
+   <option>Square</option>
+   <option>Bashundhara</option>
+   <option>Walton</option>
+   <option>Beximco</option>
+   <option>Runner</option>
+   <option>DBL</option>
+   <option>Youngone</option>
+   <option>Magpie</option>
+   <option>Azim</option>
+  </select>
+ </div>
+
  <div class="section">
-  <h2>Latest Matching Vacancies</h2>
-  <span id="resultCount" style="font-size:12px;color:#68758a"></span>
+  <h2>Latest Job Discoveries</h2>
+  <span class="status" id="status">Connecting to job feeds...</span>
  </div>
 
- <div class="jobs" id="jobList"></div>
-
- <div class="info">
-  <b>About Career Radar BD</b><br>
-  This platform is designed to identify opportunities relevant to IPE graduates at multinational companies and established business groups.
-  Vacancy information should be checked against the original employer or job portal before applying.
-  <br><br>
-  <b>Data policy:</b> Job titles, company names, deadlines and other factual details may be displayed with source attribution. Full advertisements, logos and copyrighted images are not reproduced without permission.
-  <br><br>
-  <b>Update policy:</b> This is a static website. Its vacancy list must be updated through the job data below or a permitted external data feed. It does not automatically crawl job portals.
+ <div class="jobs" id="jobList">
+  <div class="empty">Loading job results...</div>
  </div>
+
+ <div class="notice">
+  <b>Important information:</b>
+  These are job-search results, not independently verified vacancies.
+  Some results may be expired, irrelevant or duplicated.
+  Always check the original advertisement for eligibility, salary,
+  application deadline and employer details.
+  <br><br>
+  Search results are discovered through Google News RSS.
+  This page does not copy complete job advertisements.
+  Public RSS and proxy services may have availability or usage limits.
+ </div>
+
 </main>
 
-<footer>CAREER RADAR BD © 2026 | Bangladesh IPE Career Portal</footer>
+<footer>
+ CAREER RADAR BD © 2026 | Independent Job Discovery Portal
+</footer>
 
 <script>
-/*
-  ADD VERIFIED VACANCIES HERE.
-
-  Each vacancy needs:
-  title, company, companyType, category, location,
-  experience, education, deadline, source, sourceUrl,
-  applicationUrl, description and verifiedDate.
-
-  Use original short descriptions, not copied advertisements.
-*/
-
-const vacancies = [
-  // Example structure (replace with verified vacancies):
-  // {
-  //   title: "Executive - Industrial Engineering",
-  //   company: "Example Group",
-  //   companyType: "Large Group",
-  //   category: "Industrial Engineering",
-  //   location: "Savar",
-  //   experience: "0-2 Years",
-  //   education: "BSc in IPE",
-  //   deadline: "20 November 2026",
-  //   source: "Official Career Page",
-  //   sourceUrl: "https://example.com/careers",
-  //   applicationUrl: "https://example.com/apply",
-  //   description: "Production efficiency, time study and process improvement.",
-  //   verifiedDate: "3 November 2026"
-  // }
+const queries = [
+ '"Industrial Engineering" Bangladesh job vacancy',
+ '"Industrial Engineer" Bangladesh recruitment',
+ '"IPE" Bangladesh job vacancy',
+ '"Production Executive" Bangladesh job',
+ '"Production Planning" Bangladesh vacancy',
+ '"Supply Chain" Bangladesh MNC job',
+ '"OPEX" manufacturing Bangladesh job',
+ '"Planning Executive" Bangladesh job',
+ '"Industrial Engineer" Dhaka Gazipur Savar job',
+ '"IE Executive" Bangladesh manufacturing vacancy',
+ '"Quality Executive" Bangladesh manufacturing job',
+ '"Procurement Executive" Bangladesh group job'
 ];
 
-let saved = JSON.parse(localStorage.getItem("careerRadarSaved") || "[]");
+const categoryWords = {
+ "Industrial Engineering":["industrial engineering","industrial engineer","ie executive","time study","method study"],
+ "Production":["production","manufacturing","plant operation"],
+ "Planning":["planning","production planning","supply planning"],
+ "Supply Chain":["supply chain","logistics","inventory"],
+ "OPEX":["opex","operational excellence","continuous improvement"],
+ "Quality":["quality assurance","quality control","quality"],
+ "Procurement":["procurement","purchasing","sourcing"],
+ "Logistics":["logistics","warehouse","distribution"]
+};
 
-function renderJobs(){
- const search = document.getElementById("search").value.toLowerCase();
- const category = document.getElementById("category").value;
- const experience = document.getElementById("experience").value;
- const location = document.getElementById("location").value;
+const companies = [
+ "Unilever","Nestle","Nestlé","BAT Bangladesh","Marico",
+ "Berger","LafargeHolcim","Heidelberg","Akij","PRAN",
+ "Meghna Group","Bashundhara","Square","Beximco",
+ "Abul Khair","Walton","Runner Group","DBL Group",
+ "Youngone","Magpie Group","Azim Group"
+];
 
- const filtered = vacancies.filter(job=>{
-  const text = [
-   job.title,job.company,job.category,job.location,
-   job.description,job.education
-  ].join(" ").toLowerCase();
+let allJobs = [];
+let seen = new Set();
 
-  return text.includes(search) &&
-   (!category || job.category === category) &&
-   (!experience || job.experience === experience) &&
-   (!location || job.location.includes(location));
+const list = document.getElementById("jobList");
+
+function cleanHTML(value){
+ const el=document.createElement("div");
+ el.innerHTML=value||"";
+ return (el.textContent||"").replace(/\s+/g," ").trim();
+}
+
+function escapeHTML(value){
+ return String(value||"").replace(/[&<>"']/g,c=>({
+  "&":"&amp;",
+  "<":"&lt;",
+  ">":"&gt;",
+  '"':"&quot;",
+  "'":"&#39;"
+ }[c]));
+}
+
+function getCategory(text){
+ const t=text.toLowerCase();
+
+ for(const [category,words] of Object.entries(categoryWords)){
+  if(words.some(word=>t.includes(word))){
+   return category;
+  }
+ }
+ return "Other";
+}
+
+function getCompany(text){
+ const t=text.toLowerCase();
+
+ return companies.find(name=>
+  t.includes(name.toLowerCase())
+ ) || "Company mentioned in source";
+}
+
+function getGoogleRSS(query){
+ return "https://news.google.com/rss/search?q="
+  + encodeURIComponent(query+" when:30d")
+  + "&hl=en-US&gl=US&ceid=US:en";
+}
+
+async function fetchFeed(query){
+ const rssURL=getGoogleRSS(query);
+
+ const proxyURL=
+  "https://api.allorigins.win/raw?url="
+  +encodeURIComponent(rssURL);
+
+ const response=await fetch(proxyURL);
+
+ if(!response.ok){
+  throw new Error("Feed unavailable");
+ }
+
+ const xmlText=await response.text();
+ const xml=new DOMParser().parseFromString(
+  xmlText,"text/xml"
+ );
+
+ if(xml.querySelector("parsererror")){
+  throw new Error("Invalid RSS response");
+ }
+
+ return [...xml.querySelectorAll("item")].map(item=>{
+  const title=cleanHTML(item.querySelector("title")?.textContent);
+  const description=cleanHTML(item.querySelector("description")?.textContent);
+  const link=item.querySelector("link")?.textContent?.trim();
+  const pubDate=item.querySelector("pubDate")?.textContent?.trim();
+
+  return {title,description,link,pubDate};
+ });
+}
+
+async function loadJobs(){
+ document.getElementById("status").textContent=
+  "Searching public job feeds...";
+
+ const results=await Promise.allSettled(
+  queries.map(query=>fetchFeed(query))
+ );
+
+ const collected=[];
+
+ results.forEach(result=>{
+  if(result.status==="fulfilled"){
+   collected.push(...result.value);
+  }
  });
 
- document.getElementById("total").textContent = vacancies.length;
- document.getElementById("resultCount").textContent =
-  filtered.length + " matching vacancies";
+ const fresh=[];
 
- const list = document.getElementById("jobList");
+ for(const item of collected){
+  if(!item.title||!item.link)continue;
+
+  const text=(item.title+" "+item.description).toLowerCase();
+
+  const relevant=Object.values(categoryWords)
+   .flat()
+   .some(word=>text.includes(word));
+
+  if(!relevant)continue;
+
+  if(seen.has(item.link))continue;
+  seen.add(item.link);
+
+  fresh.push({
+   ...item,
+   category:getCategory(text),
+   company:getCompany(text)
+  });
+ }
+
+ allJobs=fresh;
+ renderJobs();
+
+ const now=new Date();
+ document.getElementById("lastUpdate").textContent=
+  now.toLocaleTimeString([],{
+   hour:"2-digit",minute:"2-digit"
+  });
+
+ document.getElementById("status").textContent=
+  results.some(r=>r.status==="fulfilled")
+   ? "Feed search completed"
+   : "Feeds unavailable — try again later";
+}
+
+function renderJobs(){
+ const search=document.getElementById("search")
+  .value.toLowerCase();
+
+ const category=document.getElementById("category").value;
+ const company=document.getElementById("company").value;
+
+ const filtered=allJobs.filter(job=>{
+  const text=(
+   job.title+" "+job.description+" "+job.company
+  ).toLowerCase();
+
+  return text.includes(search)
+   &&(!category||job.category===category)
+   &&(!company||text.includes(company.toLowerCase()));
+ });
+
+ document.getElementById("total").textContent=
+  filtered.length;
 
  if(!filtered.length){
-  list.innerHTML = `
+  list.innerHTML=`
    <div class="empty">
-    <h3>No matching vacancies yet</h3>
-    <p>New verified vacancies will appear here when the vacancy data is updated.</p>
+    <h3>No matching job results</h3>
+    <p>Try another keyword or refresh the search.</p>
    </div>`;
   return;
  }
 
- list.innerHTML = filtered.map((job,index)=>{
-  const isSaved = saved.includes(job.id);
-  return `
-   <article class="job">
-    <div class="tags">
-     <span class="tag">${job.companyType}</span>
-     <span class="tag">${job.category}</span>
-    </div>
-    <h3>${escapeHTML(job.title)}</h3>
-    <div class="company">${escapeHTML(job.company)}</div>
-    <div class="details">
-     <b>Location:</b> ${escapeHTML(job.location)}<br>
-     <b>Experience:</b> ${escapeHTML(job.experience)}<br>
-     <b>Education:</b> ${escapeHTML(job.education)}<br>
-     <b>Deadline:</b> ${escapeHTML(job.deadline)}<br>
-     <b>Source:</b> <a href="${safeURL(job.sourceUrl)}" target="_blank" rel="noopener">${escapeHTML(job.source)}</a><br>
-     <b>Last verified:</b> ${escapeHTML(job.verifiedDate)}
-    </div>
-    <div class="details">${escapeHTML(job.description)}</div>
-    <div class="actions">
-     <a class="apply" href="${safeURL(job.applicationUrl)}" target="_blank" rel="noopener">View / Apply ↗</a>
-     <button class="save" onclick="toggleSave('${job.id}')">${isSaved?"★ Saved":"☆ Save job"}</button>
-    </div>
-   </article>`;
- }).join("");
+ list.innerHTML=filtered.map(job=>`
+  <article class="job">
+   <div class="tags">
+    <span class="tag">${escapeHTML(job.category)}</span>
+    <span class="tag">Search discovery</span>
+   </div>
+
+   <h3>${escapeHTML(job.title)}</h3>
+
+   <div class="company">${escapeHTML(job.company)}</div>
+
+   <div class="details">
+    <b>Published:</b>
+    ${escapeHTML(job.pubDate||"Not provided")}
+    <br>
+    <b>Source:</b> Google News RSS
+   </div>
+
+   <div class="details">
+    ${escapeHTML(job.description||"Open the source for details.")}
+   </div>
+
+   <div class="actions">
+    <a class="apply"
+       href="${escapeHTML(job.link)}"
+       target="_blank"
+       rel="noopener noreferrer">
+       Open Original Result ↗
+    </a>
+   </div>
+  </article>
+ `).join("");
 }
 
-function escapeHTML(value){
- return String(value ?? "").replace(/[&<>"']/g,c=>({
-  "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
- }[c]));
-}
+document.getElementById("search")
+ .addEventListener("input",renderJobs);
 
-function safeURL(value){
- try{
-  const url=new URL(value);
-  return ["https:","http:"].includes(url.protocol)?url.href:"#";
- }catch(e){return "#";}
-}
+document.getElementById("category")
+ .addEventListener("change",renderJobs);
 
-function toggleSave(id){
- if(saved.includes(id)){
-  saved=saved.filter(x=>x!==id);
- }else{
-  saved.push(id);
- }
- localStorage.setItem("careerRadarSaved",JSON.stringify(saved));
- renderJobs();
-}
+document.getElementById("company")
+ .addEventListener("change",renderJobs);
 
-["search","category","experience","location"].forEach(id=>{
- document.getElementById(id).addEventListener(
-  id==="search"?"input":"change",renderJobs
- );
-});
+loadJobs();
 
-renderJobs();
+// Refresh while the website remains open.
+setInterval(loadJobs,30*60*1000);
 </script>
+
 </body>
 </html>
