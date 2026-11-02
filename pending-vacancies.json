@@ -1,9 +1,18 @@
 {
-  "lastChecked": "2026-11-02T21:53:13.437620+00:00",
+  "lastChecked": "2026-11-02T22:35:12.758171+00:00",
   "feedsChecked": 58,
   "feedErrors": [],
   "note": "RSS results are discovery leads only. They are not verified vacancies and are never published to vacancies.json automatically.",
   "candidates": [
+    {
+      "title": "Operator/Technician Production at Taiwan-Bangla Medical Equipment Co. Ltd. - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQS1pc2syZDVnZmZCeGtuakJsQ1g4aXJxUkNuclpiekQxcFA1a3ZrZXZnM3kxeDhHTzl6cDR5cXIzNWJGall4ZnlVM2FzRHBLV2VVTTNlOFcyT0R0clgzMmpIaTJiUWRQOHptZkpUTk9kQ01TN2liY2NfY2lSVE1QMi03U0lseGpwanNrMEhycjVhcFctLTRJX1hwZTJ5ZGxzdU5ZNHdZQmY?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 31 May 2023 07:00:00 GMT",
+      "summary": " Operator/Technician Production at Taiwan-Bangla Medical Equipment Co. Ltd. &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
     {
       "title": "Assistant Manager – QA & Planning at Confidence Infrastructure PLC - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVkwwaDhGM2JBMUtPN2hpZ3EtMlhHMFlKc1A3RXQ0RmpVdGU1Q2RrYnlIMm9WakozR20wRjA2TzBHWXRlRmExQ1RQNzBmTGlqb2RFdGg0TjBKbXV4RHhSY1FacDRIcjVJU0pnZjEyMFBLWmw4em5GcXhKRFduV1gwUzlBWm41bV9PM21HTjJXRG5HRDFIZ0FsZHBlcVo?oc=5",
@@ -64,6 +73,24 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 29 Jul 2026 07:00:00 GMT",
       "summary": " Assistant Manager - Supply Chain : Babuland Limited &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Assistant Purchase Officer at Independent University, Bangladesh (IUB) - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQno5RGR6UkN2cnZjY1pZbDU3N2tMa1lZN3pJOUVOZW5BTDh4MGVlejhwYzl6d0xfdnp0X2NWVFhzZ0U0ZTdZSnQ3U1c1X0xXY2lYQU03WWJNbTBIR0FPUFJINkVpenBDOUdtR3IydlVFVUc5anpZTnZGcjFiSTZHWUctS1k3VjR0OG5LNUluRVNJYlZnMmRvZENvbHk1QUtpNTNZ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "summary": " Assistant Purchase Officer at Independent University, Bangladesh (IUB) &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Technical Officer - Enterprise Development : Bangla-German Sampreeti (BGS) - BD Jobs",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPQXF3UjNuUXpGTUN0TWpPcG91ZzYwS293VG12WWUzT2pEREpnMktTcE01eGc5dWI5NVI3T3V2TnhmRlBQZXNaU3FDeWM1VE5vaG5R?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 28 Oct 2026 12:32:01 GMT",
+      "summary": " Technical Officer - Enterprise Development : Bangla-German Sampreeti (BGS) &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -140,6 +167,15 @@
       "verified": false
     },
     {
+      "title": "Officer/ Sr. Officer, Inventory & Warehouse at Kazi Farms Group - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQQUoyRVlna1g5Y2pTMnR5QU9hczFpanJfR3VHUW4xMHhHY3p2VUgwaWc4Qktjd2EwQUtuNW9PTjFjTk1CMWFleC1kaWpVM0FoeUlqeVR5N0YzVDhyS0tPVGU1LXpTTkIwWVU3T2VvbkZGS3JXSGlUODM2NGR0eXc5UjZaWEtUWUUyampwdDhoNy1iTDlZRnln?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 27 Aug 2025 07:00:00 GMT",
+      "summary": " Officer/ Sr. Officer, Inventory & Warehouse at Kazi Farms Group &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Manager- Store at Fakir Knitwears Ltd. - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4xb2FTVS1nUXRJSW9XMC1zVF9Tc1JEelpOREdCcEFqRkdiNzMtd3hrZDNQcldHSG9UMG1HUkVVdnZ2VG5YRjlhcUFvRDQ4WkNkZE5rTVpRSWUyOVFEcDdZYnFJVkloR1BkZ1VabVl6N2l3VzZJT1ZyZ0VB?oc=5",
       "feedSource": "Google News RSS",
@@ -199,6 +235,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 21 Oct 2026 21:14:39 GMT",
       "summary": " Associate Manager, Procurement Centre of Excellence at BRAC Bank PLC &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Manager, Procurement Centre of Excellence at BRAC Bank PLC - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOX2FUTm1CU1l2b0ppTFZZTzZMeWhGc1RKanJYODhNX2xMSmpDTnJvT2V3R292WXZhWWVPWW5ZaThaQldkdzFabHZQcXgxaFhISzl5MnIwRkVYOXhyUThaOGxCVDdydjNuckVQSVA4RFBIM1RhY3lJcXhTSXpObnZWeV9vTldSVm5XT3ZYVHlXMzZkem5kMVE?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 21 Oct 2026 21:14:36 GMT",
+      "summary": " Manager, Procurement Centre of Excellence at BRAC Bank PLC &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -284,6 +329,15 @@
       "verified": false
     },
     {
+      "title": "Unlocking yarn export opportunities for Bangladesh: Lessons from Indonesia and Vietnam - Textile Today",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaVJZNElTaFJENktYdHVUcXRZc0hqcDNOQjlveVlueWpZSEpIdGpPRF9SS1pCSDNoMFBBZ3kyNlk2M2lsS1o3T3NhRGwtNlBHVW16Sm9OYmhBLTFaWFJDRWRGSWtnUS1yYWJpWTZJU0tRS3Q1OF9iaXo2bFRtNTNGbk9GNWx1TnJvVmxQZzFTbWtqZlpZTlR2Z05MNEdMN2F4blVvSFI4dDBZQWxtbG5zN2VLZGxtdUV4?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 21 May 2025 07:00:00 GMT",
+      "summary": " Unlocking yarn export opportunities for Bangladesh: Lessons from Indonesia and Vietnam &nbsp;&nbsp; Textile Today ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Top 10: Ethical Labour Practices in Supply Chains - Sustainability Magazine",
       "feedUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdFpaQ2JnTDZIWWFpSjZjY0xQQTIxNEtPSVFvVlk3Y3AxUTFHSjlaNGlZc3FtcXZER21MQlNUWU80UDB5RnhCd0JFTGg1Tkk0OXotdGxXeU51U2RBN0U5V0FPc0RGT3VTOWNYQV9jS0FMNW5meHVGdm96UElRQzFKTEtkcjk4cy1RclMydA?oc=5",
       "feedSource": "Google News RSS",
@@ -338,11 +392,29 @@
       "verified": false
     },
     {
+      "title": "Ha-Meem Group launches accessories manufacturing plant to reduce apparel lead time - Textile Today",
+      "feedUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdjVOTWJVYmxCMW92elM5X250ZFdnVVoxUFQtYkxLMVRCM0VHZXFfYkFUZ0V4MXhtX2ZHU0dXTVhLMzIyNUFYTTEwRTRYcFdwRi1VeXJER2toZ29rSl96VnpfbGUzYkJobWRBNTAyUHFOZXlTNW9DRnpXaUsxSW4teXktRkppTEluV3J0Nmg1SUJQbGlUTEFxa19jVjd0YlVKa1AtRmFKdjAtSDJhc0p1VFRJUm0?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "summary": " Ha-Meem Group launches accessories manufacturing plant to reduce apparel lead time &nbsp;&nbsp; Textile Today ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Management Trainee Officer (Operations) at Euro-Vigil (Pvt.) Ltd. - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZGgtLUlHLVJ2bnp3UjkzZ0liLUdpeVNHRkdUMWxEWFQxYkp2dGd6cEJPeEs2cktCWmVFelRJZGZjSFh3VUJMOU1oTDRZOUtCNjRpU3hiZ194TWZsLVFoVmpYV3hFVUllOU9zZ2R0U294SGJHR3cyYkhaTUlGRGtSTEpPek1vWURDUURBa0FFQ1MzUENiVzlxMw?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 16 Sep 2026 11:41:16 GMT",
       "summary": " Management Trainee Officer (Operations) at Euro-Vigil (Pvt.) Ltd. &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Assistant Manager / Deputy Manager - Factory at Aman Group of Companies - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxON3JkN1J3eHpsaFBCZS1XeHJnSGdkdHlEVGFNOWFZQkVHTlZ3NmdNMDRibDVrdkpNOVlMSWV4SWZ0XzVOaV9hT3NubU5pQW4ta0k0cU84YVluUzZCWTUwTjctYTZFcFNkNUtsVVJJd1p3b21OVWJMaXRoSmNZQzJsa0pjc2dkU2hWYTFoTWhtWkNva2F4MUNIeDRSbVI5aVBMNU9z?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 16 Apr 2025 07:00:00 GMT",
+      "summary": " Assistant Manager / Deputy Manager - Factory at Aman Group of Companies &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -388,6 +460,24 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 14 Oct 2026 07:00:00 GMT",
       "summary": " Executive / Senior Executive - Local Purchase : Bombay Sweets & Co. Ltd. &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "MTO - Operations : Getwell Ltd. (A concern of RFL Group) - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5WdDQtUFdfbkJEcUFqbkFpcWtrSWhMWVhFV1pZT0w4dGdHNnFqYlowejNEbEpzaVU2a3VNZ2FBSmtGSHpIam1MQTVrVXNFUkx1MlBN?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "summary": " MTO - Operations : Getwell Ltd. (A concern of RFL Group) &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Assistant Manager - Store & Inventory : Confidence Batteries Limited - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NMnFqcGdzdGg5Ymt2c3NHckZrRG9rbV9mYnY5dTZwcEY1a0xhWDR6enU2ckZKZGYwVFJKamFoU3VpeXhPaXpmVXBOSnduVll6SXlB?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "summary": " Assistant Manager - Store & Inventory : Confidence Batteries Limited &nbsp;&nbsp; Bdjobs.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -455,6 +545,24 @@
       "verified": false
     },
     {
+      "title": "Mineral Bricks for Dairy Industry in Bangladesh - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSl9ZZ1lYeWN4Umc1Rml1R3Bqc3FqZEdqSVdIdkZWbnRaTTNIOVdjYmcwdHNNSFIyTk8za0d2d1hHa3RQMlBvWUdXQS1OcmxoYTFtTlQtWnlYdzZ0RU5HX183VlA5bFk4ZlNKRWM2ZWIySGQwOGRzS3E4N2JOTnBMSXJmM1VPeHJGUkc5WW51OGtGYlZDWkR1c3pHS0pFV1lSM3Y1cm1nWjJsZw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 11 Mar 2026 00:04:38 GMT",
+      "summary": " Mineral Bricks for Dairy Industry in Bangladesh &nbsp;&nbsp; Aci-bd.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Senior Manager - Supply Chain at Wise Corporation - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNHZiamkxQjBnOU92UTBmMjRyWmZ3WURZQWQtRWtrTzVIbUVzNUt0ZHZfOU5vOXdLTWFoaUZ1R3oxZERmamxSbHUtWDhSb1NheU0tTXJkekVSRjNBNV9Qcl9IMnJsb1ZQdC14M1VtQ0hkRTRUM1FMdW5HZGM1b2pNTjIyUG56OUZ0?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 10 Sep 2025 07:00:00 GMT",
+      "summary": " Senior Manager - Supply Chain at Wise Corporation &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Bangladesh can be world's No. 1 RMG sourcing hub: Inditex regional chief - The Daily Star",
       "feedUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPckF4azI4Ry13RmxxeGY5WTgzQWluamt4TUhkSE15S0M5UTR5NzQ1ajVpLTB3dzYzSHVUcExXYXRyYmpEa25qcHlPUEZOZTZPczVJQ2pYODNaa2dVUUlocUxsMUJ4b0x0T19lWExvbDlJT1Q4LTc3cDNnSUhPTmphcmJBUEdFdVJNWU9OUG02dmpQZDU3X0g0cFVPZ0lJWThKTGRpZlFqaEtRMTQ1WVdycHJhU1Z0eFN0LUU5aA?oc=5",
       "feedSource": "Google News RSS",
@@ -478,6 +586,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 10 Dec 2025 05:33:44 GMT",
       "summary": " Danish Refugee Council &nbsp;&nbsp; BD Jobs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Administrative Assistant (Finance & Procurement) at Qatar Charity - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNSU01MERmbEhmU0g0M1JUNkZBb0plQkdXMENCVHBnaDNIVGMxc1BNdmhESjBCajBlVi1rVENyTFFtVk01T1M3MmkxekxidWo1Q2JiTXBQWGxRci1fT0w1S0JiTlJLVHMtNkNWa0ZQcGlCQUpkc05XamE4dnJaYjNHVzA4Z0FyQXVhWjZtbkNfc0ZXcFFzeGhOd0NhZw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "summary": " Administrative Assistant (Finance & Procurement) at Qatar Charity &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -509,6 +626,15 @@
       "verified": false
     },
     {
+      "title": "Partial production resumes at nine closed state-run jute mills - The Business Standard",
+      "feedUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVHNmX1UxQlFaWWIwSDROZnVoX3ctR1dadU1vd3E2VTkzUW9YZHBUSVR5eTFNcDR6eXpWYmNkbXRFNG54eWFkXzlGLTVXbWxwT0k3US1xNFdJb3JWc2h4Uzc3T3BTcm0tREdueFdpT2hwbnIwLUJXbW1GczBURlV5aVQ2WmlkUEs5ZEZ6em9FMVF5WVE3Ni1tTkFWdUFlWTU4NFcwckxncGRSbi1X?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 07 Oct 2026 11:02:54 GMT",
+      "summary": " Partial production resumes at nine closed state-run jute mills &nbsp;&nbsp; The Business Standard ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Officer - Admin & Logistics : ActionAid Bangladesh - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE04OXVKLWhLUFJDTVdiTVhOb29rMVJXV2ZVOW02TFY5bGtOdU1mbVdxUmdBMFdQM0h2aFFLYXNUSEVNM2VEdFR2bEc3c053a1hfeVN3?oc=5",
       "feedSource": "Google News RSS",
@@ -536,11 +662,47 @@
       "verified": false
     },
     {
+      "title": "Junior Officer (Engineering) : One Pharma Limited - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBITnhSZ3NJaGRVWDkxS2VrdEFpRURTUzBYUzBhZTV5RV9mWUdKdUFYakpLVG5WQ1hremRDdlhUdFNuUHVmdFctVUU0NFFicHN2MU80?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 07 Oct 2026 07:00:00 GMT",
+      "summary": " Junior Officer (Engineering) : One Pharma Limited &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Procurement & Logistics Officer : RTM International - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80VmtjNWdvdjFiTlQ2Mjc4Rm9YT2wxMHlrRHloRXlxcjd3VXdfOGR3OV9ndmE0czRzRm0ybERBaV9CRVJvS05XRXE3TDV6cm5HOUtXRGx5U0dDMlNvNVhwQllLX0xBUG9HVk5Dc1FB?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 07 Oct 2026 06:42:04 GMT",
       "summary": " Procurement & Logistics Officer : RTM International &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Manager, Research & Development at Apex Footwear Limited - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQanFWWG1kamxGV0xaSi1ZaTA4aHhNMzZOZDhERzRZN3NzM1IxTnpsTEI2Nm5ORWlvTGZtRHplMXBGdGRUY2hDN3VxbWEyaHp5bU9uMmllNTgyTXFWLUZZVkNNUmZlTGVXOUI5OTdEcFFaMGNFRG04alR6NG54M2xibnRKVGNYVm5BWEg1NGNNT2c?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 07 Oct 2026 03:10:48 GMT",
+      "summary": " Manager, Research & Development at Apex Footwear Limited &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "IUB launches BBA in Supply Chain Management program - The Daily Star",
+      "feedUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd3ZGeE5KclNzNWR1aUw5M1Ftc0RfLUtVd01RMGRSM2NmMC04MnRaNlNXMWZsTnItWkJmUHJfSkZsNGtadjNRVDFwVzYzYlowbEVvdDZtMnpURjlpdk9qSFplaURBcGdpQThpZW9rUkdldFhYSGt2X2JHdW4zb3ZEMDZZQXlTb3puSENEV0FJSHBsbzhQRkhFNUY0Q1BYQmRWY1FnSXRYMndUVnVvcEZwYnFoTFZteXRMQTBVdFV4M2ZTaXRlRGo4MFJLZks?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 06 May 2026 03:54:08 GMT",
+      "summary": " IUB launches BBA in Supply Chain Management program &nbsp;&nbsp; The Daily Star ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Final Boi life May 2015 - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcjBGNG1tYlpJV3ZrMmF2TWJFZ2Uxa3NzeWRWOTU0aE5OaFZYdHZVZzBTYWd5UUlUNUs1cFVkMzZwbG5UNTVLdnN5eUFYVkc5N3owbVVJa1JBN0h5ZkFKZ1hPWS1FX2dyU1ZXNnhhZDBlRHpfTXdsTjVkSVBEQS1HaXh3?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 06 May 2015 07:00:00 GMT",
+      "summary": " Final Boi life May 2015 &nbsp;&nbsp; Aci-bd.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -586,6 +748,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 03 Sep 2025 07:00:00 GMT",
       "summary": " Computer Operator, Depot Office at Popular Pharmaceuticals PLC. &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Untitled - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQZkJ0aWNnNUJsRDNtOS1qX2QtX24xT0V6ZkIwUVBJWkw4Yk5aVjRYZ1h0clhzTV9PTkpxX05Nck92bkFOMEpqc2tSbm1feDh1WFNGZzdTQUxkaXhRMHB4a1F2cGZLV0lCQ2xmUWFJTzlKSzlISnhFVTVBS3NRaW55R2dUR3EtdjJNM1hlM0lzUHBOY0I0U3NEcDBtWmdlS3k4?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 03 Dec 2025 08:00:00 GMT",
+      "summary": " Untitled &nbsp;&nbsp; Aci-bd.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -671,11 +842,29 @@
       "verified": false
     },
     {
+      "title": "Sr. Commercial Officer (UD) in Modele Group : A Largest Export-oriented Garments Group of Company - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVem9fUmVxQmd6dkJaU1Vqa0YwekJlY3R4OHd5R0txXzBGNkQxVGRYLXRoeUVRMWlKREJmanVuYmNJTDZ0cXNFWmJaaHRDSmtYTzRV?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 29 Sep 2026 07:00:00 GMT",
+      "summary": " Sr. Commercial Officer (UD) in Modele Group : A Largest Export-oriented Garments Group of Company &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Civil Engineer at M/S Hafez Enterprise - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBqUDhxNVFsV05LajFjelpNVFdlaVRnSzBtSXY3ZTR4OFI3NFZfSmF1T3BhUklDd3A2NlBoclRsaGpCd01EOHppSDk3Y2RESHQwbUFCZ3ZKa0ZOSGlQclljSk5GY3ZnMGRWWVJVUjFMajk5bHJxY1RVZmtNRQ?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 29 Jul 2025 07:00:00 GMT",
       "summary": " Civil Engineer at M/S Hafez Enterprise &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "IGLOO, Ice Cream Industry In Bangladesh and Career: An Interview With G M Kamrul Hassan, CEO, IGLOO - Future Startup",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPX3NPUFJBSFR2Qmw0V09KX0tmUmJ0eC1xN3NMWXVIbGEyLWlUNzFlUVlqcEJ3Q2xPc05HVDZSOGNwNjNvLVhIanNDSkdVZHpHUk1KeFdLTVd1dDVubTFQa1I4dW5QeEppRW9lTmtaWXNnVVlVa2hRNDJOY2ZIbnNJMTQ2VUFZV1VJQjRBLU9rRjM4QXBnSXdPdWhoeEtfVi1oR19fSVpUdW1NWEtiSkhJV3k1akRCWlBJR3c?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 28 Nov 2017 08:00:00 GMT",
+      "summary": " IGLOO, Ice Cream Industry In Bangladesh and Career: An Interview With G M Kamrul Hassan, CEO, IGLOO &nbsp;&nbsp; Future Startup ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -734,11 +923,20 @@
       "verified": false
     },
     {
-      "title": "Manager- Import and Export : KhyGen - Bdjobs.com",
+      "title": "Operation Manger : Welkin Pastry Ltd. - BD Jobs",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Wd3U5eDNxaG5ud1RFVllza2R5UVNlVi1Tdms0X2gxbUxMWlFoNVE3LV9LUjRHY1Utb3lkbzc1akJQZFJmQ2R5MVBxOHNPZG9xakxn?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 27 Oct 2026 12:38:59 GMT",
+      "summary": " Operation Manger : Welkin Pastry Ltd. &nbsp;&nbsp; BD Jobs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Manager- Import and Export : KhyGen - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE81YWc4TURpLVBRNUFvMGhqcUM3ODQwdjBfWFRRMHdvS3JiNTBMNTBYMTdScDhNNmZ2WGRrRXg0Q1FtbU9pMUhpeWlEWlBSX1htSldR?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 27 Oct 2026 09:21:43 GMT",
-      "summary": " Manager- Import and Export : KhyGen &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " Manager- Import and Export : KhyGen &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -761,6 +959,15 @@
       "verified": false
     },
     {
+      "title": "GM (Admin & Production) at Nasir Group of Industries. - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXlGeWtJN0llS0tIV0twQ1Q1QWZsNnJ1SGRBeXI5V3d5Q0Nra1hRWEhHd0MwWnFReVZtQl9rRzJpbFU1QkhwQTNPZ3dEb1dsUWpsSlF2ZVNzQnZkRnU4Smk3QVBHbDJvR2I5akM0MXpVZWpaWTBDVXRyZG9Xb1oxLVhBZlU1OTE5?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 26 Jan 2021 08:00:00 GMT",
+      "summary": " GM (Admin & Production) at Nasir Group of Industries. &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Driving sustainability in denim-washing at Vertex Group - Textile Today",
       "feedUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaEVjT1Y1QTNxWS1aOXhGc3JGcDNzOHZGT21Rb3M4U1lSTkYtRDIwN1FsTERQcWp0Y0JDYmlXS25RZ0xyQVMzWWhBZUY2T3A2ZTJobjBqSGxFeVl0amVqTTFWOUZ1WUlyakVMZU9CWnA4Y1d5THZFbEVzSjNnY3ZGeDlQUkN2X3Q5eHNKV2d0OEo?oc=5",
       "feedSource": "Google News RSS",
@@ -779,11 +986,38 @@
       "verified": false
     },
     {
+      "title": "Team Manager/ Sr. Team Manager - Production : STENCIL BANGLADESH LIMITED. - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpTTZGdEdxQW1uX3BETDZhZld6RU5BcUNlc1lVZm5Gem53VHNDMHIwZXZwWERnZ3B0Q3hXNGl4SG40NmkxVEV0LVoyN2dTOTZIRmY4?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "summary": " Team Manager/ Sr. Team Manager - Production : STENCIL BANGLADESH LIMITED. &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Testing water quality: When labs don’t work - World Bank Blogs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9sRktac1ZJWV9VR3F1NzBLbkR3QnktbnVjUnVZelhrMHZwRGZSZlp4UndJVmpnaTRTOVExc2E5RnhPOTZoVjFUMHFZeGcxU3VmQThPN1A5OXBPVlRrWjl0Y1JRV1lzeVBD?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 24 Jan 2017 08:00:00 GMT",
       "summary": " Testing water quality: When labs don’t work &nbsp;&nbsp; World Bank Blogs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "042 November 2015 Biolife - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWjVMVi15X1NQaTR6enlpemJSZE1fYnV6dEd6MnMwZEtGcnpDdVFVbXpMaXdFVEZNWmZFS1ljSU1WTFF1Y2VqcjZXamhzNExTUXRFZi1yakRXTFlIZWRVUTNhbjdKYTN3MDJxSzBPbFRfZjlDRTBra3ZxeWd5QWRxTU9Fd1VVbzBv?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 22 Mar 2016 02:35:38 GMT",
+      "summary": " 042 November 2015 Biolife &nbsp;&nbsp; Aci-bd.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Emirates is hiring for 17,000+ fresh jobs: Roles, pay, benefits and accommodation, key details inside - The Times of India",
+      "feedUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOMDFOTGVsZ3pBN2JIeHllLTN3Y21UUHVtX253MGdHOFNBQVZOVVBNY1NKUEgyckpaam9EQ3l0YmNiczVnWGRyOV9TLVFfWHZWRzBEYVQ2SjNzby1vS1FheV96V1JwUGkySmxkSkVBRklkRkliNDQwRXdIM3VtNVBPZDFmYUR4TWpNVTJ3U1Z4MmhKaW1VQWREdExUNWlEb3RuSF9oaF95Rk9DVkdfV2NIWEJmaGRUTW4zMjQtU1FoX3ZYNW51cXVXbkl6TlUwTGlZXzVUVE5XMGFNM3hXeW03bHFVdWlJMXFSRHEzNFZvbzZsTW5hbHctVU9NWTFVb2REZVNFSGhn0gGLAkFVX3lxTFBvQU8ydVRRemJrSy16UVY4d3k3YWF2aEpycGZCVEg2VUxTdTBab0Vqa1BjNVoybTktWENXQ0twcUxVR3BmQTBDQlhVMEJfRnJQNlJQNWVlMGpiVC1vR1Jma1IteWRaeExrVkxlX3otZGtYb0Y0eV9ZVTJrdm4yUXpyMlBCUG04U2hhVlppMkV4R3pUcDBVelhFTjJJWFNXQTZ2UV8temFVWlZpTFZjX0lZbmFkc2I5aC1PZVBNTnNyQ2IwNGJyTFlZaXZ2SHk0V0Joc0F1T2pNZVRJLXRwMnpMdlltdEF6NE4tdVlqSkR2Q1RvRDFLY2pZVUhvSGV4SEd5QzZqbnB0cmxnWQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 22 Jul 2025 07:00:00 GMT",
+      "summary": " Emirates is hiring for 17,000+ fresh jobs: Roles, pay, benefits and accommodation, key details inside &nbsp;&nbsp; The Times of India ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -878,6 +1112,24 @@
       "verified": false
     },
     {
+      "title": "Use of transplanter can give a leg-up to farm mechanisation - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcFpBbjRnSUxjdzE2Sm9wNzRZbnE3UlBCa05Zd0JMdDBtQjVpSVY2Mm5wbXRlckJXeUZjU0tnamt1Zks3aEJjTUFrQ3FfRkNWcXVmd3BWRTdkTnl0V2VpWUdxRDAxZ2xVbDE3UDNOQU9Ya3pfallPRm1mcGphUWtBRFJNQ0ZRN2FWWXdoU3NodzlVLTBhX3phX01UVTc?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 20 Oct 2020 08:56:10 GMT",
+      "summary": " Use of transplanter can give a leg-up to farm mechanisation &nbsp;&nbsp; Aci-bd.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Executive/Sr. Executive - Production (Frozen Food/Ice-Cream) at Square Food & Beverage Ltd - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeWE3ZVBBSlA2WEpEWTdHbjRkVGtJbHZ6VmRUOUJlajEyaWV2M1BkYVpQUUxoY3hPQ2g5QmNYaUpNQTB4WG1jRS1HVnNvcUNFUEthdUg0TE1ibGJCeW1hQnBrZk12X0RKU2RhTG8yOENacFFrRnhkVS1lWDBYSktDQXJlM3RkNXE0WTNrc0l3dXZpNUxvWURtbnNBUk80eHJHUHRhbE1QWkR4YWZkTjZIdDd6Z2N2Zw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 20 May 2025 07:00:00 GMT",
+      "summary": " Executive/Sr. Executive - Production (Frozen Food/Ice-Cream) at Square Food & Beverage Ltd &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Johnson & Johnson transforms its demand planning and external manufacturing processes - Capgemini",
       "feedUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPTzc4OFpnTFpqOVhzeU81aWRVVmVrNzBUZ3pNM3FlRXA2OTFNVDZRaTNtWWpRc2w2TEJFSHFxNlF6eGNXMUl3dGFFVVk1NU9TTFhsQVphTm8wNnM3dWl3NENXMVlRVGNvQ0VINllTTWxYMm9kWTVoZVM3LTF4Z0djbUhLNEo1MGQ4TjBtVFp3UE52ZVJ5M1hRYkdEUGhHU0psNmR2UFRYXzRaSV90dlhLQWw4TGVUUzNCVkpwS0ZfV3o1cWhSaEZVazBvbFI5ZkhKWlE?oc=5",
       "feedSource": "Google News RSS",
@@ -914,11 +1166,29 @@
       "verified": false
     },
     {
+      "title": "US-Bangla now training aircraft maintenance engineers - The Bangladesh Monitor",
+      "feedUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVGZnUjVDbXRWbi1vVTNGbmlLamVJNGRWWFRfSmtsM2pwME9SMlNIbTZFa05fYXRKU2dqbTJtNHVxN2xWSVFxajlJYW9sOWVWZlJkTFpFajZlYVVtemFKekF4NnlzeTUwWG5xRFRNZ213VXRZcGVDTWdPd05pT2JMMmppTWtXQV85QlF2UnAwSE1ESDhtVzlubA?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 19 May 2026 06:24:58 GMT",
+      "summary": " US-Bangla now training aircraft maintenance engineers &nbsp;&nbsp; The Bangladesh Monitor ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Career Paths for Professionals in Manufacturing and Apparel Industries - PC Tech Magazine",
       "feedUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNS2p4OThHc05PdEtTSnFFcGJ0MzVEaGV4Wk5WMS0xS0VwQlJEd3FlT2ZIaUZPdGhBQTRRVVhoS1o5QTF0Y0pfOUVNRndPdmxfdWVCenIyanktQ3JpRFdKM2ZQZ0tjeTRBQl9wdmE4emJTV211cWhheVRXZ1RtdV9xdXBld0ZJNnh2TUw2WGlkSER2dzFJWXhpNnBpTlpfa1NsZDdJ?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 18 Aug 2026 07:00:00 GMT",
       "summary": " Career Paths for Professionals in Manufacturing and Apparel Industries &nbsp;&nbsp; PC Tech Magazine ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Store Manager at Sonar Madina Spinning Mills Ltd - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcWZCSTNEeVJ4Y1AtdzctamU4bjB0dm1OOGxON25PT28zWVVLZERVMEJsMjU4UUo4aDhlcXdpZlJlelMtc2I5bWlSU21ZcmE4a0d0QnJZMDVBZHpORGR1Unl2LWhBakp1MlQ3SFF0cXNEUDhpYlpXakplWFFxV2V3TF8yaFR5bUk1V3c?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "summary": " Store Manager at Sonar Madina Spinning Mills Ltd &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -937,6 +1207,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 15 Oct 2019 07:00:00 GMT",
       "summary": " Next decade market challenges for Bangladesh textile and apparel industry &nbsp;&nbsp; Textile Today ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Manager - Procurement at Sunman Group of Companies - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcDZleGpkdkJiOUNGRWV1M1RmZVVoQXZmZXh2R3JhVGVGRTNzU2I1U0o4cWtRYm9HLXJaOWU0cGk2bEkyTnQ4T284N3NjNzFhdm1PLVh4Y2dBNHlhSE9zcjBJZ2RzODkwT0p4dUpDOG1MREV5aE5Gak1XNlc3MnhPRmkwSkNJSVpTZWc?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 15 Mar 2022 07:00:00 GMT",
+      "summary": " Manager - Procurement at Sunman Group of Companies &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -964,6 +1243,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 14 Oct 2025 07:00:00 GMT",
       "summary": " Operations Manager at Brandsquare, LLC &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Global: Garment workers face mass layoffs, suspended employment & reduced working hours as suppliers report reduced & cancelled orders from brands amid cost-of-living crisis - Business and Human Rights Centre",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQU0xWNFduLXQ3V21rUy1oY1JQUkhjRlh2TGRVVExiZ1Q3SHdmZDZhaHFqcDFtcnFxcW9NWjhnUGlYVEVKaHFWR1JkWExCNzBmOTVFal9yWktjcTQ3WWlCS3JmTlFOSUNOcXRpYjlZRUk1bmNoa2lSaVRFcjBpM1hqNVdkVVdkVkpWa045WnNSdk9ZMmU3eGItRlhralBtWXQzc3JLb3Z4SFhIS2c4X19RV0RnX3Fzd0dGYmFYOFRZaXpXcEZnb0lMZEJOSktDNkhuQ0h4ZWt0YmpMSFk5RG11bXNDM1BLX19WbTYyazhiNzRwNng4M1VZZXVCZmprTndKc09HNm5HbG1fbDk3aThoZ0tETllGVHoxQzJyeVVwdUcwR3B1Zmc0ZXkyZWdoaUdxclpManNCcjB4TkVCaWNXV013?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 14 Mar 2023 06:52:38 GMT",
+      "summary": " Global: Garment workers face mass layoffs, suspended employment & reduced working hours as suppliers report reduced & cancelled orders from brands amid cost-of-living crisis &nbsp;&nbsp; Business and Human Rights Centre ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1040,6 +1328,24 @@
       "verified": false
     },
     {
+      "title": "Production Supervisor : Tamim Group Of Companies, Bangladesh - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxZ2NOdjFIQ0JEYUs0T2FvN242dG1hdVV6a0g0cHAyLTFaajFlWl9DUFdLWmlZNUFfaF9BeEs3enRETF84UUhEb2VtWU4zSlRkSFgw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 13 Oct 2026 07:00:00 GMT",
+      "summary": " Production Supervisor : Tamim Group Of Companies, Bangladesh &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Purchase Officer : Akter Ispat Industries Limited - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9CZmRGMUlpMEE5RVM4N3BIaFFGVzVnYmpVNXVpQzA2VGt0czduc1JoYWNXdFU2MnQwQmE4N1hRS3dkVGdodFBDUTF4TlBDaEJKcjhB?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 13 Oct 2026 07:00:00 GMT",
+      "summary": " Purchase Officer : Akter Ispat Industries Limited &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Interviews - Aci-bd.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yVkdjUWJwaE1MSkxrUnR5aWxfRENsOUJIVkhTc1ZqTXVIeUg5dHVNTE05ZzlUY0lURGFpcVlQcUwydWlaNndqYTZxUEQxWWloeWN1blEwM0xLNWctaW9IRjZrdVMtWlROUWVGN1BRY0lDeFc1a3lPTjNqYW1kQ3M?oc=5",
       "feedSource": "Google News RSS",
@@ -1085,6 +1391,15 @@
       "verified": false
     },
     {
+      "title": "MAGIC Las Vegas 2026 brings global fashion sourcing community to Las Vegas - Textile Today",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObHZESTJEM1gwenVacWtCcEJuY2I1RVJaSlQtRlJ6RnVRMmI4Z0dXVUIweTRRVGZaZHV6YktTeVUzemd0UktINlVSRHd4eVRqNk5xRjhrRGVNcFcwNkc1LTZtbEtGZW5vdEc2NDl6MXJnR2ZjUXU0dTFXdVVlbm5MRnFSREdpY3BDQ2VFekoxRlQySTVZSDNTa0tLTHRHZmhZeUJzY1VjQXNIZw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "summary": " MAGIC Las Vegas 2026 brings global fashion sourcing community to Las Vegas &nbsp;&nbsp; Textile Today ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "CAREER OPPORTUNITY AT ELITE GROUP - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fTmpXci0wa3BMNU0tTGlZcHNMQTRXRjl5aUFCRXBvc1J1YnJQa0IyU3BOQzl3QkdSUzRtRG5DeGZvMEdCQXl0QVlxNVZDVnZLNnNzeVJqb1dFYzVKZVNBcmFrZEc?oc=5",
       "feedSource": "Google News RSS",
@@ -1121,11 +1436,38 @@
       "verified": false
     },
     {
+      "title": "Junior Officer, Store at A Group of Company - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPS1FjSWtlaGZFYmQzRFg4c21XSVNYLVVHQ2tLbVpEMkJGVVRtNVhZMURudnRCLXo1M2JKZWt5Rm5SeW4xbDZEeDMxMkpRZjJ5TkxzRkREaWMtU3dmM1hzNnVrYVE3ZmJ6NGxWNkc3SHBqakZDZXdVVTM5YUZTb2dHd3dB?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "summary": " Junior Officer, Store at A Group of Company &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Global Vegetable Seed Leader, East West Seed Starts Its Journey with ACI, the Largest Seed Company in Bangladesh - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMkRnME5PU0hNVVZ5cHJhVGxQalIzbWdBXzl0WUdwNERxenR3OUF6aVE3M3VNSkdLRDJWcTFBVzlBcXRfeGRCTVRRSDRreXUwc1pnUkRTeEJweEVzZDJwWjZVSk96ajdIa0JKWUtnNk1nWFJBZl9VM3ltWnRuTl9OdWt6eWNKY0dEQUdfQk5CaFhVV0kwLVlzX2VOcU9QSWlwX2h5ZXR4WHNjZ0hDZHdhZHlhLTVtcTkyemwzU3EwQ2RvNUVLV2xoMVpSQTZPOGh0Q242TjA2MXEweWs4ZUdULQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 08 Sep 2020 09:03:09 GMT",
+      "summary": " Global Vegetable Seed Leader, East West Seed Starts Its Journey with ACI, the Largest Seed Company in Bangladesh &nbsp;&nbsp; Aci-bd.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Using Open Foris Collect in National Forest Inventory of Bangladesh: ensuring a robust and efficient data management system - Food and Agriculture Organization",
       "feedUrl": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQajRhaEwySy1aRWdRSWR3MWJzcUVqZENkVWJTS2d5LVhvT3pjeVdSd2IzQVlfWXJvc3p0czR3ZEIzdTdOUjQyQ2VFeEpCWkpUWFQ4YXE1eWdiM1hDYktZa3BvVzdkN2NEQTZfbVF4b0Q5X3RSQ0s0bFhFcWZUTGtMOUZOeGhMQ2UtX2hzcHVJTmtsVFFvYzlZMlNJS2hYYndrNHlRanBkUmtKNXJtWEVaMm04V2FaU09DQ202ODA1ZlhzYm5fODFTUjdiQ0d0Q1cyUFZIQlJudjhIUjMyZjBSZzJSam9YTm9LVG91TlBjTG9ZZkRiYzY2R3h4UGFzSWhhVTUtNnU5NjlYVC1pMk91OE5hVVNXQi1kU3R2Y0xfZ1VqUQ?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 08 Jun 2021 07:00:00 GMT",
       "summary": " Using Open Foris Collect in National Forest Inventory of Bangladesh: ensuring a robust and efficient data management system &nbsp;&nbsp; Food and Agriculture Organization ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Executive Production at Paxar Bangladesh Ltd (A concern of Avery Dennison Corporation, USA) - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNY25RTV9YbWp5U0R4bUFaaTRaQjB4RzhIVXNHdFBuX0tzX295d3IyVlRRdFRSQ1hqYjRNakMycHA0WmpEbVlYdEt3Y243X2cxV0RCTHBrV2dkLVU1NnFWb0FPcEd5TmFBWGFGSFBOZkNfR0lVLUtITFVmbl9rOE4yNmZ1bDl3T09jWjBQTm1lNjRNYzJYVTZ2Z1RtdXpsbm5scDFDRkVLTU1YbTZnclRVcjhfYjVISVVYdjFVS3N2VQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 08 Apr 2025 07:00:00 GMT",
+      "summary": " Executive Production at Paxar Bangladesh Ltd (A concern of Avery Dennison Corporation, USA) &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1202,11 +1544,47 @@
       "verified": false
     },
     {
+      "title": "Assistant Manager - Commerce & Management Affairs (Supply Chain Management) : Concord Group - Bdjobs.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VTm5OTEc1MEp0a04wTTdmbk1WRWN4R0o5UU85LUFYR2w0SUhoZ0szc3lmckV1V2wzOUJaYjhOS2MzVUpnMzJka1lDc0RYU0FSQUFF?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
+      "summary": " Assistant Manager - Commerce & Management Affairs (Supply Chain Management) : Concord Group &nbsp;&nbsp; Bdjobs.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Head of Department-QC (FMCG) at Sajeeb Group - Dohaj.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUGxjZHp4dG9FQjRQYng2RE5MNmFqVGpxaFNmU3o5UHRFR1NvX3cyeW9aaDRETFE2NFhxQWVJaFRLME9uVjhxRUxTUTNCMnNnelZYTnFlS1VVZ2ZhVHoybFRzQ1BJbXVjLWxXaXZBYVpyTFNMSHc0UmV2a3R6LWVpaXVB?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 06 Oct 2026 06:11:45 GMT",
       "summary": " Head of Department-QC (FMCG) at Sajeeb Group &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Officer - C F S Operation at KDS Logistics Ltd. - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTBiazlKXzQ3SXlwQjZ0QlJHcmZXQUFteWpRX0JYb2Q1YmdlVmVTbDA5QjY4elNIQkVZWjROMFFNdXFMSnRLY3hwSjE3RjFOSWhFbDNjcHpkY1EwSmRUV282d0FaYllMYlF4bjJTOXJaSVhGbU42RmgwVWZhbktGY0RHOWU?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 04 Mar 2025 08:33:02 GMT",
+      "summary": " Officer - C F S Operation at KDS Logistics Ltd. &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Officer/ Asst. Officer- Store (Particle Door Factory_Manikganj at AKIJBASHIR GROUP - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNb0dYcHdTVHhOLVVjRDJld1dONXA1UE1iOVI4UFFkMXZqaC13YUtna1R4eHdDT1o2ckdZVzlXcTJvUTI5YTdNM3Z5NUR4dFRJeU1UM3lOczd1cmdsOUpGeUJZUFpXZkVvR25sWnQ1cGNkZzlJM0dLSE1tbWlKelZXdWpZR2xubHhPaktDUmpmWXlxejdmYWpMMWJGYmZMWjlLWUhQb3kwTkF5enpwS2Q5Unpn?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "summary": " Officer/ Asst. Officer- Store (Particle Door Factory_Manikganj at AKIJBASHIR GROUP &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "3 inventory optimization tips to minimize the bullwhip effect - DHL",
+      "feedUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNGh3LVNrWDJWenRqd0FqdnJNdHlhM3lzd0Z5Wl9HYnVsdnAweXJQdTlmRFJxX0NVdTBiVFNyNmphWTZTdTl3SVFwRXhpNWpPUkNGNDVULWtxYUdTbzlHODlKM3dYT2NjS2JKTVpqcEktTGlQY2ZhcndjaTM4TVNMa3pKWGUyVDh1SHdPaHdwUGFVbVZ4bnV5aC1HUC1qWHhneDZoSldB?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 03 Mar 2026 08:00:00 GMT",
+      "summary": " 3 inventory optimization tips to minimize the bullwhip effect &nbsp;&nbsp; DHL ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1274,6 +1652,15 @@
       "verified": false
     },
     {
+      "title": "ACI invests Tk 1.1b in plant expansion - The Financial Express",
+      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZUh4MWhwcXI1WHhYb1hTcUE0VXF6cXhWRHZFQm5pVDBVZjdHM2xraTh0WWx1c010Z2hOT1lWZDh3LTVtTUdYWmhyNGNWN2E2MzJsUG9XSWFwcjQ3NUFmV0k0VVNxZzE0VDJLUUU0TDNuQmEwcHpyQzdqWVctNnhNekVfY1ZPVjJXNDNMX2Njdzdwa2xWUHFzeTVB0gGmAUFVX3lxTE1Qb1hGY3FDWFUxNHY1Nm03dF9BR0ZZZC00QTd1SkJjYUpHOHN6MzMxcTRDTzdsU1JMSzJmNTN5X3NueGlXRVowSTg0d3NMVVNoS095ZEV4ZjNyY1JIVlgxUVZYRE1XV29kMUlCVUpvRzJnRHpsR2NMeW0yVTVYSk9KOThzYm4tRndWN3dBdW9LWE1JVW55TkNDTHNpV1UwRGU2WGU0LVE?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Thu, 29 Sep 2011 07:00:00 GMT",
+      "summary": " ACI invests Tk 1.1b in plant expansion &nbsp;&nbsp; The Financial Express ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Maintenance & Utilities Engineer - HEINEKEN Careers",
       "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZjJqVmt6NHFzc1lLQ3FmTHBCb2J3YS1HM3FxQS1vZzYwSjNFMXEtN2Q0Mmx3U29KN0lPXzljSDhPN3ExUzh4UUJybHo5OXJ5M0o1aGhrOEtmS2ZwSWpPM3dIS0w3WjB0WXdQTUVwT0g5cE9XM3hvS2paczZKa3gzYVgzRVlmZDM4S3I2ZkUzX2hXcExneTcxSnhYWVc4TDRhOTBkTFVGSHk?oc=5",
       "feedSource": "Google News RSS",
@@ -1292,11 +1679,11 @@
       "verified": false
     },
     {
-      "title": "Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group - Bdjobs.com",
+      "title": "Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ua2t6VXBWazFVYXhfMUx2VDl6VmQ0YkhZNXhLNnpBd2RZaXA5em5KTUYtSU43bFQ5VWxfSms4dnZSZnpvSjlmbTBvWU9seW9QMDN3?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Thu, 29 Oct 2026 06:24:43 GMT",
-      "summary": " Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " Head of Store / Store Head : A reputed 100% Export-Oriented Garments Manufacturing Group &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1328,6 +1715,15 @@
       "verified": false
     },
     {
+      "title": "BCIC proposes 11 new ventures to restore profitability, create jobs - The Business Standard",
+      "feedUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWXI0SGczVWJ0R0tJOUQyWF8yaUNqa0tES2JjX2UwNHpQVFhMY1Nla3pZbFdpTjY0TVlmZ0l0RmdmTmFiUERkMkM0X0NEa2dnM3VqRE5qMHRYZXVxV3pfaE9qSUtITzB4TUh6TVRZY25Ic0RsWXhvQ2dUQzVtSmRacTFZV0ZseHNTZlY2Skd2Vkw0ZjJmQk8yRnVuQ3dpOGZmWUdubndB?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Thu, 27 Nov 2025 08:00:00 GMT",
+      "summary": " BCIC proposes 11 new ventures to restore profitability, create jobs &nbsp;&nbsp; The Business Standard ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Developing Competitiveness: Creating Jobs and Reducing Inequality - World Bank Group",
       "feedUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOd01DWmhGOVk0RUl6T21zRURPak9rSHI2T0pZNndQaE1QQXBTaHMzQ3F5WkVpQTVINTF4S3ZFYzkxWjlSdGhHUS1RSDdWZUU2cWYwZl9SN0VCNUI3Mi1yV0dEeGxSZTFRWDBRWDM0RUREcVdCZkozRkE5RGpCYTV0UzBTVFZtY0JzdEVNMy1iTlNqRWE1WEtFb09SWGpyalhLRHc1ZTBSSXI5eXdnSE5TWHllc1lMaGdIbzB3UnR6eFdnTjdMcXJPeW9JYVg4Yk02alE?oc=5",
       "feedSource": "Google News RSS",
@@ -1342,6 +1738,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Thu, 27 Aug 2009 07:51:54 GMT",
       "summary": " Procurement &nbsp;&nbsp; UN World Food Programme ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Mitsui & Co. Asia Pacific inks strategic partnership with ACI Logistics (Shwapno) - Aci-bd.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOLTJORDR0dXIxeVZCT25XYTBfXzZ1dG9JSDY3TkVsMnVKWVNJeFlHa09JbEprRVFMTHBYT05VSFVWUEl1V1pfbkx4eUx4bnNleWxSVGZRUVZjMFRUTE9BNktmdzU1M3NYVEVBck5BSk9XT0RQS21zdjBWVUJaUVZtSU5vQ21SeXZyY3hTREZuUFh4THVJbjNSdXBQQXY2SHM3UU5CU0FSbU5NaXBsbUVEZUU0WU4?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Thu, 25 Jun 2026 08:47:16 GMT",
+      "summary": " Mitsui & Co. Asia Pacific inks strategic partnership with ACI Logistics (Shwapno) &nbsp;&nbsp; Aci-bd.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1364,6 +1769,24 @@
       "verified": false
     },
     {
+      "title": "Junior Engineer - Fan factory at XXW Sourcing - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTlZnNDQzMm5rWlpxbUF2N1VEQjBDb3lHeWJjUEM5cDVyY3VXRmVFb0g2SXlSZVY1UTl2cUx1VUJHcnZ6QjZCdGNRNk1HT2VHZm5VSjNlWDdrd3FhMWVGNXpnODNTSnNrNk5rdnh6dEJEV1BXQnNEVTBLYVp6YmxuaE0yUQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Thu, 23 Oct 2025 07:00:00 GMT",
+      "summary": " Junior Engineer - Fan factory at XXW Sourcing &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Store In-charge, Ranks ITT at Rancon Holdings Limited - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSWE2WnJpLVZxbVBFaDhodDlRX3lvcklhaU8yN1hfZFI5RXN6RmM5RXhCYVFEYXVtWmMzXzRkZVpPOTExWGFnTGdaN09BSWZvNFYzOW1JdTV3b3hhOEdOXy1DWjRJRUt6RkNqeDVMdzZjZXhPVnBnNDhEbDkyaFVtYTNrQTA1ZUROOEs0aWNqbw?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Thu, 23 Oct 2025 07:00:00 GMT",
+      "summary": " Store In-charge, Ranks ITT at Rancon Holdings Limited &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "Production Planning & Control in Garments industry - Bdjobs eLearning",
       "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOUkVrc3JPaU5OSFNvSmpWU0dITmZWQzQwNVdQb1MxOWwwVHpqMmNUZDdkSzIwcFhaaENrbWFQaEVyOEVIbHhPV3ZyZ1phZDJxTGtpN0VrUjJQTmU2YnB4OWp6NnRqaGtNNG9FR0daZTliQU5iM2JZaXV4RmFJdXptRDVB?oc=5",
       "feedSource": "Google News RSS",
@@ -1373,434 +1796,11 @@
       "verified": false
     },
     {
-      "title": "Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) - Bdjobs.com",
+      "title": "Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9aNDh2ZDlaQm5CR0QxT09xdU05alFNeExpQVRabTVQbHYyTHZDQWhieVlzQkk0THVxMGlicUlSTEpYX2QyOVVYTDFrNG15WWZfNmhV?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Thu, 23 Apr 2026 06:43:38 GMT",
-      "summary": " Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Finance & Admin Officer at Prantic Unnayan Society (PRANTIC),Bangladesh - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObWZhNHotekxrckhaaTdYOVZ6NEZBd2pZUnF0a3Z3TzAyNm1JUm9qUE4wbFRWbWJza1JPT0NCUkY4UEFlTl8wQjhsdDJGb3lOWTRoY1hrdGgtR2FYcDJiZXRqS2plakFYdVNUNHpsS3hSM3dYV3pLVjUtRU1CVVk2R3QxeGtQa0Q5Mnd4NTB5eHVWSlo0S3VpUzR2cnlvUU5wQmc?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 21:16:27 GMT",
-      "summary": " Finance & Admin Officer at Prantic Unnayan Society (PRANTIC),Bangladesh &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Plant Operations Lead-Agri Business (Rice) at Confidence Infrastructure PLC - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNWt3MGI3NkFZVnMxdXo1cExkWEFBLUFjNllLdkU3ZEdrRXBKMVJ0SS03YnhqNGtmd3JQckdIMmJ4UTBXWl80SW5BQWktRkdPSndydndPbmlGWkZnY3NtZGdocTFlNWluX0lUS3UwRTJvUndURFMtSVhWVVVIOGY5bG1KSFFrektUWHlTanZ0TnpoOUJJN2M4dFoxMnY4TVZwRVRZdEw1RGtDTlk?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 16:48:37 GMT",
-      "summary": " Plant Operations Lead-Agri Business (Rice) at Confidence Infrastructure PLC &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Head of Factory Operations (Cut to Ship) : NAZ Bangladesh Ltd - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTE96X1hfU3FaQnZoWHRHRkItb1o3WDJsV3kyLVFFVzlGV0cxYVdMNHcxTnBQUFdZRi1LemdXTTEydGgxcWxRaUpuQ2dpOEF2bVNraXRheEE3ZUk5c01MVjJTQWY4Q0FZYXBMRzNyZg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 13:49:55 GMT",
-      "summary": " Head of Factory Operations (Cut to Ship) : NAZ Bangladesh Ltd &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Executive – Store at Primitek Group - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBSY01NRGk2cEJ2YXloWFZ2WEJkNUU0ZmFTTUd5Tk94YWdudUduMFpxeVNFTll4TmxWOU14VXZTaElxaXNob3d2RzRmZ2EtTzVHa1J5MTBfVThPdTFMZV9qaXF2M1JNZ3IwWDZBS0VkQW95RmtsQ0E?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 13:42:12 GMT",
-      "summary": " Executive – Store at Primitek Group &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Call Centre Executive at Diamond Melamineware Industries Ltd. - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVnlNazlNN0tOeTd4U3lXajlRMVNjM2pVWTE4N3ZWR0tuM3I4TGVtVDhfbC1pOVdvNEVsUHF0TFZmUzlHZHhuWTg0SUxBVTdKTVZ5MzREVXhORW9GeTdPakQweW95MFQ2TlVsVHlocy1Kb2VOU0xWcjdBbjlxaGNqcXVWRFNJWkpITzNsM1BqRjk3Y29Gck0zY0d3?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 13:16:39 GMT",
-      "summary": " Call Centre Executive at Diamond Melamineware Industries Ltd. &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Head of Factory Operations (Cut to Ship) at NAZ Bangladesh Ltd - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcWQzT3FQQnUwZVNTMlZnOG9NZ3htTUx2LXVQMVJtMUZXSHpsV2EzWVA3QzB4NnllbTNwUU9OVTg0bHVWZzBSU0F2aEs4RFBLNHJURlZyRmFSTV9GWHF2d2lkcTZsSWRnMGhZTjJnelVLakt2eVUyd29kcGRRaUtrTTBNRmE2ZlVFal91dE1nQ0pneTJPQ3RlNzBn?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 13:16:38 GMT",
-      "summary": " Head of Factory Operations (Cut to Ship) at NAZ Bangladesh Ltd &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Assistant Manager – Garments Planning at Liberty Knitwear Ltd - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUEJKM1FwVHl0cTFqNHE1YnQ1THM4OFZaTmFuMVBOdTBBamdZSlNfa2FlUnhuZk1VcUl6dlJpTVFFbVpTVTBoWmYyeHNCSzU0YV9iUGphUW9Ba19Hc3ljN05kUzhsaUNWa3FpRFRVazI3eTJyVWxNNHRCd2ROZTlxbjA2Z0JtRVJ3MU1vR193UC1udndHaXA4bg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "summary": " Assistant Manager – Garments Planning at Liberty Knitwear Ltd &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Officer, Store - Agri Business (Rice) : Confidence Infrastructure PLC - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZVzB6WW52N0IxM3lMYTFnUnVIV3dYUXdMZ25xMTVuWVdqcHJNMm1JakJ0b0lQbFB1Y2F1Z3pyb2FtczNsLUtBRnc4S1NhM0xlVHBZ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "summary": " Officer, Store - Agri Business (Rice) : Confidence Infrastructure PLC &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Officer, Quality Control – Agri Business(Rice) at Confidence Infrastructure PLC - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPUDVwTm9IeWhPUElSb1hpbFp5dXA4UVFva3FjQkJTZUQtQ2dOWUxvS2R4WVRRMjI0aVl5UVowSjNPUWFuWHZDWWMwc29zZlNrUERzQVZJVFJjQkVMRzhUODd2Vkd4WHhqdUJzSEFHUFhyMm9EcGhjVlk4SFZKWUx2VXJrUGIyOUlaSVFhcThPdDZZVTA3cVowTHVfOHZJblZ1ZDlHWlhSR0pGZTh5?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "summary": " Officer, Quality Control – Agri Business(Rice) at Confidence Infrastructure PLC &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Industrial Engineer job with BD (Becton, Dickinson and Company) | 85379959 - SWE Career Center",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TbmZCWV9fekJSWmF1d1FGWFNkMVNZZ0sydG9HemFMcl9xejg5MU1nQlhTeG5LQXlIVkNPN19uZ0dGOFUxZzhraENGUWFZX3ZLQ3ZyVjFnUEdfelBDc3EtTW16bkhNblBr?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 07:00:00 GMT",
-      "summary": " Industrial Engineer job with BD (Becton, Dickinson and Company) | 85379959 &nbsp;&nbsp; SWE Career Center ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Senior Executive - Accounts at Friends & Co - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SWnVtQkRzenpwUHpaVlJpaHZJZmhlWUVUdjR5ZDNTbGhmRVk5UFdqVTBXeldwakZkZUJya0tJODRQajBsc2I5R0REOV85MlNWUUx5c2hHWVJLQ3UzTVVnZ1hTekszaGJWYWxUZmU5bE9FQ2U0RFRSTk9UdE14UQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Oct 2026 05:14:09 GMT",
-      "summary": " Senior Executive - Accounts at Friends & Co &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "A low CGPA will ruin your career: myth or fact? - The Daily Star",
-      "feedUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPT25FVDVvc3VfQlBIT0h3ZEUyTWg2SU5FSmRZNF9zREhlTXpfeXZaQjNhdEN5RXlucHAxUVY2N2lId1RZTTdjTGVNWFpwVV9vMjFBS1NoVVhNZjY4VkJwZjRqcXRWMW1rWlRCQzUyUWM4RHpWY2hObUF1Z0FGOUZETGNEQW42X0RmbGV0cnptRmFWMHdv?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Mar 2018 08:06:55 GMT",
-      "summary": " A low CGPA will ruin your career: myth or fact? &nbsp;&nbsp; The Daily Star ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Certificate Course on Supply Chain & Logistics Management - Bdjobs eLearning",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNbmZmYUpaRlRneWNUYTJNZ2lFRHVzZVlYR2tWcnc5akFzNlFWQnl0U0ZoWFlwMlpzWGtaQUh1dWFlV1BfOHg2TXZCekpqVTNIdDB1U2NoSlRETnJSVlg1dGZIdzdsaXhlQTdFNXUxT2tkakhoZUVvalNySVNGUTItR01B?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Jul 2021 11:40:14 GMT",
-      "summary": " Certificate Course on Supply Chain & Logistics Management &nbsp;&nbsp; Bdjobs eLearning ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Public Procurement- PPA2006, PPR-2008 and e-GP - Bdjobs eLearning",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZm5mNkRxeTFwd0JidHVSZDVJOG13NUZPYTF3ejlZckZrTDNreEk5MndvVERMR0k5SGNFeG9GRklDZkRiZFI2WEJEQU1fT2tQalVBNUJONVhYQkpwZDdyTGxiZ2hab2hibF94VlBIS1VjZS1kR2EzcjBDTlBNVnM2Rmh3?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 22 Jul 2021 00:50:09 GMT",
-      "summary": " Public Procurement- PPA2006, PPR-2008 and e-GP &nbsp;&nbsp; Bdjobs eLearning ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Xiaomi opens smartphone manufacturing plant in Gazipur - The Daily Star",
-      "feedUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSmNidlJvejNsM3Z2UzFWTERXeGFtV0FqSmExSWRSTWFFY3VCWWRRZUo5UGtVUVhoSGZUZjFCaFlvWGZqSkdVUUtSVGlMSVNfT2tLZ0w3MlZRblZDR3FrSDZMNkVlcC15YnZicFctQmJ6SUVJUzVVTEtrVFZ2YnBsQlZUWDVwV2ZDcHkzTHRNTGVER0VIN0pQWkV0aW54WTFLdFVHcA?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 21 Oct 2021 07:00:00 GMT",
-      "summary": " Xiaomi opens smartphone manufacturing plant in Gazipur &nbsp;&nbsp; The Daily Star ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "A better BCS exam can create better students, job seekers - The Business Standard",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcF9yZjVlNl9XMHN3MmZZZ3BrVGlTN1lyLUp4WExCczdxdkxIdXF0ZVZpZGpTTjd3bndUaXJJZUFyN0Y4ODdGdU5leWFfNWJ2aFhKZHNoZTZuNGtWU292eHptYjVvd2E1RjZadWRscEFNdTVrMk5BR0VEcEliTXlvNHdzdGVKN0VRLWRhS1Znc1lfQmtNYW1LR0xB?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 20 May 2021 07:00:00 GMT",
-      "summary": " A better BCS exam can create better students, job seekers &nbsp;&nbsp; The Business Standard ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Walton Group| Best Electrical, Electronics & IT products manufacturer Company in Bangladesh - Walton",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiOEFVX3lxTE9yRWtmWi1DdjMyU0QzVjFTQms5QVZHUTBZYzdGa3ZMSnI5ZHRPaU5Pcjc2Zl9kLXFT?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 20 Mar 2014 00:51:32 GMT",
-      "summary": " Walton Group| Best Electrical, Electronics & IT products manufacturer Company in Bangladesh &nbsp;&nbsp; Walton ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Assistant Manager (Production & Factory Operations) Smart Hi Tech Industries Ltd : Smart Technologies (BD) Ltd - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mS0VOLXFGazhuaTk5ajVzdU1naW9WMmtGSTl0c2hhQjQtRVhjalpXeG1tUHRENnN1Q1IwVDVPRzB4ZEgxOXVwX0huaG85QlJKbjlMUmNvbEJILUNoMXJrSmZ6QmxReGpjeTc3ekNB?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 17 Sep 2026 07:00:00 GMT",
-      "summary": " Assistant Manager (Production & Factory Operations) Smart Hi Tech Industries Ltd : Smart Technologies (BD) Ltd &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Menzies plans $12m investment, over 1,000 jobs at HSIA’s 3rd terminal - The Financial Express",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOTJOR2N0WUhnc0RQYjBnODRwOFR5eWtBcjNuTWFjcVpKZW1pWXVpZlZlbmJDWDFvVWh2V1pCbUF5SUxEeEg5SmRIX3A0bUNGeFFRZ1VSb0xYLWtObURqcXBqTF94TjVrbWxTWWt2cHB4NFVQVkJVX2FkTW5mVVRWNWt3QTRzYWJuNGgwRENhQmdrZE50THFQbkxOWDRaZl9xNGhqaTJLdy0?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 17 Sep 2026 07:00:00 GMT",
-      "summary": " Menzies plans $12m investment, over 1,000 jobs at HSIA’s 3rd terminal &nbsp;&nbsp; The Financial Express ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Future of jobs: Are we ready? - The Daily Star",
-      "feedUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQanpweHVoazF1MlFhc0t0UWhPbTBXYzJpb093aWY2YkxoNFZaU2YtNGtRVnJvRjF4UmNSWDRzaUpENVhiMzdzajhpUmppNkczeDZabnpyOV8xZnQxZ3dWVlJwY3JHaGwxVThyMTFBWHh1Z1d4R3lCTFE4R1I1U2lMRw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 16 Jan 2025 08:00:00 GMT",
-      "summary": " Future of jobs: Are we ready? &nbsp;&nbsp; The Daily Star ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Assistant Manager - Planning : Park (Bangladesh) Company Limited. - BD Jobs",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IV0Z1M0FsLU9CSmZUdUw3M0h0Rm93aGJESjE4bjVYQjVMNHBSZHB4SjZzbGxPeFQ4RVUxWl9pbUxJbmxlZHRiZlJEbjdJYjJMTzRR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Oct 2026 07:00:00 GMT",
-      "summary": " Assistant Manager - Planning : Park (Bangladesh) Company Limited. &nbsp;&nbsp; BD Jobs ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Plant Manager at A Leading Crop Protection Chemical Company - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNTNoeFpyWUNNeDcwajl0UW1vcFNiZm5XLWZZUHN3MjNUdTJBSzRzN0lfVEdnTno1dlJMelRYN19zUVZsZXNTX0xCWjI2a3dEczJLdk4tdVhSNUVVV0NEbm5CME01by1oYWw1MjRJVGExOW5SWjZpajZoemhNS2JseG5QOWcxTXhfd0NVdjNndW15WDczYW9tMQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Oct 2026 07:00:00 GMT",
-      "summary": " Plant Manager at A Leading Crop Protection Chemical Company &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Manager - Procurement : Momen Real Estates Limited - BD Jobs",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5FQ1lzaDlWZFVkdTV2RjBkTGJSQi1kNHdWYTY2aTVEdnNSYXdiUWYwWTM1eVQ4LXdHTFFOU0tHQWVNalFHY2xfWVVmYzZsVVA4cnZn?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Oct 2026 07:00:00 GMT",
-      "summary": " Manager - Procurement : Momen Real Estates Limited &nbsp;&nbsp; BD Jobs ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Executive/Sr. Executive - SCM Planning : Akij Venture Ltd. - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5rVlZlblluOVo2MXVLdGVVSkVLZGxWY3JSM1VIeFFZYmZmWVphMHU2U1lfRE0zem1NRGwtZGxMQ2lWVXZxMWFER0lmc2NBNHBUMFhR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Oct 2026 07:00:00 GMT",
-      "summary": " Executive/Sr. Executive - SCM Planning : Akij Venture Ltd. &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Administration & Logistics Management - Bdjobs eLearning",
-      "feedUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fTmJJcUZvaEtlcGlGTEdfZ25lSWN0aVlhVHVzb2lCVkx5RVNrdXlVMTZwRjVPdnZWRTU5NmM4Z3BEaDVIYlFSMVNadmczbDNoNEYyWXlKZHVlb3BoMFZRalF0OUkxY3o2ZVFsbVF2ZTIwS2ozV25pVHkzX3R5MW8?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Jul 2021 14:22:35 GMT",
-      "summary": " Administration & Logistics Management &nbsp;&nbsp; Bdjobs eLearning ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Business Analyst at OVS Hongkong Sourcing Limited - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQM1cyVFc3WXFqSnRHTU90ZlRsREh1c1RiSmh3MEZENTB0X083NkQ1dl9rY3l4ajZaOVUwYkt4c3hNZ1F6TmZUREQ5QzktYmkxUXhnd0F5ejUyaEN4bjVTZkN1eVRBU2dDcHBPdjdhRl9EZGt2c2Q0OGFxTjhHUk1VbFJfT1d2dVl3SFNR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 15 Jan 2026 08:00:00 GMT",
-      "summary": " Business Analyst at OVS Hongkong Sourcing Limited &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "‘SIPEAA CAMPUS TO CORPORATE 2024’ held for the new graduates - Textile Today",
-      "feedUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUVpHZHJHYW56MHNEWElIdkM2Vm5aeVlWRjBaOHlUdEVoZUJ5bmlDMzBOV05NWGtrNml4VjFlQm0weDFTQXE5cnF4VTVqUkhJSW90WHdLb2hDTjdXRHg1WjV5aVRENnZLcklwaGhRWU1neHUtN283dGNUclNZdDlxUy1qQVNmOTVJVUdTeXNSOXpJOGpo?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 13 Jun 2024 07:00:00 GMT",
-      "summary": " ‘SIPEAA CAMPUS TO CORPORATE 2024’ held for the new graduates &nbsp;&nbsp; Textile Today ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Operations Manager at SPACE ESSE - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zYVlvSmFSb2t0TlBRV0tHZDdPWTVIOGlwNjA4b1F5eHZ6RlE5X1k5aFdpTVF0ZzJmenZFTWVNYjJKamhoLUl0OWlncW1HaWxldXlzV3N2czFtZDJ5NkJRZnA3aGxDUUJKU1llWkJzLVExUEFa?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 10 Sep 2026 07:00:00 GMT",
-      "summary": " Operations Manager at SPACE ESSE &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Assistant Officer - Work Study at Youngone Group-Chittagong - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUFNaVEloaDZEUVg3bl9CSDloM2xubzR3bDQwTzVNSjFETjFaaU51LTVBbzF5YVlHVVRSRFNZZW0tczkyOHpmN3NBX1BFNUNSRFZwMklTS05nQjRKSS1qaXNPUnFUc01wN2dhLVFnTGRLOHZYQXdRQnc3N1dsZmdLOUpwdTVnRXBzR21iVlFZZFp5Mk1YWmc?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 10 Jul 2025 07:00:00 GMT",
-      "summary": " Assistant Officer - Work Study at Youngone Group-Chittagong &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Security Guard/Supervisor (Dhaka) at Khidmah Hospital Ltd. - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSS1QNXZQajBkc3luc05zY1dXTTJlX0tWaXZDU0I5NWhUeEg0aU1yalpIZkUtcTVKSmhNOFVsZUFqSVkzVXh4TS15RGVfQnlmRklpajFpM2tlRHF6R0VWcy1PQ250dlh4Njc4Z0R0RUN4cWh6RUZJQ1hnQVNLV0ZRcllWS1JtTnczLVREdnVtYjBfZw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 12:15:40 GMT",
-      "summary": " Security Guard/Supervisor (Dhaka) at Khidmah Hospital Ltd. &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Supervisor/Officer (Production) : Kaixi Lingerie Bangladesh Co. Ltd - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1oQ1g4OTlDOWkweTZUTTAtT3U2Qmh1TVZCZDdNMzQwWVRoQmJ5eXNrczJWYXUyWlpJUmk3R3FnTWJLSmZpZzYyS3MyWDhMNWlpclRv?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Supervisor/Officer (Production) : Kaixi Lingerie Bangladesh Co. Ltd &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Production Sample Maker : Kaixi Lingerie Bangladesh Co. Ltd - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5pMlVEOGFXZS1TMXREZ1h6bDlmLUxYMmg0VDVLMEo1ZzFOVDhBbFdLeUNrOURkNlFuZFpHUkhiQ1VfSkFGaHZja1hJSWtUdTVwZmFR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Production Sample Maker : Kaixi Lingerie Bangladesh Co. Ltd &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Quality Control Officer : BKY Jute Mills Ltd. - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5xYzJoNnM2c2I3NkVIX0Rzam1kN0dhMEViZTZNb0dvQ0xnUVBkY0I3QkpqdmdLbHdoR0RTUzlPb2pyR3hCU2R4SFZRbUlXSHBrZERv?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Quality Control Officer : BKY Jute Mills Ltd. &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Officer - Industrial Engineering : Apex Footwear Limited - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tS0xMLW5EcGNwSzM4bHpRVzhBZWhZOC1DNTdwdzhqQkE5Vko2VmlyRTVENkpLMlI4T01aQVpZVWZtRE1TYW1fN01WVDNTSVpveXhJ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Officer - Industrial Engineering : Apex Footwear Limited &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Production Manager - SMT : BENLI ELECTRONIC ENTERPRISE CO. LTD. - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9sZGJod0tEcE5rY3IyUUtDbVJteWo0cldvQnVKTUJJQVFYc3FrRTdXM2U3RVNXTmxNLWV1SmdTM0lWNW9hR0xGakF5dEcyeUFnaWNJ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Production Manager - SMT : BENLI ELECTRONIC ENTERPRISE CO. LTD. &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "DGM / GM - Planning (Central Planning) : A Reputed Knitwear & Garment Group of Company - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YYkxSazFwMTU2cVV5UjdOVHN6VjA2MlhhTFFMRnY0ZGVVaVQ0cWZ6SWJ1REFKc1dVX2pHSVZxdEpiVEd5Qi1SNC1wYmFibGRDMVpN?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " DGM / GM - Planning (Central Planning) : A Reputed Knitwear & Garment Group of Company &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Production Manager - SMT at BENLI ELECTRONIC ENTERPRISE CO LTD - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPODhPTmRoTHBzZFBJV25ZMDdwZjBGSUZpWWg4YU5abWtyTFVyZEtxYjBpdFNkTUhPal9JVEJpQUFkMW9wa3B5clpqZF9uX3NEQmFmTWVaTDdqclB0VjNZa21yZTlkb3FndXNTOTVaRjVmZVJhcXZjOVNxcy1QdUZtSldUSWs5U01fY1NYN3dqVjljUS1RYUhZdXBR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Production Manager - SMT at BENLI ELECTRONIC ENTERPRISE CO LTD &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Deputy Manager, Process Engineering job with BD (Becton, Dickinson and Company) | 85371384 - SWE Career Center",
-      "feedUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4xRmNScnhldFJETm9sVEQ3LWhqbEpZQ2FSaEE0U0NoVndyQ2tib1VhZEM1Y2hGc19LRU1tYlNOS215WGh1Tkw1bXZpN3BScnM3cWN0X3FONEEzcXhWVFRhSFVyMDl2QjNWSGRiU1B0Vm40TjNGOXlvbVFvWXg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 08 Oct 2026 07:00:00 GMT",
-      "summary": " Deputy Manager, Process Engineering job with BD (Becton, Dickinson and Company) | 85371384 &nbsp;&nbsp; SWE Career Center ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "CNV Production Engineer - Sofidel",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWFdURUstZVNicHZrVmZxSEtzdUVwdnBuWGhpZmtJOXk5Q1JGZWJEY29yUURGbUVLd29ucEY1NHhHTDhhNVFzWWY5eFZwWHZpWGtQeTk0YXlXdTJnLWR6NkpzX2kzQm9pOElNM2MxcHNaRlJSdmpPOVNSNzMtT1JLeUl3RG5SdjNWYVE?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 06 Aug 2026 19:15:25 GMT",
-      "summary": " CNV Production Engineer &nbsp;&nbsp; Sofidel ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "All Jobs | Intact Careers - Intact Careers",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0zVWNhOS1WTEJaTTNBbHNzMkR5ZEVOQ0ZxYWJQaUNqMFhsTF9zMzYwQTBGcWU4SzRjLUJUUW1US0ozQmxaemxsWg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 05 Jun 2025 04:41:43 GMT",
-      "summary": " All Jobs | Intact Careers &nbsp;&nbsp; Intact Careers ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Dyeing Master (for Garments Wash Factory) at A Leading Knit Garemnts Group - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT1BLVHBaVEZzQ1BwRFlSc1FRZWQyLTkyM3BndEFVR1l2ajByYmhWcVk4ZXFZWDZRT2RHYzJyeERqOUJGeVBZUUtFd2l6a0NzZGtPaEJaOExoY0pGY1VEN1A0VlVFcFNRZm5JY1F4aHQwUHpUVU5pUzRpNGdPZ3JocTczTUF0SGlBaVFOYzhqdGtzLTZIcmx6Sy13YnNrdkJRRkp0RkR1VWttQQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 05 Dec 2024 08:00:00 GMT",
-      "summary": " Dyeing Master (for Garments Wash Factory) at A Leading Knit Garemnts Group &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Scientific Seminar on Rice Production at ACI Centre - Aci-bd.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTFZXVDAzYWowMVUteTBYZzVNaTNfeHNLVEp4ZkM5ZFFyZmpKMHVjWGJfVmpaaDQ1QndOTGJsZjlsYVlnVVVOM0ZCSDRZYzhOQmZjcGxXdGRjMkdLNXAtLWpmdzBnYWFmbWFZZ1ZhUHV2b2FfazRuRHZueHZqYXdHeHhqX19Sc2M4RXUyVEd1c05hUQ?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 04 Apr 2019 11:48:16 GMT",
-      "summary": " Scientific Seminar on Rice Production at ACI Centre &nbsp;&nbsp; Aci-bd.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Executive - Production Control Unit : MAS Intimates Bangladesh (Pvt.) Ltd. - Bdjobs.com : Largest Job Site in Bangladesh",
-      "feedUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBJQjREdXAta1pULXhNMExDV0JJZGliYWEtSXNqaTBIcXUtaVV3R2N2Snh0a0h3aG9XcDdOX1Q0ME5jVGZuU2FOT2hHU1BQcndjR1U3Z09aWERMUmRJWXZneXZxNVVrWXJqYjVKQg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 03 Sep 2026 07:00:00 GMT",
-      "summary": " Executive - Production Control Unit : MAS Intimates Bangladesh (Pvt.) Ltd. &nbsp;&nbsp; Bdjobs.com : Largest Job Site in Bangladesh ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Digital Marketing Executive at Universal Menswear Ltd. - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWTltMVpCczRYWV9QWnRVakJnRW9udjhqcmliRTlqakN5b3l1Tzg0UXdjcXEtajBRcndYNzdWUDZESkliWUVwRmZEbHVkTjI5VkJqcnR2bGliTzhCMG04UUM4U2s2bE5uaW4xaU81cDVUMEJteXJWN0g1aFAweGFsdDdWX0JMVXhsQ1RwTWllYjg?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 03 Sep 2026 07:00:00 GMT",
-      "summary": " Digital Marketing Executive at Universal Menswear Ltd. &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Muslim Hands International - Bdjobs.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qVnNwYzBxSE1sMmNuSVhGNVhCRTAxU3JGTC00U0hndXh0eHM1V2xkd0NDcWVWMWI1RDhJOHhFTTZqaElmX1NveTd2emJKQ2FMTHBUMEM1RmJyU0Ryb0FVNlFvU29YVmxPNGxLemdR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 02 Nov 2023 06:03:42 GMT",
-      "summary": " Muslim Hands International &nbsp;&nbsp; Bdjobs.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Transforming India's Logistics Sector: Challenges and Opportunities - IBEF",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTlZnb1N6dXJFQWJTMXd6NEpxVnVTalRTU25VYS1QQnFyZnNXVnpqN3VJcjdIcWdCNUZjZHNPU1kzSmFYNF9UUE9oN05rS01FSGFmZkZ0cVFSN2Qzd1p4SWVBbkphX3lGNzhtSGlVUTVzVWNsaXduWmxEWE45OG5KUFFhdGM0SEhNZW5ITnphSFFaX3JaYVZfY3BtaWd3VklhMVdUT0xxTHVHWTA?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 02 May 2024 09:00:30 GMT",
-      "summary": " Transforming India's Logistics Sector: Challenges and Opportunities &nbsp;&nbsp; IBEF ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Meet a supply chain ‘guru’ who handled a pandemic supply chain crisis and intends to pass on the torch - The Business Standard",
-      "feedUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQazZsUTI4Rk42Yk01MU5NV2k4RHVISWFwOVlwbEwzX3JTcTVXejV5cXEtM3AzbXE2YVp6X0JibUFNdlN5NTZTNzNqYW80eEcwZnpjeTZBTF9EbUJDUWFtd2xLTzhaRlBmUFNvRmlkSlBEbExCR2JQeWVXNFd2d1JOdXVmM0hoUU5lOGsyVlRhLTlxV2YwU3Q4Q0c3N2FnaU5yeXdYcld4RjRISHV0NjB3SnpSem1QTUFyYnN5S2Fzdw?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Thu, 02 Dec 2021 08:00:00 GMT",
-      "summary": " Meet a supply chain ‘guru’ who handled a pandemic supply chain crisis and intends to pass on the torch &nbsp;&nbsp; The Business Standard ",
+      "summary": " Cluster Manager / Area Manager - Restaurant Operations (QSR) : JUBILANT FOODWORKS BANGLADESH LIMITED(Domino`s Pizza Bangladesh) &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     }
