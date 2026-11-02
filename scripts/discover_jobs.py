@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "sources.json"
 PENDING = ROOT / "pending-vacancies.json"
 MAX_ITEMS = 200
-KEYWORDS = re.compile(r"production|planning|supply chain|industrial engineer|opex|quality|procurement|logistics|operations|store", re.I)
+KEYWORDS = re.compile(r"production|manufactur|planning|PPC|supply chain|industrial engineer|industrial engineering|IPE|opex|operation|process improvement|lean|quality|QA|QC|procurement|purchase|sourcing|logistics|warehouse|inventory|store|maintenance|engineering|factory|plant", re.I)
 
 
 def read_json(path, default):
