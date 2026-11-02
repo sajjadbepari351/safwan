@@ -5,167 +5,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career Radar BD | Verified Jobs</title>
-<style>
-:root {
-  --navy:#10233f;
-  --blue:#2563eb;
-  --bg:#f4f7fb;
-  --muted:#64748b;
-}
-* { box-sizing:border-box; }
-body {
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:var(--bg);
-  color:#172033;
-}
-header {
-  background:var(--navy);
-  color:white;
-  padding:28px 6%;
-}
-header h1 { margin:0; font-size:28px; }
-header p { color:#cbd5e1; margin-bottom:0; }
-.container {
-  max-width:1200px;
-  margin:28px auto;
-  padding:0 18px;
-}
-.search,.filter {
-  width:100%;
-  padding:14px;
-  border:1px solid #d8e0eb;
-  border-radius:9px;
-  font-size:15px;
-  background:white;
-}
-.search { margin-bottom:14px; }
-.filters {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-  margin-bottom:22px;
-}
-.layout {
-  display:grid;
-  grid-template-columns:250px 1fr;
-  gap:22px;
-}
-.panel,.job,.source {
-  background:white;
-  border:1px solid #e4eaf2;
-  border-radius:12px;
-  padding:17px;
-}
-.panel h3 { margin-top:0; }
-.category {
-  display:flex;
-  justify-content:space-between;
-  width:100%;
-  padding:11px 9px;
-  border:0;
-  background:white;
-  border-radius:7px;
-  cursor:pointer;
-  text-align:left;
-  font-size:14px;
-}
-.category:hover,.category.active {
-  background:#eaf1ff;
-  color:var(--blue);
-}
-.count {
-  background:#edf1f6;
-  padding:3px 8px;
-  border-radius:20px;
-}
-.topline {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:10px;
-}
-.topline h2 { margin:0 0 15px; }
-.job { margin-bottom:14px; }
-.job h3 { color:var(--navy); margin:0 0 8px; }
-.meta {
-  color:var(--muted);
-  font-size:13px;
-  line-height:1.9;
-}
-.tag {
-  display:inline-block;
-  background:#edf3ff;
-  color:#2455a5;
-  padding:5px 9px;
-  border-radius:20px;
-  font-size:12px;
-  margin-top:9px;
-}
-.apply {
-  display:inline-block;
-  margin-top:12px;
-  background:var(--blue);
-  color:white;
-  text-decoration:none;
-  padding:10px 14px;
-  border-radius:7px;
-  font-size:13px;
-}
-.empty {
-  background:white;
-  border:1px dashed #cbd5e1;
-  border-radius:12px;
-  padding:35px;
-  text-align:center;
-  color:var(--muted);
-}
-.source-area { margin-top:35px; }
-.sources {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:12px;
-}
-.source h3 { margin-top:0; font-size:16px; }
-.lead { background:#fff; border:1px solid #e4eaf2; border-radius:10px; padding:14px; margin-bottom:10px; }
-.lead h3 { margin:0 0 7px; color:var(--navy); font-size:16px; }
-.lead a { color:var(--blue); }
-.lead-label { display:inline-block; font-size:11px; padding:4px 8px; border-radius:20px; background:#fff3d6; color:#805500; margin-bottom:8px; }
-.source a { color:var(--blue); text-decoration:none; }
-.notice {
-  background:#fff8e7;
-  border:1px solid #f3dfaa;
-  padding:13px;
-  border-radius:9px;
-  color:#73520b;
-  font-size:13px;
-  line-height:1.6;
-  margin-top:20px;
-}
-footer {
-  text-align:center;
-  color:var(--muted);
-  padding:30px 10px;
-  font-size:12px;
-}
-@media(max-width:700px) {
-  .layout { grid-template-columns:1fr; }
-  .filters { grid-template-columns:1fr; }
-}
-</style>
+<style>:root{--navy:#10233f;--blue:#2563eb;--ink:#172033;--muted:#64748b;--bg:#f3f6fb;--line:#e5eaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.site-header{color:#fff;background:radial-gradient(ellipse at 85% 10%,#22d3ee40,transparent 35%),linear-gradient(120deg,#0b1830,#142f56 58%,#174a78);padding:22px max(5%,calc((100% - 1180px)/2)) 54px}
+.site-nav{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1180px;margin:0 auto 46px}.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;font-weight:800}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#38bdf8,#2563eb);font-size:20px;box-shadow:0 8px 24px #02061755}.nav-links{display:flex;gap:22px;flex-wrap:wrap}.nav-links a{color:#dbeafe;text-decoration:none;font-size:13px;font-weight:600}.nav-links a:hover{color:#fff}
+.hero{max-width:1180px;margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff35;background:#ffffff12;border-radius:30px;padding:6px 12px;color:#dbeafe;font-size:11px;font-weight:800;letter-spacing:.5px}.pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px #4ade8025}.hero h1{max-width:760px;margin:18px 0 12px;font-size:clamp(34px,5vw,56px);line-height:1.08;letter-spacing:-1.8px}.hero h1 span{color:#67e8f9}.hero p{max-width:650px;color:#cbdcf0;font-size:16px;margin:0}.hero-points{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.hero-points span{border:1px solid #ffffff25;background:#ffffff10;border-radius:8px;padding:8px 11px;color:#e2e8f0;font-size:12px}
+.container{max-width:1180px;margin:0 auto;padding:0 20px}.search-wrap{position:relative;margin:-27px auto 24px;z-index:2}.search{width:100%;padding:18px 20px 18px 50px;border:1px solid #dbe3ef;border-radius:14px;font-size:15px;background:#fff;box-shadow:0 12px 35px #0f274015;outline:none}.search:focus,.filter:focus{border-color:#60a5fa;box-shadow:0 0 0 3px #3b82f625}.search-icon{position:absolute;left:19px;top:11px;color:#64748b;font-size:25px}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:25px}.filter{width:100%;padding:13px 14px;border:1px solid #dce4ef;border-radius:10px;font-size:14px;background:#fff;color:#334155;outline:none}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px;align-items:start}
+.panel,.job,.source,.lead{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 5px 18px #152b4b08}.panel{padding:19px;position:sticky;top:16px}.panel h3{margin:0 0 14px;font-size:15px}.category{display:flex;justify-content:space-between;align-items:center;width:100%;padding:10px 11px;border:0;background:transparent;border-radius:9px;cursor:pointer;text-align:left;font-size:13px;color:#475569;margin:2px 0}.category:hover,.category.active{background:#edf4ff;color:#1d4ed8;font-weight:700}.count{background:#f1f5f9;padding:2px 8px;border-radius:20px;font-size:11px;color:#64748b}.category.active .count{background:#dbeafe;color:#1d4ed8}
+.topline{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin:2px 0 13px}.topline h2,.section-heading h2{margin:0;font-size:21px;letter-spacing:-.4px}.meta{color:var(--muted);font-size:12px;line-height:1.9}.job{padding:20px;margin-bottom:13px;transition:transform .2s,border-color .2s,box-shadow .2s}.job:hover{transform:translateY(-2px);border-color:#c7d8f2;box-shadow:0 12px 28px #17345a10}.job h3{color:var(--navy);margin:0 0 7px;font-size:17px;line-height:1.35}.job strong{font-size:13px;color:#334155}.job .meta{margin-top:10px}.tag{display:inline-block;background:#eff6ff;color:#2455a5;padding:5px 10px;border-radius:20px;font-size:11px;font-weight:700;margin-top:10px}.apply{display:inline-flex;margin-top:13px;background:linear-gradient(110deg,#2563eb,#1d4ed8);color:white;text-decoration:none;padding:10px 15px;border-radius:8px;font-size:12px;font-weight:700;box-shadow:0 5px 12px #2563eb25}.apply:hover{transform:translateY(-1px);box-shadow:0 8px 18px #2563eb35}.job p{font-size:13px;color:#475569}
+.empty{background:#fff;border:1px dashed #cbd5e1;border-radius:14px;padding:35px;text-align:center;color:var(--muted)}.source-area{margin-top:42px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:8px}.section-heading p{margin:4px 0 14px}.sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.source{padding:17px}.source h3{margin:0 0 7px;font-size:14px}.source a{color:var(--blue);text-decoration:none;font-size:12px;font-weight:700}.source a:hover{text-decoration:underline}.lead{padding:16px;margin-bottom:10px}.lead h3{margin:0 0 7px;color:var(--navy);font-size:15px}.lead a{color:var(--blue);font-size:12px;font-weight:700}.lead-label{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.3px;padding:4px 8px;border-radius:20px;background:#fff3d6;color:#805500;margin-bottom:8px}.notice{background:#fff8e7;border:1px solid #f3dfaa;padding:15px;border-radius:11px;color:#73520b;font-size:12px;line-height:1.7;margin-top:25px}footer{text-align:center;color:#94a3b8;padding:34px 12px;font-size:11px}
+@media(max-width:760px){.site-header{padding:18px 20px 48px}.site-nav{margin-bottom:34px}.nav-links{gap:12px}.nav-links a{font-size:11px}.layout{grid-template-columns:1fr}.panel{position:static}.filters{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.container{padding:0 14px}}@media(max-width:430px){.nav-links{display:none}.hero p{font-size:14px}.job{padding:16px}.topline h2,.section-heading h2{font-size:19px}}</style>
 </head>
 <body>
 
-<header>
-  <h1>Career Radar BD</h1>
-  <p>Discover verified career opportunities across Bangladesh</p>
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
+    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#leads">New Leads</a><a href="#sources">Employers</a></div>
+  </nav>
+  <div class="hero">
+    <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
+    <h1>Find your next move.<br><span>Build your career.</span></h1>
+    <p>Explore verified job opportunities across Bangladesh in production, industrial engineering, planning, supply chain and operations.</p>
+    <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div>
+  </div>
 </header>
-
 <main class="container">
-
-  <input id="search" class="search"
-    placeholder="Search job title, company, location or skill...">
+  <div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" placeholder="Search job title, company, location or skill..."></div>
 
   <div class="filters">
     <select id="locationFilter" class="filter">
@@ -193,7 +60,7 @@ footer {
       <div id="categories"></div>
     </aside>
 
-    <section>
+    <section id="jobs">
       <div class="topline">
         <h2 id="heading">All Vacancies</h2>
         <span id="total" class="meta">Loading...</span>
@@ -204,15 +71,13 @@ footer {
     </section>
   </div>
 
-  <section class="source-area">
-    <h2>New Vacancy Leads (Not Yet Verified)</h2>
-    <p class="meta">Recently discovered job-related posts from RSS feeds. These are leads, not confirmed vacancies; check the original notice before applying.</p>
+  <section class="source-area" id="leads">
+    <div class="section-heading"><div><h2>New Vacancy Leads</h2><p class="meta">Freshly discovered posts awaiting verification. Always check the original notice.</p></div><span class="lead-label">NOT YET VERIFIED</span></div>
     <div id="leads"><div class="empty">Loading new leads...</div></div>
   </section>
 
-  <section class="source-area">
-    <h2>Official Career Pages</h2>
-    <p class="meta">Visit employers' official websites to check openings.</p>
+  <section class="source-area" id="sources">
+    <div class="section-heading"><div><h2>Explore Employers</h2><p class="meta">Visit official career pages for the latest openings.</p></div></div>
     <div class="sources" id="sources"></div>
   </section>
 
