@@ -1,0 +1,36 @@
+name: Daily vacancy discovery
+
+on:
+  schedule:
+    - cron: "30 2 * * *" # 08:30 Bangladesh time (UTC+6)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Collect RSS discovery leads
+        run: python scripts/discover_jobs.py
+
+      - name: Commit updated discovery list
+        run: |
+          git config user.name "Career Radar BD Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pending-vacancies.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update daily vacancy discovery leads"
+            git push
+          else
+            echo "No discovery changes."
+          fi
