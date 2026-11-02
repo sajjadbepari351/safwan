@@ -1,4 +1,34 @@
+
 {
   "lastUpdated": "2026-11-03",
-  "vacancies": []
+  "vacancies": [
+    {
+      "title": "Jr. Supervisor - Despatch (Import & Export)",
+      "company": "YKK Bangladesh Pte Ltd.",
+      "category": "Logistics",
+      "location": "Dhaka (Savar EPZ)",
+      "salary": "Not Disclosed",
+      "experience": "Freshers are encouraged to apply",
+      "education": "Graduation in any discipline",
+      "deadline": "2026-11-27",
+      "description": "Coordinate packing, delivery, production, warehouse, export and logistics operations. Support inventory records, reporting and continuous improvement.",
+      "source": "Dohaj",
+      "apply": "https://www.dohaj.com/job-details/jr-supervisor-despatch-import-export-ykk-bangladesh-pte-ltd-919065",
+      "verified": true
+    },
+    {
+      "title": "Officer (Machinery Spare Store)",
+      "company": "JK Group",
+      "category": "Procurement",
+      "location": "Dhaka (Savar)",
+      "salary": "BDT 20,000 - 28,000",
+      "experience": "3-5 years",
+      "education": "Bachelor's/Master's in Supply Chain Management, Business Administration, Management, Logistics or related field",
+      "deadline": "2026-11-17",
+      "description": "Maintain machinery spare parts inventory, manage inventory records and provide timely information to management and relevant departments.",
+      "source": "Bdjobs",
+      "apply": "https://jobs.bdjobs.com/jobdetails/?fcatId=0&id=1546555&ln=1",
+      "verified": true
+    }
+  ]
 }
