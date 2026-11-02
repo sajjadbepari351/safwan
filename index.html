@@ -208,8 +208,8 @@ footer {
 
   <div class="notice">
     <strong>Verification policy:</strong>
-    Vacancies are published only after checking the employer's
-    official recruitment source. Always confirm eligibility and
+    Vacancies are published only after checking that the original
+    recruitment notice is active. Always confirm eligibility and
     deadlines on the original application page.
   </div>
 </main>
@@ -240,9 +240,10 @@ let vacancies = [];
 let selectedCategory = "All";
 
 function safeUrl(value) {
+  if (!value || typeof value !== "string") return null;
   try {
     const url = new URL(value);
-    return url.protocol === "https:" ? url.href : null;
+    return ["https:","http:"].includes(url.protocol) ? url.href : null;
   } catch {
     return null;
   }
@@ -258,15 +259,19 @@ function escapeHTML(value) {
 function validVacancies() {
   const today = new Date().toISOString().slice(0,10);
 
-  return vacancies.filter(v =>
-    v.title &&
-    v.company &&
-    categories.includes(v.category) &&
-    safeUrl(v.source) &&
-    safeUrl(v.apply) &&
-    v.verified &&
-    (!v.deadline || v.deadline >= today)
-  );
+  return vacancies.filter(v => {
+    const applyUrl = safeUrl(v.apply);
+    const sourceUrl = safeUrl(v.sourceUrl || v.source) || applyUrl;
+
+    return (
+      v.title &&
+      v.company &&
+      v.category &&
+      applyUrl &&
+      v.verified === true &&
+      (!v.deadline || v.deadline >= today)
+    );
+  });
 }
 
 function renderCategories() {
@@ -285,7 +290,7 @@ function renderCategories() {
     categories.map(c => `
       <button class="category ${selectedCategory===c?"active":""}" data-cat="${escapeHTML(c)}">
         <span>▸ ${escapeHTML(c)}</span>
-        <span class="count">${counts[c]}</span>
+        <span class="count">${counts[c] || 0}</span>
       </button>
     `).join("");
 
@@ -305,7 +310,7 @@ function renderJobs() {
   const filtered = validVacancies().filter(v => {
     const text = [
       v.title,v.company,v.location,v.category,
-      v.summary,v.experience
+      v.description,v.summary,v.experience,v.education
     ].join(" ").toLowerCase();
 
     const loc = (v.location || "").toLowerCase();
@@ -315,7 +320,7 @@ function renderJobs() {
     if (experience === "fresher") {
       expMatch = /fresh|no experience|entry level/i.test(exp);
     } else if (experience === "3+") {
-      expMatch = /3\+|3 years|4 years|5 years/i.test(exp);
+      expMatch = /3\+|3 years|4 years|5 years|3-5/i.test(exp);
     } else if (experience) {
       expMatch = exp.includes(experience);
     }
@@ -352,29 +357,35 @@ function renderJobs() {
     return;
   }
 
-  area.innerHTML = filtered.map(v => `
-    <article class="job">
-      <h3>${escapeHTML(v.title)}</h3>
-      <strong>${escapeHTML(v.company)}</strong>
-      <div class="meta">
-        Location: ${escapeHTML(v.location || "Not specified")}<br>
-        Experience: ${escapeHTML(v.experience || "Check official notice")}<br>
-        Deadline: ${escapeHTML(v.deadline || "Check official notice")}<br>
-        Verified on: ${escapeHTML(v.verified)}
-      </div>
-      <span class="tag">${escapeHTML(v.category)}</span>
-      <p>${escapeHTML(v.summary || "")}</p>
-      <a class="apply" href="${safeUrl(v.apply)}"
-         target="_blank" rel="noopener noreferrer">
-         Apply at Official Website ↗
-      </a>
-      <div class="meta">
-        Source:
-        <a href="${safeUrl(v.source)}" target="_blank"
-           rel="noopener noreferrer">Employer career page</a>
-      </div>
-    </article>
-  `).join("");
+  area.innerHTML = filtered.map(v => {
+    const applyUrl = safeUrl(v.apply);
+    const sourceUrl = safeUrl(v.sourceUrl || v.source) || applyUrl;
+
+    return `
+      <article class="job">
+        <h3>${escapeHTML(v.title)}</h3>
+        <strong>${escapeHTML(v.company)}</strong>
+        <div class="meta">
+          Location: ${escapeHTML(v.location || "Not specified")}<br>
+          Salary: ${escapeHTML(v.salary || "Not disclosed")}<br>
+          Experience: ${escapeHTML(v.experience || "Not specified")}<br>
+          Education: ${escapeHTML(v.education || "Not specified")}<br>
+          Deadline: ${escapeHTML(v.deadline || "Not disclosed")}<br>
+          Source: ${escapeHTML(v.source || "Original notice")}
+        </div>
+        <span class="tag">${escapeHTML(v.category)}</span>
+        <p>${escapeHTML(v.description || v.summary || "")}</p>
+        <a class="apply" href="${applyUrl}"
+           target="_blank" rel="noopener noreferrer">
+           Apply / View Original Notice ↗
+        </a>
+        <div class="meta">
+          <a href="${sourceUrl}" target="_blank"
+             rel="noopener noreferrer">View source ↗</a>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function renderSources() {
@@ -397,16 +408,22 @@ function render() {
 
 async function loadVacancies() {
   try {
-    const response = await fetch("./vacancies.json");
+    const response = await fetch("./vacancies.json?v=" + Date.now());
 
     if (!response.ok) {
-      throw new Error("Database unavailable");
+      throw new Error("Database unavailable: " + response.status);
     }
 
     const data = await response.json();
-    vacancies = Array.isArray(data.vacancies) ? data.vacancies : [];
+
+    if (!Array.isArray(data.vacancies)) {
+      throw new Error("Vacancies list is missing or invalid.");
+    }
+
+    vacancies = data.vacancies;
     render();
   } catch (error) {
+    console.error(error);
     document.getElementById("jobs").innerHTML = `
       <div class="empty">
         <h3>Unable to load vacancy database</h3>
