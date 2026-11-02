@@ -1,104 +1,13 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Radar BD | Find Your Career</title>
-<style>
-:root{--navy:#10233f;--blue:#2563eb;--bg:#f4f7fb;--muted:#64748b}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#172033}
-header{background:var(--navy);color:white;padding:25px 6%}
-header h1{margin:0;font-size:27px}
-header p{margin:8px 0 0;color:#cbd5e1}
-.container{max-width:1200px;margin:28px auto;padding:0 18px}
-.search{width:100%;padding:15px;border:1px solid #d8e0eb;border-radius:10px;font-size:16px;margin-bottom:22px}
-.layout{display:grid;grid-template-columns:250px 1fr;gap:22px}
-.panel,.job,.source{background:white;border:1px solid #e4eaf2;border-radius:12px;padding:17px}
-.panel h3{margin:0 0 14px}
-.category{display:flex;justify-content:space-between;align-items:center;width:100%;padding:11px 9px;border:0;background:white;text-align:left;border-radius:7px;cursor:pointer;font-size:14px}
-.category:hover,.category.active{background:#eaf1ff;color:var(--blue)}
-.count{background:#edf1f6;padding:3px 8px;border-radius:20px;font-size:12px}
-.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.topline h2{margin:0 0 15px}
-.job{margin-bottom:13px}
-.job h3{margin:0 0 8px;color:var(--navy)}
-.meta{color:var(--muted);font-size:13px;line-height:1.8}
-.tag{display:inline-block;background:#edf3ff;color:#2455a5;padding:5px 9px;border-radius:20px;font-size:12px;margin:8px 5px 0 0}
-.apply{display:inline-block;margin-top:13px;background:var(--blue);color:white;text-decoration:none;padding:9px 14px;border-radius:7px;font-size:13px}
-.source-area{margin-top:35px}
-.sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.source h3{margin:0 0 7px;font-size:16px}
-.source a{color:var(--blue);text-decoration:none;font-size:14px}
-.notice{background:#fff8e7;border:1px solid #f3dfaa;padding:13px;border-radius:9px;color:#73520b;font-size:13px;line-height:1.6;margin:15px 0}
-.empty{background:white;border:1px dashed #cbd5e1;border-radius:12px;padding:35px;text-align:center;color:var(--muted)}
-footer{text-align:center;color:var(--muted);padding:30px 10px;font-size:12px}
-@media(max-width:700px){.layout{grid-template-columns:1fr}.panel{order:0}.topline{align-items:flex-start}}
-</style>
-</head>
-<body>
-<header>
-  <h1>Career Radar BD</h1>
-  <p>Discover verified career opportunities across Bangladesh</p>
-</header>
-
-<main class="container">
-  <input id="search" class="search" placeholder="Search job title, company, location or skill...">
-
-  <div class="layout">
-    <aside class="panel">
-      <h3>Job Categories</h3>
-      <div id="categories"></div>
-    </aside>
-
-    <section>
-      <div class="topline">
-        <h2 id="heading">All Vacancies</h2>
-        <span id="total" class="meta"></span>
-      </div>
-      <div id="jobs"></div>
-    </section>
-  </div>
-
-  <section class="source-area">
-    <h2>Official Career Pages</h2>
-    <p class="meta">Check the original company websites for current openings.</p>
-    <div class="sources" id="sources"></div>
-  </section>
-
-  <div class="notice">
-    <strong>Our verification policy:</strong> Career Radar BD does not scrape or copy
-    job advertisements from third-party job portals. Vacancy information is added
-    after checking the employer's official recruitment page. Always confirm details
-    and eligibility on the original application page.
-  </div>
-</main>
-
-<footer>Career Radar BD · Independent job information directory · Not affiliated with listed employers</footer>
-
-<script>
-// Add a vacancy here only after verifying it on the employer's official
-// career page. Write your own short summary; do not copy the full advertisement.
-const vacancies = [
-  // Example structure — replace with a real, verified vacancy:
-  // {
-  //   title: "Production Engineer",
-  //   company: "Company Name",
-  //   location: "Gazipur",
-  //   experience: "1–2 years",
-  //   category: "Production",
-  //   deadline: "2026-11-20",
-  //   source: "https://company.com/careers",
-  //   apply: "https://company.com/apply",
-  //   verified: "2026-11-03",
-  //   summary: "Short description written in our own words."
-  // }
-];
-
 const categories = [
-  "Industrial Engineering","Production","Planning","Supply Chain",
-  "OPEX","Quality","Procurement","Logistics"
+  "Industrial Engineering",
+  "Production",
+  "Planning",
+  "Supply Chain",
+  "OPEX",
+  "Quality",
+  "Procurement",
+  "Logistics"
 ];
 
 const officialSources = [
@@ -112,43 +21,58 @@ const officialSources = [
   {name:"Square Group",url:"https://www.squaregroup.com/"}
 ];
 
+let vacancies = [];
 let selectedCategory = "All";
 
-function safeUrl(value){
-  try{
+function safeUrl(value) {
+  try {
     const u = new URL(value);
     return u.protocol === "https:" ? u.href : null;
-  }catch(e){return null}
+  } catch {
+    return null;
+  }
 }
 
-function escapeHTML(value){
+function escapeHTML(value) {
   return String(value ?? "").replace(/[&<>"']/g, c => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    "&":"&amp;", "<":"&lt;", ">":"&gt;",
+    '"':"&quot;", "'":"&#39;"
   }[c]));
 }
 
-function validVacancies(){
+function validVacancies() {
+  const today = new Date().toISOString().slice(0, 10);
+
   return vacancies.filter(v =>
-    v.title && v.company && v.category &&
-    safeUrl(v.source) && safeUrl(v.apply) &&
-    v.verified
+    v.title &&
+    v.company &&
+    categories.includes(v.category) &&
+    safeUrl(v.source) &&
+    safeUrl(v.apply) &&
+    v.verified &&
+    (!v.deadline || v.deadline >= today)
   );
 }
 
-function renderCategories(){
+function renderCategories() {
   const all = validVacancies();
   const counts = {};
-  categories.forEach(c => counts[c] = all.filter(v => v.category === c).length);
+
+  categories.forEach(c => {
+    counts[c] = all.filter(v => v.category === c).length;
+  });
 
   document.getElementById("categories").innerHTML =
-    `<button class="category ${selectedCategory==="All"?"active":""}" data-cat="All">
-      <span>▦ &nbsp; All Vacancies</span><span class="count">${all.length}</span>
+    `<button class="category ${selectedCategory === "All" ? "active" : ""}" data-cat="All">
+      <span>▦ &nbsp; All Vacancies</span>
+      <span class="count">${all.length}</span>
     </button>` +
     categories.map(c => `
-      <button class="category ${selectedCategory===c?"active":""}" data-cat="${escapeHTML(c)}">
+      <button class="category ${selectedCategory === c ? "active" : ""}" data-cat="${escapeHTML(c)}">
         <span>▸ &nbsp; ${escapeHTML(c)}</span>
         <span class="count">${counts[c]}</span>
-      </button>`).join("");
+      </button>
+    `).join("");
 
   document.querySelectorAll(".category").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -158,30 +82,40 @@ function renderCategories(){
   });
 }
 
-function renderJobs(){
+function renderJobs() {
   const q = document.getElementById("search").value.toLowerCase().trim();
-  const all = validVacancies();
+  const location = document.getElementById("locationFilter").value;
+  const experience = document.getElementById("experienceFilter").value;
 
-  const filtered = all.filter(v => {
-    const categoryMatch = selectedCategory==="All" || v.category===selectedCategory;
-    const text = [v.title,v.company,v.location,v.category,v.summary,v.experience]
-      .join(" ").toLowerCase();
-    return categoryMatch && text.includes(q);
+  const filtered = validVacancies().filter(v => {
+    const text = [
+      v.title, v.company, v.location,
+      v.category, v.summary, v.experience
+    ].join(" ").toLowerCase();
+
+    return (
+      (selectedCategory === "All" || v.category === selectedCategory) &&
+      text.includes(q) &&
+      (!location || (v.location || "").toLowerCase().includes(location.toLowerCase())) &&
+      (!experience || (v.experience || "").toLowerCase().includes(experience.toLowerCase()))
+    );
   });
 
   document.getElementById("heading").textContent =
-    selectedCategory==="All" ? "All Vacancies" : selectedCategory;
+    selectedCategory === "All" ? "All Vacancies" : selectedCategory;
+
   document.getElementById("total").textContent =
     `${filtered.length} vacancy/vacancies`;
 
   const area = document.getElementById("jobs");
 
-  if(!filtered.length){
-    area.innerHTML = `<div class="empty">
-      <h3>No verified vacancies found</h3>
-      <p>Check the official career pages below for current openings.</p>
-      <p>New listings will appear here after verification.</p>
-    </div>`;
+  if (!filtered.length) {
+    area.innerHTML = `
+      <div class="empty">
+        <h3>No verified vacancies found</h3>
+        <p>New listings will appear after verification.</p>
+        <p>Check the official career pages below.</p>
+      </div>`;
     return;
   }
 
@@ -192,7 +126,7 @@ function renderJobs(){
       <div class="meta">
         Location: ${escapeHTML(v.location || "Not specified")}<br>
         Experience: ${escapeHTML(v.experience || "Check official notice")}<br>
-        Application deadline: ${escapeHTML(v.deadline || "Check official notice")}<br>
+        Deadline: ${escapeHTML(v.deadline || "Check official notice")}<br>
         Verified on: ${escapeHTML(v.verified)}
       </div>
       <span class="tag">${escapeHTML(v.category)}</span>
@@ -200,30 +134,57 @@ function renderJobs(){
       <a class="apply" href="${safeUrl(v.apply)}" target="_blank" rel="noopener noreferrer">
         Apply at Official Website ↗
       </a>
-      <div class="meta">Source:
-        <a href="${safeUrl(v.source)}" target="_blank" rel="noopener noreferrer">Employer career page</a>
+      <div class="meta">
+        Source:
+        <a href="${safeUrl(v.source)}" target="_blank" rel="noopener noreferrer">
+          Employer career page
+        </a>
       </div>
-    </article>`).join("");
+    </article>
+  `).join("");
 }
 
-function renderSources(){
+function renderSources() {
   document.getElementById("sources").innerHTML = officialSources.map(s => `
     <div class="source">
       <h3>${escapeHTML(s.name)}</h3>
       <a href="${safeUrl(s.url)}" target="_blank" rel="noopener noreferrer">
         Visit official career page ↗
       </a>
-    </div>`).join("");
+    </div>
+  `).join("");
 }
 
-function render(){
+async function loadVacancies() {
+  try {
+    const response = await fetch("./vacancies.json");
+
+    if (!response.ok) {
+      throw new Error("Could not load vacancy database");
+    }
+
+    const data = await response.json();
+    vacancies = Array.isArray(data.vacancies) ? data.vacancies : [];
+  } catch (error) {
+    vacancies = [];
+    document.getElementById("jobs").innerHTML = `
+      <div class="empty">
+        <h3>Unable to load vacancy database</h3>
+        <p>Please try again later.</p>
+      </div>`;
+  }
+
+  render();
+}
+
+function render() {
   renderCategories();
   renderJobs();
 }
 
 document.getElementById("search").addEventListener("input", renderJobs);
+document.getElementById("locationFilter").addEventListener("change", renderJobs);
+document.getElementById("experienceFilter").addEventListener("change", renderJobs);
+
 renderSources();
-render();
-</script>
-</body>
-</html>
+loadVacancies();
