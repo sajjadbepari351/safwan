@@ -14,6 +14,9 @@
       "reason": "Publicly indexed LinkedIn post surfaced in search. Salary, education, experience, deadline and employer application route need confirmation from the complete original post."
     }
   ],
-  "lastChecked": "2026-11-03T09:24:00+06:00",
-  "feedsChecked": 10
+  "lastChecked": "2026-11-03T05:22:40+00:00",
+  "feedsChecked": 16,
+  "feedsAttempted": 16,
+  "feedSource": "Bing public RSS search index; no LinkedIn login or gated-page scraping",
+  "scanErrors": []
 }
