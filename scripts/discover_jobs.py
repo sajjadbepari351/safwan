@@ -34,7 +34,7 @@ def clean(value):
 def main():
     config = read_json(SOURCES, {"feeds": []})
     old = read_json(PENDING, {"candidates": []})
-    by_url = {item.get("feedUrl"): item for item in old.get("candidates", []) if item.get("feedUrl")}
+    by_url = {(item.get("feedUrl") or item.get("sourceUrl") or item.get("postUrl")): item for item in old.get("candidates", []) if (item.get("feedUrl") or item.get("sourceUrl") or item.get("postUrl"))}
     checked = []
     errors = []
 
