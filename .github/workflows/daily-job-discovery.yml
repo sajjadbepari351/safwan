@@ -2,7 +2,11 @@ name: Scheduled vacancy discovery and LinkedIn public leads
 
 on:
   schedule:
-    - cron: "*/30 * * * *" # Every 30 minutes (GitHub Actions schedule; may be delayed) # Every 5 minutes (GitHub Actions schedule; may be delayed)
+    - cron: "*/30 * * * *" # Every 30 minutes (GitHub Actions schedule; may be delayed)
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/daily-job-discovery.yml"
   workflow_dispatch:
 
 permissions:
