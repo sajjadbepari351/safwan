@@ -175,7 +175,9 @@ const officialSources = [
   {name:"RFL Group",url:"https://www.rflbd.com/career"},
   {name:"ACI Limited",url:"https://www.aci-bd.com/"},
   {name:"Meghna Group",url:"https://www.mgi.org/"},
-  {name:"Square Group",url:"https://www.squaregroup.com/"}
+  {name:"Square Group",url:"https://www.squaregroup.com/"},
+  {name:"Padma Group of Converters (Official Website)",url:"https://www.padmagroupbd.com/"},
+  {name:"Padma Group of Converters (Official LinkedIn)",url:"https://www.linkedin.com/company/padma-group-of-converters"}
 ];
 
 let vacancies = [];
@@ -439,7 +441,7 @@ function renderSources() {
         <h3>${escapeHTML(s.name)}</h3>
         <a href="${safeUrl(s.url)}" target="_blank"
            rel="noopener noreferrer">
-          Visit official career page ↗
+          Visit company page ↗
         </a>
       </div>
     `).join("");
