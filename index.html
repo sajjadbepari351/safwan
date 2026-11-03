@@ -17,6 +17,9 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .nav-links{display:flex;align-items:center;gap:27px;flex-wrap:wrap}.nav-links a{color:#c8d8eb;text-decoration:none;font-size:13px;font-weight:650}.nav-links a:hover{color:#fff}.nav-links a:last-child{padding:9px 14px;border:1px solid #ffffff40;border-radius:9px;background:#ffffff0c}
 .update-nav{display:inline-flex!important;align-items:center;gap:7px;padding:8px 11px!important;border:1px solid #7dd3fc65!important;border-radius:999px;background:#0ea5e91c!important;color:#e0f2fe!important;white-space:nowrap}
 .update-nav:hover{background:#0ea5e933!important}
+.nav-update-group{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.nav-last-updated{display:inline-flex;align-items:center;gap:5px;color:#dbeafe;font-size:11px;white-space:nowrap}
+@media(max-width:760px){.nav-update-group{gap:6px}.nav-last-updated{font-size:10px}}
 .update-strip{display:flex;align-items:center;gap:11px;flex-wrap:wrap;margin-top:20px;padding:11px 14px;border:1px solid #ffffff2b;border-radius:12px;background:#ffffff0c;color:#e2e8f0;font-size:12px;max-width:max-content}
 .update-strip .update-icon{font-size:18px;color:#7dd3fc}
 .update-strip strong{color:#fff;font-weight:750}
@@ -33,6 +36,16 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .update-count strong{font-size:11px;font-weight:650}
 .update-count b{display:inline-grid;place-items:center;min-width:23px;height:23px;padding:0 6px;border-radius:7px;background:#dbeafe;color:#1d4ed8;font-size:11px}
 #updateLeadSummary{margin-top:11px;color:#64748b;font-size:11px;line-height:1.6}
+.new-update-item{padding:13px 0;border-top:1px solid #e5eaf1;display:flex;flex-direction:column;gap:5px}
+.new-update-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.new-update-dept{font-size:10px;font-weight:750;color:#1d4ed8;background:#eff6ff;padding:4px 8px;border-radius:999px}
+.new-update-verified,.new-update-pending{font-size:10px;font-weight:700;padding:4px 8px;border-radius:999px}
+.new-update-verified{color:#166534;background:#dcfce7}
+.new-update-pending{color:#92400e;background:#fef3c7}
+.new-update-title{font-size:13px;color:#172b45}
+.new-update-meta{font-size:11px;color:#64748b;line-height:1.5}
+.new-update-link{font-size:11px;font-weight:700;color:#2563eb;text-decoration:none;margin-top:2px}
+.new-update-empty{padding:14px 0;font-size:12px;color:#64748b}
 @media(max-width:760px){.update-nav{font-size:10px!important;padding:7px 9px!important}.update-strip{font-size:11px;margin-top:16px}}
 @media(max-width:430px){.update-nav{display:none!important}.update-strip{max-width:100%;width:100%}}
 .hero{position:relative;z-index:1;max-width:1200px;margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff30;background:#ffffff0d;border-radius:30px;padding:7px 13px;color:#dbeafe;font-size:10px;font-weight:800;letter-spacing:1.25px}.pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px #4ade8025}
@@ -53,7 +66,7 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
   <nav class="site-nav">
     <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
     <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
-    <a class="update-nav" href="#updateStatus" aria-label="See latest vacancy updates">✦ <span>New Updates</span></a>
+    <div class="nav-update-group"><a class="update-nav" href="#updateStatus" aria-label="See newly added vacancies">✦ <span>New Updates</span></a><span class="nav-last-updated" title="Latest database scan">◷ <span id="lastUpdatedAt">Checking…</span></span></div>
   </nav>
   <div class="hero">
     <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
@@ -68,7 +81,7 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
     <div class="update-status-head">
       <div>
         <div class="update-status-title"><span class="clock">✦</span> New Updates</div>
-        <div class="update-status-note">Verified vacancies currently listed by department, plus newly discovered leads awaiting verification.</div>
+        <div class="update-status-note">Only vacancies added recently. Existing listings are not repeated here.</div>
       </div>
       <div class="update-status-main" id="updateTotals">Loading updates…</div>
     </div>
@@ -455,70 +468,60 @@ async function loadLeads() {
   } catch (error) { area.innerHTML = '<div class="empty">Automatic discovery has not published its first scan yet.</div>'; }
 }
 
-function classifyDepartment(item) {
-  const explicit = String(item.category || "").trim();
-  if (explicit) return explicit;
-  const text = [item.title, item.summary, item.description, item.company].join(" ").toLowerCase();
-  if (/supply chain|procurement|purchase|sourcing|store|inventory|warehouse|logistic/.test(text)) return "Supply Chain";
-  if (/industrial engineer|\\bie\\b|work study|line balan|productivity/.test(text)) return "Industrial Engineering";
-  if (/production|manufactur|plant|process engineer/.test(text)) return "Production";
-  if (/planning|ppc|demand forecast/.test(text)) return "Planning";
-  if (/operation|opex/.test(text)) return "Operations";
-  return "Other";
+function formatUpdateTime(value) {
+  if (!value) return "Not available";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "Not available";
+  return new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Dhaka", day: "2-digit", month: "short",
+    year: "numeric", hour: "2-digit", minute: "2-digit", hour12: true
+  }).format(date) + " BDT";
 }
 
 async function loadUpdateStatus() {
-  const sources = [
-    "./vacancies.json",
-    "./government-vacancies.json",
-    "./pending-vacancies.json",
-    "./linkedin-leads.json"
-  ];
+  const stamp = document.getElementById("lastUpdatedAt");
+  const total = document.getElementById("updateTotals");
+  const detail = document.getElementById("updateDetails");
+  const lead = document.getElementById("updateLeadSummary");
   try {
-    const loaded = await Promise.all(sources.map(async file => {
-      const response = await fetch(file + "?v=" + Date.now());
-      if (!response.ok) throw new Error("Could not load " + file);
-      return response.json();
-    }));
-    const [privateData, governmentData, pendingData, linkedinData] = loaded;
-    const verified = [
-      ...(Array.isArray(privateData.vacancies) ? privateData.vacancies : []),
-      ...(Array.isArray(governmentData.vacancies) ? governmentData.vacancies : [])
-    ].filter(job => job.verified === true);
-    const departmentCounts = {};
-    verified.forEach(job => {
-      const department = classifyDepartment(job);
-      departmentCounts[department] = (departmentCounts[department] || 0) + 1;
-    });
-    const ordered = Object.entries(departmentCounts).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
-    const pending = Array.isArray(pendingData.candidates) ? pendingData.candidates : [];
-    const linkedin = Array.isArray(linkedinData.candidates) ? linkedinData.candidates : [];
-    const leadCounts = {};
-    [...pending, ...linkedin].forEach(lead => {
-      const department = classifyDepartment(lead);
-      leadCounts[department] = (leadCounts[department] || 0) + 1;
-    });
-    const totalEl = document.getElementById("updateTotals");
-    const detailEl = document.getElementById("updateDetails");
-    const leadEl = document.getElementById("updateLeadSummary");
-    if (totalEl) totalEl.textContent = verified.length + " verified vacancies";
-    if (detailEl) {
-      detailEl.innerHTML = ordered.length ? ordered.map(([name,count]) =>
-        '<span class="update-count"><strong>' + escapeHTML(name) + '</strong><b>' + count + '</b></span>'
-      ).join("") : '<span>No verified vacancies listed yet.</span>';
+    const [updatesResponse, pendingResponse, linkedinResponse] = await Promise.all([
+      fetch("./new-updates.json?v=" + Date.now()),
+      fetch("./pending-vacancies.json?v=" + Date.now()),
+      fetch("./linkedin-leads.json?v=" + Date.now())
+    ]);
+    if (!updatesResponse.ok) throw new Error("New updates feed unavailable");
+    const updatesData = await updatesResponse.json();
+    const pendingData = pendingResponse.ok ? await pendingResponse.json() : {};
+    const linkedinData = linkedinResponse.ok ? await linkedinResponse.json() : {};
+    const candidates = Array.isArray(updatesData.items) ? updatesData.items : [];
+    const pendingTimes = [pendingData.lastChecked, linkedinData.lastChecked, updatesData.lastUpdated]
+      .filter(Boolean).map(x => new Date(x)).filter(x => !Number.isNaN(x.getTime()));
+    const latestScan = pendingTimes.sort((a,b) => b-a)[0];
+    if (stamp) stamp.textContent = latestScan ? formatUpdateTime(latestScan.toISOString()) : "Time unavailable";
+    if (total) total.textContent = candidates.length + " recent additions";
+    if (detail) {
+      detail.innerHTML = candidates.length ? candidates.map(item => {
+        const status = item.verified === true ? "Verified" : "Pending verification";
+        const statusClass = item.verified === true ? "new-update-verified" : "new-update-pending";
+        const href = item.apply || item.sourceUrl || "#";
+        return '<article class="new-update-item">' +
+          '<div class="new-update-top"><span class="new-update-dept">' + escapeHTML(item.category || "Other") +
+          '</span><span class="' + statusClass + '">' + status + '</span></div>' +
+          '<strong class="new-update-title">' + escapeHTML(item.title || "Vacancy") + '</strong>' +
+          '<div class="new-update-meta">' + escapeHTML(item.company || "Employer not stated") + ' · ' +
+          escapeHTML(item.location || "Location not stated") + '</div>' +
+          '<div class="new-update-meta">Salary: ' + escapeHTML(item.salary || "Not stated") +
+          ' · Deadline: ' + escapeHTML(item.deadline || "Not stated") + '</div>' +
+          '<a class="new-update-link" href="' + escapeHTML(href) + '" target="_blank" rel="noopener">View source / application ↗</a>' +
+          '</article>';
+      }).join("") : '<div class="new-update-empty">No new vacancies have been added since the tracker started. Check back after the next scan.</div>';
     }
-    if (leadEl) {
-      const leadParts = Object.entries(leadCounts).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]))
-        .map(([name,count]) => escapeHTML(name) + ": " + count).join(" · ");
-      leadEl.textContent = "Unverified new leads: " + (pending.length + linkedin.length) +
-        (leadParts ? " (" + leadParts + ")" : "") +
-        " · Check the New Leads and LinkedIn Posts sections before applying.";
-    }
+    const pendingCount = (pendingData.candidates || []).length + (linkedinData.candidates || []).length;
+    if (lead) lead.textContent = pendingCount + " unverified leads are tracked separately under New Leads and LinkedIn Posts; they appear here only when first discovered.";
   } catch (error) {
-    const totalEl = document.getElementById("updateTotals");
-    const detailEl = document.getElementById("updateDetails");
-    if (totalEl) totalEl.textContent = "Update summary unavailable";
-    if (detailEl) detailEl.textContent = "Could not load vacancy counts. Please refresh the page.";
+    if (stamp) stamp.textContent = "Time unavailable";
+    if (total) total.textContent = "New updates unavailable";
+    if (detail) detail.textContent = "Could not load the latest additions. Please refresh the page.";
   }
 }
 
