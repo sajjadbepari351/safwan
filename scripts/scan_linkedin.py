@@ -35,7 +35,7 @@ NOW = dt.datetime.now(dt.timezone.utc).astimezone()
 
 def clean(value):
     value = html.unescape(re.sub(r"<[^>]+>", " ", value or ""))
-    return re.sub(r"\\s+", " ", value).strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 def canonical(url):
     try:
@@ -98,8 +98,8 @@ def main():
         if url and is_linkedin_post(url):
             linkedin[url] = item
     for item in old_pending.get("candidates", []):
-        url = canonical(item.get("sourceUrl") or item.get("feedUrl") or "")
-        if url and not is_linkedin_post(url):
+        url = canonical(item.get("sourceUrl") or item.get("feedUrl") or item.get("postUrl") or "")
+        if url:
             pending[url] = item
 
     successful, errors = 0, []
