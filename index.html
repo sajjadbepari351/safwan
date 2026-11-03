@@ -69,6 +69,103 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .detected-card .meta{font-size:10px}
 .detected-source{display:inline-flex;margin-top:9px;color:#2563eb;font-size:11px;font-weight:750;text-decoration:none}
 .detected-source:hover{text-decoration:underline}
+
+/* Professional UX refresh */
+:root{--navy:#10243d;--blue:#2563eb;--ink:#17263c;--muted:#64748b;--bg:#f4f7fb;--line:#e4eaf2}
+body{background:#f4f7fb;color:#17263c}
+.site-header{padding-top:18px;padding-bottom:82px}
+.site-nav{margin-bottom:62px}
+.brand{font-size:16px;letter-spacing:-.45px}
+.brand-mark{width:42px;height:42px;border-radius:13px}
+.nav-links{gap:8px}
+.nav-links a{padding:9px 12px;border-radius:9px;font-size:12px;white-space:nowrap}
+.nav-links a:hover{background:#ffffff12}
+.nav-links a:last-child{border:0;background:transparent}
+.hero h1{max-width:800px;font-size:clamp(39px,5.1vw,62px);letter-spacing:-2.4px}
+.hero p{font-size:15px;max-width:640px}
+.hero-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-primary,.hero-secondary{display:inline-flex;align-items:center;gap:13px;padding:12px 17px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:750}
+.hero-primary{background:#fff;color:#12345a;box-shadow:0 8px 24px #0206172b}
+.hero-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px #02061735}
+.hero-secondary{color:#e0f2fe;border:1px solid #ffffff45;background:#ffffff0c}
+.hero-secondary:hover{background:#ffffff18}
+.container{max-width:1240px}
+.search-wrap{margin-top:-34px;margin-bottom:27px}
+.search{height:62px;padding:18px 22px 18px 56px;border-radius:14px;font-size:14px}
+.search-icon{top:15px;left:21px}
+.search-hint{position:absolute;right:17px;top:21px;color:#94a3b8;font-size:10px;pointer-events:none}
+.update-status{padding:17px 19px;margin-bottom:27px;border-radius:14px}
+.update-status-title{font-size:14px}
+.update-status-main{font-size:12px}
+#updateDetails{max-height:310px;overflow:auto;padding-right:5px}
+.new-update-item{padding:12px 2px}
+.filter-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:25px 0 12px}
+.filter-heading h2{margin:0;color:#1e3048;font-size:15px;letter-spacing:-.2px}
+.filter-heading p{margin:3px 0 0;color:#718096;font-size:11px}
+.clear-filters{border:1px solid #d5deea;background:#fff;color:#526176;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:700;cursor:pointer}
+.clear-filters:hover{border-color:#93b4e8;color:#1d4ed8;background:#f8fbff}
+.filters{grid-template-columns:1fr 1fr;gap:13px;margin-bottom:22px}
+.filter-control{display:flex;flex-direction:column;gap:6px;color:#526176;font-size:11px;font-weight:700}
+.filter{min-height:44px;border-radius:9px;font-size:12px;padding:11px 13px}
+.layout{grid-template-columns:225px minmax(0,1fr);gap:22px}
+.panel{padding:17px;border-radius:13px;box-shadow:0 8px 24px #142d4b08}
+.panel h3{font-size:11px;letter-spacing:.9px}
+.category{padding:10px 9px;font-size:12px}
+.topline{margin:0 0 14px}
+.topline h2,.section-heading h2{font-size:20px}
+.job{padding:20px 21px;border-radius:13px;margin-bottom:12px;box-shadow:0 6px 20px #142d4b08}
+.job h3{font-size:15px}
+.job .meta{font-size:11px}
+.apply{padding:10px 15px;border-radius:8px;font-size:11px}
+.applied-toggle{font-size:10px}
+.source-area{margin-top:39px}
+.section-heading{align-items:center}
+.section-heading p{max-width:700px}
+.detected-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:13px}
+.detected-card{padding:17px;border-radius:13px;transition:transform .18s,box-shadow .18s,border-color .18s}
+.detected-card:hover{transform:translateY(-2px);border-color:#c5d7f2;box-shadow:0 12px 28px #142d4b10}
+.detected-card h3{font-size:14px}
+.detected-source{padding-top:3px}
+.sources{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.source{padding:17px;border-radius:12px}
+.notice{padding:17px 19px;border-radius:12px}
+footer{padding:35px 12px}
+:focus-visible{outline:3px solid #60a5fa;outline-offset:2px}
+@media(max-width:900px){.site-nav{align-items:flex-start;margin-bottom:48px}.nav-links{justify-content:flex-end;gap:3px}.nav-links a{padding:8px;font-size:11px}.nav-last-updated{display:none}}
+@media(max-width:760px){
+ .site-header{padding:15px 16px 66px}
+ .site-nav{display:flex;flex-direction:column;gap:13px;margin-bottom:42px}
+ .nav-links{display:flex;width:100%;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;padding:2px 0 7px;scrollbar-width:thin}
+ .nav-links a{flex:0 0 auto;padding:8px 11px;background:#ffffff0c}
+ .nav-update-group{position:absolute;right:0;top:0}
+ .brand{padding-right:112px}
+ .hero h1{font-size:clamp(36px,9vw,49px);letter-spacing:-1.7px}
+ .hero p{font-size:14px;line-height:1.7}
+ .hero-points{gap:7px;margin-top:20px}
+ .hero-points span{padding:8px 9px}
+ .container{padding:0 15px}
+ .layout{grid-template-columns:1fr;gap:15px}
+ .panel{position:static}
+ .panel h3{margin-bottom:8px}
+ #categories{display:flex;gap:7px;overflow-x:auto;padding:1px 0 5px}
+ .category{flex:0 0 auto;width:auto;white-space:nowrap;margin:0;padding:9px 11px;background:#f8fafc}
+ .filters{grid-template-columns:1fr 1fr}
+ .search-hint{display:none}
+ .section-heading{align-items:flex-start}
+ .update-status{padding:14px}
+}
+@media(max-width:480px){
+ .hero-actions{gap:8px}
+ .hero-primary,.hero-secondary{font-size:11px;padding:11px 13px}
+ .hero-points span{font-size:9px}
+ .filters{grid-template-columns:1fr}
+ .filter-heading{margin-top:21px}
+ .topline h2,.section-heading h2{font-size:18px}
+ .job{padding:16px}
+ .detected-grid{grid-template-columns:1fr}
+ .update-status-details{gap:8px 13px}
+}
+
 </style>
 </head>
 <body>
@@ -76,18 +173,18 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 <header class="site-header">
   <nav class="site-nav">
     <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
-    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#detectedJobs">Newly Detected</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
+    <div class="nav-links" aria-label="Main navigation"><a href="#jobs">Find Jobs</a><a href="#detectedJobs">Newly Detected</a><a href="#governmentJobs">Government Jobs</a><a href="#sources">Employers</a></div>
     <div class="nav-update-group"><a class="update-nav" href="#updateStatus" aria-label="See newly added vacancies">✦ <span>New Updates</span></a><span class="nav-last-updated" title="Latest database scan">◷ <span id="lastUpdatedAt">Checking…</span></span></div>
   </nav>
   <div class="hero">
     <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
     <h1>Find your next move.<br><span>Build your career.</span></h1>
     <p>A focused job discovery platform for Bangladesh’s manufacturing and business professionals. Explore opportunities in Production, Industrial Engineering, Planning, Supply Chain and Operations.</p>
-    <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div>
+    <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div><div class="hero-actions"><a class="hero-primary" href="#jobs">Explore vacancies <span>→</span></a><a class="hero-secondary" href="#detectedJobs">See newly detected jobs</a></div>
   </div>
 </header>
 <main class="container">
-  <div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" placeholder="Search job title, company, location or skill..."></div>
+  <div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" class="search" type="search" aria-label="Search vacancies" placeholder="Search by job title, company, location or skill..."><span class="search-hint">Press to search</span></div>
   <section class="update-status" id="updateStatus" aria-live="polite">
     <div class="update-status-head">
       <div>
@@ -107,24 +204,25 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
     <div id="detectedJobsList"><div class="empty">Loading newly detected jobs…</div></div>
   </section>
 
+  <div class="filter-heading"><div><h2>Refine your search</h2><p>Filter verified vacancies by preferred location and experience.</p></div><button type="button" id="clearFilters" class="clear-filters">Clear filters</button></div>
   <div class="filters">
-    <select id="locationFilter" class="filter">
+    <label class="filter-control"><span>Location</span><select id="locationFilter" class="filter">
       <option value="">All Locations</option>
       <option value="Dhaka">Dhaka</option>
       <option value="Gazipur">Gazipur</option>
       <option value="Savar">Savar</option>
       <option value="Narayanganj">Narayanganj</option>
       <option value="Other">Other locations</option>
-    </select>
+    </select></label>
 
-    <select id="experienceFilter" class="filter">
+    <label class="filter-control"><span>Experience</span><select id="experienceFilter" class="filter">
       <option value="">All Experience Levels</option>
       <option value="fresher">Fresher</option>
       <option value="0-1">0–1 years</option>
       <option value="1-2">1–2 years</option>
       <option value="2-3">2–3 years</option>
       <option value="3+">3+ years</option>
-    </select>
+    </select></label>
   </div>
 
   <section class="source-area urgent-area" id="closingTomorrow" aria-live="polite">
@@ -626,15 +724,14 @@ document.getElementById("jobsList").addEventListener("click", event => {
 document.getElementById("search").addEventListener("input", renderJobs);
 document.getElementById("locationFilter").addEventListener("change", renderJobs);
 document.getElementById("experienceFilter").addEventListener("change", renderJobs);
+document.getElementById("clearFilters").addEventListener("click", () => { document.getElementById("search").value=""; document.getElementById("locationFilter").value=""; document.getElementById("experienceFilter").value=""; selectedCategory="All"; render(); });
 
 renderSources();
 loadUpdateStatus();
 loadDetectedJobs();
 loadVacancies();
 loadGovernmentJobs();
-loadLeads();
-loadLinkedInLeads();
-setInterval(() => { loadUpdateStatus(); loadDetectedJobs(); loadVacancies(); loadGovernmentJobs(); loadLeads(); loadLinkedInLeads(); }, 5 * 60 * 1000);
+setInterval(() => { loadUpdateStatus(); loadDetectedJobs(); loadVacancies(); loadGovernmentJobs(); }, 5 * 60 * 1000);
 </script>
 
 </body>
