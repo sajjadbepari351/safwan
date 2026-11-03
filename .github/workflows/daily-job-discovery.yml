@@ -2,7 +2,7 @@ name: Scheduled vacancy discovery and LinkedIn public leads
 
 on:
   schedule:
-    - cron: "0 0,6,12,18 * * *" # Every 6 hours: 06:00, 12:00, 18:00, 00:00 Bangladesh time
+    - cron: "*/5 * * * *" # Every 5 minutes (GitHub Actions schedule; may be delayed)
   workflow_dispatch:
 
 permissions:
