@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "Career Radar BD Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pending-vacancies.json
+          git add pending-vacancies.json linkedin-leads.json
           if ! git diff --cached --quiet; then
             git commit -m "Update daily vacancy discovery leads"
             git push
