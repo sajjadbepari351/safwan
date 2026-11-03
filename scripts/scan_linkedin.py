@@ -23,6 +23,12 @@ QUERIES = [
     "site:linkedin.com/posts Bangladesh hiring planning PPC operations",
     "site:linkedin.com/posts Bangladesh hiring industrial engineering IE",
     "site:linkedin.com/posts Dhaka Gazipur Savar Narayanganj vacancy engineer",
+    "site:thecvguy.net/jobs-and-careertips Bangladesh MNC production manufacturing planning supply chain",
+    "site:bdrecruit.net Bangladesh production manufacturing planning supply chain vacancy",
+    "site:facebook.com/groups Bangladesh jobs production manufacturing supply chain planning vacancy",
+    "site:facebook.com Bangladesh MNC job circular production engineering supply chain",
+    "Bangladesh vacancy production planning supply chain site:chakri.app OR site:jobs.com.bd OR site:myjobs.com.bd OR site:skill.jobs",
+    "Bangladesh vacancy manufacturing engineering production site:jagojobs.com OR site:nrbjobs.com OR site:bdjobstoday.com",
     "Bangladesh production engineer OR executive vacancy Dhaka Gazipur Savar",
     "Bangladesh supply chain OR procurement OR planning officer executive vacancy",
     "Bangladesh industrial engineering OR IE executive vacancy manufacturing",
@@ -30,7 +36,7 @@ QUERIES = [
     "site:dohaj.com/job-details Bangladesh production OR supply chain OR industrial engineering",
 ]
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; CareerRadarBD/1.1; +https://sajjadbepari351.github.io/safwan/)"}
-ALLOWED_JOB_HOSTS = ("bdjobs.com", "dohaj.com", "jobmedia.com.bd", "careerjet.com.bd")
+ALLOWED_JOB_HOSTS = ("bdjobs.com", "dohaj.com", "jobmedia.com.bd", "careerjet.com.bd", "thecvguy.net", "bdrecruit.net", "jobs.com.bd", "job.com.bd", "myjobs.com.bd", "chakri.app", "skill.jobs", "nrbjobs.com", "bdjobstoday.com", "jagojobs.com", "bikroy.com", "youthop.com", "uncareer.net", "onlinejobbd.com", "chakrirkhobor.net", "bdgovtjobs.com", "teletalk.com.bd")
 NOW = dt.datetime.now(dt.timezone.utc).astimezone()
 
 def clean(value):
@@ -54,6 +60,18 @@ def is_linkedin_post(url):
         p = urllib.parse.urlsplit(url)
         host, path = (p.hostname or "").lower(), p.path.lower()
         return (host == "linkedin.com" or host.endswith(".linkedin.com")) and ("/posts/" in path or "/feed/update/" in path)
+    except Exception:
+        return False
+
+def is_public_facebook_post(url):
+    """Accept only publicly indexed post/permalink URLs, never private group content."""
+    try:
+        p = urllib.parse.urlsplit(url)
+        host, path = (p.hostname or "").lower(), p.path.lower()
+        if not (host == "facebook.com" or host.endswith(".facebook.com")):
+            return False
+        return ("/posts/" in path or "/permalink/" in path or
+                path.startswith("/permalink.php") or path.startswith("/story.php"))
     except Exception:
         return False
 
@@ -122,6 +140,16 @@ def main():
                         "postUrl": url, "publishedAt": published or "Date not supplied by search index",
                         "status": "pending_manual_verification",
                         "reason": "Found through public search indexing only. Confirm employer, requirements, location, deadline and application route."
+                    })
+                elif is_public_facebook_post(url):
+                    pending.setdefault(url, {
+                        "title": title[:220], "company": "", "location": "",
+                        "summary": summary[:700] or "Publicly indexed Facebook vacancy post. Open the original post to confirm details.",
+                        "source": "Facebook public post",
+                        "sourceUrl": url, "feedUrl": url,
+                        "publishedAt": published or "Date not supplied by search index",
+                        "status": "pending_manual_verification",
+                        "reason": "Discovered from public search indexing only. Private groups and login-restricted content are not accessed; verify the original post and employer before applying."
                     })
                 elif is_job_result(url):
                     pending.setdefault(url, {
