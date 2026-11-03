@@ -74,8 +74,8 @@ def main():
         items = added + items
     # Keep the newest 100 additions for the website's New Updates panel.
     items = items[:100]
-    OUTPUT.write_text(json.dumps({"lastUpdated": now, "items": items}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
-    STATE.write_text(json.dumps({"seen": sorted(seen), "updatedAt": now}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    OUTPUT.write_text(json.dumps({"lastUpdated": now, "items": items}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    STATE.write_text(json.dumps({"seen": sorted(seen), "updatedAt": now}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"New vacancy updates recorded: {len(added)}; total retained: {len(items)}")
 
 if __name__ == "__main__":
