@@ -147,8 +147,8 @@ def main():
     common = {"lastChecked": checked, "feedsChecked": successful, "feedsAttempted": len(QUERIES),
               "feedSource": "Bing public RSS search index; no LinkedIn login or gated-page scraping",
               "scanErrors": errors[:5]}
-    LINKEDIN_OUT.write_text(json.dumps({"candidates": li_items, **common}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
-    PENDING_OUT.write_text(json.dumps({"candidates": pending_items, **common}, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    LINKEDIN_OUT.write_text(json.dumps({"candidates": li_items, **common}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    PENDING_OUT.write_text(json.dumps({"candidates": pending_items, **common}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Successful feeds: %s/%s; LinkedIn leads: %s; other job-board leads: %s" %
           (successful, len(QUERIES), len(li_items), len(pending_items)))
 
