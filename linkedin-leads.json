@@ -1,5 +1,19 @@
 {
-  "candidates": [],
-  "lastChecked": "2026-11-03T09:21:00+06:00",
-  "feedsChecked": 7
+  "candidates": [
+    {
+      "title": "Executive – Supply Chain (Industrial & Stationery)",
+      "company": "Sindabad.com Ltd.",
+      "location": "Dhaka",
+      "salary": "Not stated in indexed post",
+      "experience": "Not confirmed in indexed excerpt",
+      "education": "Not confirmed in indexed excerpt",
+      "summary": "LinkedIn post describes category planning, purchase-order authorization, demand forecasting, replenishment, stock-level control and supplier/internal stakeholder coordination. Verify full requirements and current application status before applying.",
+      "postUrl": "https://www.linkedin.com/posts/jobcircularonline_we-are-hiring-executive-supply-chain-activity-7501278093483905024-fnoX",
+      "publishedAt": "Indexed as posted recently; exact date not shown",
+      "status": "pending_manual_verification",
+      "reason": "Publicly indexed LinkedIn post surfaced in search. Salary, education, experience, deadline and employer application route need confirmation from the complete original post."
+    }
+  ],
+  "lastChecked": "2026-11-03T09:24:00+06:00",
+  "feedsChecked": 10
 }
