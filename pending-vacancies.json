@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-03T00:00:43.487156+00:00",
+  "lastChecked": "2026-11-03T01:16:57.368107+00:00",
   "feedsChecked": 58,
   "feedErrors": [],
   "note": "RSS results are discovery leads only. They are not verified vacancies and are never published to vacancies.json automatically.",
@@ -298,6 +298,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 21 Oct 2026 16:49:18 GMT",
       "summary": " AGM/DGM-Production (Woven) at Vertex RMG Division (Vertex Group) &nbsp;&nbsp; Dohaj.com ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "AGM/DGM-Quality at Vertex RMG Division (Vertex Group) - Dohaj.com",
+      "feedUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVS15SVlma2hYNFJSTEZiWHgxOGhieFFjVWdkc29KejVwei1QaXl0bG5La0prUEgxNFVXTl9aeTItSlJpR2NxMHdDeWV1YnpvWFRLMkp0aEJFeTZlY0dLRWJOVTRvNENNNUJxOG93SzJxUE02TV93VTEyVzM0RFRtNjM2clhiMlNfYWNFTA?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Wed, 21 Oct 2026 15:01:19 GMT",
+      "summary": " AGM/DGM-Quality at Vertex RMG Division (Vertex Group) &nbsp;&nbsp; Dohaj.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -905,11 +914,20 @@
       "verified": false
     },
     {
-      "title": "ACI Logistics Ltd. - Bdjobs.com",
+      "title": "Europe job migration surges 46% in H1 amid Gulf slump - The Business Standard",
+      "feedUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdEJpMlhfaWQ0T1lna1VzdE5HazdLcmVGQTloYzA4ZEg0bzdoaTVJclV2dUpWRk9VYjNuUWlneFU5cnRQclZvbHFUT1I4cHRRT0djOUpvd2N3ZjhHZGx2LWN0LTM2RUZnUWdiaUJXSDJJX3hNQzA4UFdHM3JoZ0hVX3RIcGFlTTZaRE1PZ3BCYWE?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 30 Jun 2026 05:03:25 GMT",
+      "summary": " Europe job migration surges 46% in H1 amid Gulf slump &nbsp;&nbsp; The Business Standard ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "ACI Logistics Ltd. - BD Jobs",
       "feedUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBBOXhkVE0wZVBWSnNyaHBpeFdPOWRGWDJHRXNjMmprNk9MMGdCUlBMZm9hVzBabTZtZ2Q4Ylc0MDR1c2JWRTZiU1NJUkc1SWpIZk5VUDNXaVBWeUlTZzVaczR0X0RJbVE1QTQxZlh3N2dxZVk?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 29 Sep 2026 15:51:15 GMT",
-      "summary": " ACI Logistics Ltd. &nbsp;&nbsp; Bdjobs.com ",
+      "summary": " ACI Logistics Ltd. &nbsp;&nbsp; BD Jobs ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1391,6 +1409,15 @@
       "verified": false
     },
     {
+      "title": "The shifting landscape of global manufacturing: from offshoring to reshoring and its welfare implications - World Bank Blogs",
+      "feedUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaVJqTGh4VjJ4UTV0MzdGZ05uaWVLY0lFYXpHSm9OSkI0czJvZUdaWUFpM2d6VjU2NmhJNl9GeURockdubVd3T1lYNXpPajN3a3FOdE9qNHRHcUI3eEZobG5UNldzSEhpUjhPSVNCS2dVZE5UNHE0M3hxYVB6LS1Lb1RDQURiSk8tY0hDbTZOSTd6TkU0VjFaR29Udks4UkFDOS0xMDBfZHBUZUR1Z1R4YQ?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 19 Nov 2024 08:00:00 GMT",
+      "summary": " The shifting landscape of global manufacturing: from offshoring to reshoring and its welfare implications &nbsp;&nbsp; World Bank Blogs ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
       "title": "US-Bangla now training aircraft maintenance engineers - The Bangladesh Monitor",
       "feedUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVGZnUjVDbXRWbi1vVTNGbmlLamVJNGRWWFRfSmtsM2pwME9SMlNIbTZFa05fYXRKU2dqbTJtNHVxN2xWSVFxajlJYW9sOWVWZlJkTFpFajZlYVVtemFKekF4NnlzeTUwWG5xRFRNZ213VXRZcGVDTWdPd05pT2JMMmppTWtXQV85QlF2UnAwSE1ESDhtVzlubA?oc=5",
       "feedSource": "Google News RSS",
@@ -1513,6 +1540,15 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 14 Jun 2022 09:33:28 GMT",
       "summary": " Inventory, Transportation, Warehousing, Packaging and Distribution Management &nbsp;&nbsp; Bdjobs eLearning ",
+      "status": "pending_manual_verification",
+      "verified": false
+    },
+    {
+      "title": "Govt to find jobs for 40,000 workers laid off by Beximco - The Daily Star",
+      "feedUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONmh0R0Y0WEVzU3lJeDBiclFoSnBnc0FQb19jeXRpMFhqVFctV2RKbENXSVVkV205eVhVWjc0MjVOeUowVW9rVHRndTU2cDRBLWYxZW5WalFQaVlWcWJTSHNNNnNiVkxrYXlJZ0MwT0NjMjk1Rkh1WVZmLUl2bUhuMkY3dkRaYUY3dEN6MFVjWHpSeEY4bUt3?oc=5",
+      "feedSource": "Google News RSS",
+      "publishedAt": "Tue, 14 Jan 2025 18:22:19 GMT",
+      "summary": " Govt to find jobs for 40,000 workers laid off by Beximco &nbsp;&nbsp; The Daily Star ",
       "status": "pending_manual_verification",
       "verified": false
     },
@@ -1765,42 +1801,6 @@
       "feedSource": "Google News RSS",
       "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
       "summary": " Best Paying Jobs in Power Generation & Salaries 2026 - Top 10 &nbsp;&nbsp; Nexford University ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Deputy General Manager- Production (Textile) at Experience Textile Ltd. - Dohaj.com",
-      "feedUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMlVFbmdPS1RZbFBqTWh3NEZ4ZktSdFEzNGNyUEtTVDROdFp6aTlzbDBCQlkxbVdGVEstcXlTbEIzcHVibmZQcXVIWC1PWGUwSmpRdkp5WmtCVG4yVzJKNkhBZTRORkFnM2VSbVhpWktLN0pHcXBiTjcwXzRqQVh0Q3hkeWUwNExINS1GVmxMMnREUGZlSkVKbXp1VkRfQ0w0Vld3?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "summary": " Deputy General Manager- Production (Textile) at Experience Textile Ltd. &nbsp;&nbsp; Dohaj.com ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Top 10 Highest Paying Retail Jobs 2026 (Inc Salaries) - Nexford University",
-      "feedUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBYM0RYZDNGQUtGYld6MG85LWp5cWpWRFE2enZOUWVzNjdySzhBNFltR09KR1IyeUYwTEJVUThtRlFaaU4tZnpQZ09VUXBMY2JFeUxpNnQyd2UtYklvb0ZFX3hEdU5zeXdCV1RF0gF7QVVfeXFMTzNLY2lvQXBmaElFRl84bXExcDZ1dVpkOEZTUXpJaWw0UEdTdEprLVU2VDZ6RWVORjg0WnFzOS16TC1hcV9iTHBUV25zV0N4QkFrQ0dvV0ZQcDR6UkU3QUZFUTlLdXloUktlblRpZzV1TUtRc2dGQi1wUTRR?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "summary": " Top 10 Highest Paying Retail Jobs 2026 (Inc Salaries) &nbsp;&nbsp; Nexford University ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Best Paying Engineering Jobs & Careers 2026 (Inc Salaries) - Top 10 - Nexford University",
-      "feedUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9xS2xhaEZ1VWlabjVreDJ1ckw0LUxqVjVadWg1UjNjYzRSVWN2RFQ0MWR1dkVaTWdYRnJ6MEhkX2NHb1YzWlA3ckVwN1dsaTVuOXlCdHJBellVTFQ0UUwwakJqZGJScjNINFppX1lwNjJxUdIBggFBVV95cUxORjhXU3hPT3czcWFpRnRhWmdITWJjQjd0Z2haYmJxRGxlNklDNjF5X1JkSElucEtFdEdSallwRWlxWVE4UWVwbG1rcHlGTGtmcUlUZ0RZOFlTcWRHRkliWFlVb1hDcUdaUnQ0TXZZZXg5aGRXdnQ5Q21sQ19yOExuelln?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "summary": " Best Paying Engineering Jobs & Careers 2026 (Inc Salaries) - Top 10 &nbsp;&nbsp; Nexford University ",
-      "status": "pending_manual_verification",
-      "verified": false
-    },
-    {
-      "title": "Top 10 Highest Paying Mechanical Engineering Jobs 2026 (Inc Salaries) - Nexford University",
-      "feedUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd0VJb3RJNkxtU296Y3NRcnpaOUFSR21Nb19GUjlFdW12TGtiMzdGZ2F5d19HSUZBcDNkcld5bjNOUG5jc2E3UHM0dFA2NFgxem41LUVvYW04dnNxRzNzc1FPeExISUdyVDQySTJxYmM5RjNrTzZYczFUb2RXM0ZVSNIBkAFBVV95cUxNdVo0b0V2eEUtRnNNUVVFcExCNl82WjN2RzVnaU5OWkRfZldlaEJidXZEczJXMGNoTUdTLUZfMGY2dFZrUExLR25GUnFmOVZ5V0lKenJFakpGcGwyQkQtbjQ4QlB6eU5iaExYWlpHR0JXSzlhSlU2MGVhbkxBWE1kNHlLbnlETmRTWElPV3VKRUM?oc=5",
-      "feedSource": "Google News RSS",
-      "publishedAt": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "summary": " Top 10 Highest Paying Mechanical Engineering Jobs 2026 (Inc Salaries) &nbsp;&nbsp; Nexford University ",
       "status": "pending_manual_verification",
       "verified": false
     }
