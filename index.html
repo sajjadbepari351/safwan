@@ -217,18 +217,9 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 @media(max-width:760px){.site-header{padding-bottom:70px}.layout{grid-template-columns:1fr;gap:16px}.panel{border-radius:13px}.source-area{margin-top:37px}}
 
 
-/* Compact vacancy cards — presentation only */
-#jobsList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
-#jobsList .job{min-width:0;margin:0;padding:14px 15px;border-radius:12px}
-#jobsList .job h3{font-size:14px;line-height:1.35;margin-bottom:4px}
-#jobsList .job>strong{font-size:11px}
-#jobsList .job .meta{font-size:10px;line-height:1.65;margin-top:7px;overflow-wrap:anywhere}
-#jobsList .job .tag{font-size:9px;padding:4px 8px;margin-top:7px}
-#jobsList .job p{font-size:11px;line-height:1.55;margin-top:7px}
-#jobsList .job .apply{font-size:10px;padding:8px 11px;margin-top:9px}
-#jobsList .job .applied-toggle{font-size:10px;padding:7px 9px;margin-top:9px}
-@media(max-width:1050px){#jobsList{grid-template-columns:1fr}}
-@media(max-width:600px){#jobsList .job{padding:13px}#jobsList .job .meta{font-size:10px}}
+
+/* Keep original card layout; shorten secondary vacancy text */
+.job .job-summary{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
 </style>
 </head>
@@ -540,12 +531,10 @@ function renderJobs() {
           Location: ${escapeHTML(v.location || "Not specified")}<br>
           Salary: ${escapeHTML(v.salary || "Not disclosed")}<br>
           Experience: ${escapeHTML(v.experience || "Not specified")}<br>
-          Education: ${escapeHTML(v.education || "Not specified")}<br>
-          Deadline: ${escapeHTML(v.deadline || "Not disclosed")}<br>
-          Source: ${escapeHTML(v.source || "Original notice")}
+          Deadline: ${escapeHTML(v.deadline || "Not disclosed")}
         </div>
         <span class="tag">${escapeHTML(v.category)}</span>
-        <p>${escapeHTML(v.description || v.summary || "")}</p>
+        <p class="job-summary">${escapeHTML(v.description || v.summary || "")}</p>
         <a class="apply" href="${applyUrl}"
            target="_blank" rel="noopener noreferrer">
            Apply / View Original Notice ↗
