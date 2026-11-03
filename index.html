@@ -217,33 +217,6 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 @media(max-width:760px){.site-header{padding-bottom:70px}.layout{grid-template-columns:1fr;gap:16px}.panel{border-radius:13px}.source-area{margin-top:37px}}
 
 
-/* Dynamic interaction layer */
-.site-header{isolation:isolate;overflow:hidden}
-.site-header:after{content:"";position:absolute;z-index:-1;width:520px;height:520px;right:-150px;top:-220px;border-radius:50%;background:radial-gradient(circle at 40% 45%,#56d8d055,#39a6c422 38%,transparent 70%);filter:blur(8px);animation:heroGlow 12s ease-in-out infinite alternate;pointer-events:none}
-.site-header:before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(90deg,transparent,#000 45%,#000)}
-.hero{animation:heroEnter .75s cubic-bezier(.2,.7,.2,1) both}
-.hero h1{animation:heroEnter .85s .08s both}.hero p{animation:heroEnter .85s .16s both}
-.hero-points,.hero-actions{animation:heroEnter .85s .24s both}
-.hero-live-stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;animation:heroEnter .9s .32s both}
-.hero-stat{display:flex;align-items:center;gap:11px;min-width:158px;padding:12px 16px;border:1px solid #ffffff24;border-radius:13px;background:linear-gradient(135deg,#ffffff14,#ffffff08);backdrop-filter:blur(12px);box-shadow:0 10px 28px #071b2b22;transition:transform .25s,border-color .25s,background .25s}
-.hero-stat:hover{transform:translateY(-4px);border-color:#78ddd2a8;background:#ffffff1b}
-.hero-stat-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#55c9c126;color:#91e5dc;font-size:17px}
-.hero-stat strong{display:block;color:#fff;font-size:21px;line-height:1.1;font-weight:800;font-variant-numeric:tabular-nums}
-.hero-stat small{display:block;margin-top:4px;color:#c5d8e3;font-size:10px;font-weight:650}
-.job,.detected-card,.source,.panel,.update-status{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
-.job:hover,.detected-card:hover,.source:hover{transform:translateY(-3px)}
-.category,.apply,.hero-primary,.hero-secondary,.clear-filters{transition:all .2s ease}
-.category:active,.apply:active,.hero-primary:active,.hero-secondary:active{transform:scale(.98)}
-.search-wrap{transition:transform .2s ease}.search-wrap:focus-within{transform:translateY(-2px)}
-.nav-links a{position:relative}.nav-links a:after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;border-radius:4px;background:#66d8cb;transform:scaleX(0);transform-origin:left;transition:transform .2s}
-.nav-links a:hover:after{transform:scaleX(1)}
-.reveal-on-scroll{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
-.reveal-on-scroll.is-visible{opacity:1;transform:translateY(0)}
-@keyframes heroGlow{0%{transform:translate3d(0,0,0) scale(.92);opacity:.65}100%{transform:translate3d(-65px,55px,0) scale(1.12);opacity:1}}
-@keyframes heroEnter{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:760px){.hero-live-stats{gap:8px;margin-top:22px}.hero-stat{flex:1;min-width:calc(50% - 8px);padding:10px}.hero-stat:last-child{min-width:100%}.hero-stat strong{font-size:19px}}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal-on-scroll{opacity:1;transform:none}}
-
 </style>
 </head>
 <body>
@@ -259,7 +232,6 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
     <h1>Find your next move.<br><span>Build your career.</span></h1>
     <p>A focused job discovery platform for Bangladesh’s manufacturing and business professionals. Explore opportunities in Production, Industrial Engineering, Planning, Supply Chain and Operations.</p>
     <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div><div class="hero-actions"><a class="hero-primary" href="#jobs">Explore vacancies <span>→</span></a><a class="hero-secondary" href="#detectedJobs">See newly detected jobs</a></div>
-    <div class="hero-live-stats" aria-label="Live vacancy statistics"><div class="hero-stat"><span class="hero-stat-icon">▣</span><div><strong id="heroActiveCount">—</strong><small>Active vacancies</small></div></div><div class="hero-stat"><span class="hero-stat-icon">◈</span><div><strong id="heroCompanyCount">—</strong><small>Hiring companies</small></div></div><div class="hero-stat"><span class="hero-stat-icon">✦</span><div><strong id="heroLeadCount">—</strong><small>Newly detected leads</small></div></div></div>
   </div>
 </header>
 <main class="container">
@@ -581,19 +553,6 @@ function renderJobs() {
 
 
 
-function updateHeroStats(leadCount) {
- const active=validVacancies().length;
- const companies=new Set(validVacancies().map(v=>(v.company||"").trim().toLowerCase()).filter(Boolean)).size;
- const a=document.getElementById("heroActiveCount"),c=document.getElementById("heroCompanyCount"),l=document.getElementById("heroLeadCount");
- if(a)a.textContent=active;if(c)c.textContent=companies;if(l&&Number.isFinite(leadCount))l.textContent=leadCount;
-}
-function initScrollReveal() {
- const targets=document.querySelectorAll(".source-area,.topline,.panel,.job");
- if(!("IntersectionObserver" in window)){targets.forEach(el=>el.classList.add("is-visible"));return;}
- const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}}),{threshold:.08});
- targets.forEach(el=>{el.classList.add("reveal-on-scroll");observer.observe(el);});
-}
-
 async function loadDetectedJobs() {
   const area = document.getElementById("detectedJobsList");
   const summary = document.getElementById("detectedJobsSummary");
@@ -623,7 +582,6 @@ async function loadDetectedJobs() {
     });
     const pendingTime = [pendingData.lastChecked, linkedinData.lastChecked].filter(Boolean).map(x=>new Date(x)).filter(x=>!Number.isNaN(x.getTime())).sort((a,b)=>b-a)[0];
     const feeds = Number(pendingData.feedsChecked || 0) + Number(linkedinData.feedsChecked || 0);
-    updateHeroStats(merged.length);
     summary.innerHTML = '<span class="detected-pill">✦ ' + merged.length + ' detected leads</span><span class="detected-pill pending">⚠ All require verification</span><span class="detected-pill">◷ Last scan: ' + escapeHTML(pendingTime ? formatUpdateTime(pendingTime.toISOString()) : "Not available") + '</span><span class="detected-pill">' + feeds + ' feed checks reported</span>';
     if (!merged.length) {
       area.innerHTML = '<div class="empty">No new public job posts detected yet. The automatic scanner will check again on its next scheduled run.</div>';
@@ -787,7 +745,6 @@ async function loadVacancies() {
 
     vacancies = data.vacancies;
     render();
-    updateHeroStats(Number(document.getElementById("heroLeadCount")?.textContent) || 0);
   } catch (error) {
     console.error(error);
     document.getElementById("jobsList").innerHTML = `
@@ -810,7 +767,6 @@ document.getElementById("experienceFilter").addEventListener("change", renderJob
 document.getElementById("clearFilters").addEventListener("click", () => { document.getElementById("search").value=""; document.getElementById("locationFilter").value=""; document.getElementById("experienceFilter").value=""; selectedCategory="All"; render(); });
 
 renderSources();
-initScrollReveal();
 loadUpdateStatus();
 loadDetectedJobs();
 loadVacancies();
