@@ -58,14 +58,25 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .topline{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin:2px 0 14px;padding:0 2px}.topline h2,.section-heading h2{margin:0;font-size:21px;letter-spacing:-.55px;font-weight:780;color:#14243a}.meta{color:var(--muted);font-size:11px;line-height:1.95}.job{position:relative;padding:21px 22px;margin-bottom:13px;transition:transform .2s,border-color .2s,box-shadow .2s}.job:hover{transform:translateY(-2px);border-color:#c7d8f2;box-shadow:0 13px 30px #17345a12}.job h3{color:var(--navy);margin:0 0 6px;font-size:16px;line-height:1.4;letter-spacing:-.2px}.job strong{font-size:12px;color:#334155}.job .meta{margin-top:11px;line-height:2}.tag{display:inline-block;background:#eff6ff;color:#2455a5;padding:5px 10px;border-radius:20px;font-size:10px;font-weight:750;margin-top:10px;letter-spacing:.2px}.apply{display:inline-flex;margin-top:14px;background:linear-gradient(110deg,#2563eb,#1d4ed8);color:white;text-decoration:none;padding:10px 15px;border-radius:8px;font-size:11px;font-weight:750;box-shadow:0 5px 12px #2563eb20}.apply:hover{transform:translateY(-1px);box-shadow:0 8px 18px #2563eb35}.applied-toggle{display:inline-flex;margin:14px 0 0 7px;padding:9px 12px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:#334155;font-size:11px;font-weight:700;cursor:pointer}.applied-toggle.is-applied{background:#ecfdf5;border-color:#a7f3d0;color:#047857}.applied-toggle:hover{border-color:#60a5fa}.job p{font-size:12px;color:#526176;line-height:1.75;margin:11px 0 0}
 .empty{background:#fff;border:1px dashed #cbd5e1;border-radius:14px;padding:35px;text-align:center;color:var(--muted)}.source-area{margin-top:45px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:12px}.section-heading p{margin:4px 0 14px}.sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.source{padding:17px;transition:border-color .2s,transform .2s}.source:hover{border-color:#bfdbfe;transform:translateY(-2px)}.source h3{margin:0 0 7px;font-size:13px;color:#24364d}.source a{color:var(--blue);text-decoration:none;font-size:11px;font-weight:750}.source a:hover{text-decoration:underline}.lead{padding:16px;margin-bottom:10px}.lead h3{margin:0 0 7px;color:var(--navy);font-size:14px}.lead a{color:var(--blue);font-size:11px;font-weight:700}.lead-label{display:inline-block;font-size:9px;font-weight:850;letter-spacing:.55px;padding:5px 9px;border-radius:20px;background:#fff5db;color:#805500;margin-bottom:8px}.notice{background:#fffbeb;border:1px solid #f3dfaa;padding:15px 17px;border-radius:11px;color:#73520b;font-size:11px;line-height:1.8;margin-top:27px}footer{text-align:center;color:#94a3b8;padding:38px 12px;font-size:10px}footer a:hover{color:#2563eb!important}
 @media(max-width:760px){.site-header{padding:18px 20px 62px}.site-nav{margin-bottom:48px}.nav-links{gap:13px}.nav-links a{font-size:11px}.layout{grid-template-columns:1fr}.panel{position:static}.filters{grid-template-columns:1fr}.hero h1{letter-spacing:-1.5px}.container{padding:0 14px}.site-header:after{opacity:.5}}
-@media(max-width:430px){.nav-links{display:none}.hero p{font-size:14px}.hero-points span{font-size:10px}.job{padding:16px}.topline h2,.section-heading h2{font-size:19px}.search{font-size:13px}}</style>
+@media(max-width:430px){.nav-links{display:none}.hero p{font-size:14px}.hero-points span{font-size:10px}.job{padding:16px}.topline h2,.section-heading h2{font-size:19px}.search{font-size:13px}}
+.detected-summary{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 12px}
+.detected-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:10px;font-weight:750}
+.detected-pill.pending{background:#fff7ed;color:#9a3412}
+.detected-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:11px}
+.detected-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px;box-shadow:0 5px 18px #152b4b07}
+.detected-card h3{margin:7px 0;color:var(--navy);font-size:14px;line-height:1.45}
+.detected-card p{margin:8px 0;color:#526176;font-size:11px;line-height:1.65}
+.detected-card .meta{font-size:10px}
+.detected-source{display:inline-flex;margin-top:9px;color:#2563eb;font-size:11px;font-weight:750;text-decoration:none}
+.detected-source:hover{text-decoration:underline}
+</style>
 </head>
 <body>
 
 <header class="site-header">
   <nav class="site-nav">
     <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
-    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
+    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#detectedJobs">Newly Detected</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
     <div class="nav-update-group"><a class="update-nav" href="#updateStatus" aria-label="See newly added vacancies">✦ <span>New Updates</span></a><span class="nav-last-updated" title="Latest database scan">◷ <span id="lastUpdatedAt">Checking…</span></span></div>
   </nav>
   <div class="hero">
@@ -87,6 +98,13 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
     </div>
     <div class="update-status-details" id="updateDetails"><span>Loading department-wise vacancy counts…</span></div>
     <div class="update-status-note" id="updateLeadSummary"></div>
+  </section>
+
+
+  <section class="source-area" id="detectedJobs" aria-live="polite">
+    <div class="section-heading"><div><h2>🆕 Newly Detected Jobs</h2><p class="meta">Fresh public job posts found by automatic scans. These are leads, not confirmed vacancies—check the original post before applying.</p></div><span class="lead-label">AUTO-DISCOVERED</span></div>
+    <div id="detectedJobsSummary" class="detected-summary"><span class="detected-pill">Loading scan summary…</span></div>
+    <div id="detectedJobsList"><div class="empty">Loading newly detected jobs…</div></div>
   </section>
 
   <div class="filters">
@@ -396,6 +414,53 @@ function renderJobs() {
 }
 
 
+
+async function loadDetectedJobs() {
+  const area = document.getElementById("detectedJobsList");
+  const summary = document.getElementById("detectedJobsSummary");
+  if (!area || !summary) return;
+  try {
+    const [pendingResponse, linkedinResponse] = await Promise.all([
+      fetch("./pending-vacancies.json?v=" + Date.now()),
+      fetch("./linkedin-leads.json?v=" + Date.now())
+    ]);
+    const pendingData = pendingResponse.ok ? await pendingResponse.json() : {};
+    const linkedinData = linkedinResponse.ok ? await linkedinResponse.json() : {};
+    const pending = Array.isArray(pendingData.candidates) ? pendingData.candidates : [];
+    const linkedin = Array.isArray(linkedinData.candidates) ? linkedinData.candidates : [];
+    const merged = [];
+    const seen = new Set();
+    [...pending.map(x => ({...x, detectedSource:x.feedSource || "Public RSS / job-board search", detectedUrl:x.feedUrl || x.sourceUrl || x.postUrl || x.url})),
+     ...linkedin.map(x => ({...x, detectedSource:"Public LinkedIn search", detectedUrl:x.postUrl || x.url || x.sourceUrl || x.feedUrl}))].forEach(item => {
+      const url = safeUrl(item.detectedUrl);
+      if (!url || seen.has(url)) return;
+      seen.add(url);
+      merged.push({...item, detectedUrl:url});
+    });
+    merged.sort((a,b) => {
+      const da = Date.parse(a.publishedAt || "") || 0;
+      const db = Date.parse(b.publishedAt || "") || 0;
+      return db-da;
+    });
+    const pendingTime = [pendingData.lastChecked, linkedinData.lastChecked].filter(Boolean).map(x=>new Date(x)).filter(x=>!Number.isNaN(x.getTime())).sort((a,b)=>b-a)[0];
+    const feeds = Number(pendingData.feedsChecked || 0) + Number(linkedinData.feedsChecked || 0);
+    summary.innerHTML = '<span class="detected-pill">✦ ' + merged.length + ' detected leads</span><span class="detected-pill pending">⚠ All require verification</span><span class="detected-pill">◷ Last scan: ' + escapeHTML(pendingTime ? formatUpdateTime(pendingTime.toISOString()) : "Not available") + '</span><span class="detected-pill">' + feeds + ' feed checks reported</span>';
+    if (!merged.length) {
+      area.innerHTML = '<div class="empty">No new public job posts detected yet. The automatic scanner will check again on its next scheduled run.</div>';
+      return;
+    }
+    area.innerHTML = '<div class="detected-grid">' + merged.slice(0,60).map(item => {
+      const company = item.company || "Employer not confirmed";
+      const location = item.location || "Location not confirmed";
+      const published = item.publishedAt || "Date not supplied";
+      const summaryText = item.summary || item.reason || "Open the original post and verify role details, eligibility, deadline and application route.";
+      return '<article class="detected-card"><span class="lead-label">' + escapeHTML(item.detectedSource) + ' · UNVERIFIED</span><h3>' + escapeHTML(item.title || "Job-related post") + '</h3><div class="meta">' + escapeHTML(company) + ' · ' + escapeHTML(location) + '<br>Published: ' + escapeHTML(published) + '</div><p>' + escapeHTML(summaryText) + '</p><a class="detected-source" href="' + escapeHTML(item.detectedUrl) + '" target="_blank" rel="noopener noreferrer">Open original post / result ↗</a></article>';
+    }).join("") + '</div>';
+  } catch (error) {
+    area.innerHTML = '<div class="empty">Could not load the newly detected job feed. Please refresh the page.</div>';
+  }
+}
+
 async function loadGovernmentJobs() {
   const area = document.getElementById("governmentJobsList");
   try {
@@ -564,11 +629,12 @@ document.getElementById("experienceFilter").addEventListener("change", renderJob
 
 renderSources();
 loadUpdateStatus();
+loadDetectedJobs();
 loadVacancies();
 loadGovernmentJobs();
 loadLeads();
 loadLinkedInLeads();
-setInterval(() => { loadUpdateStatus(); loadVacancies(); loadGovernmentJobs(); loadLeads(); loadLinkedInLeads(); }, 5 * 60 * 1000);
+setInterval(() => { loadUpdateStatus(); loadDetectedJobs(); loadVacancies(); loadGovernmentJobs(); loadLeads(); loadLinkedInLeads(); }, 5 * 60 * 1000);
 </script>
 
 </body>
