@@ -89,7 +89,7 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
   <section class="source-area" id="governmentJobs"><div class="section-heading"><div><h2>Government Jobs</h2><p class="meta">Government recruitment notices are listed separately from private-sector vacancies.</p></div><span class="lead-label">GOVERNMENT</span></div><div id="governmentJobsList"><div class="empty">Loading government vacancies...</div></div></section>
 
   <section class="source-area" id="linkedinLeads">
-    <div class="section-heading"><div><h2>LinkedIn Vacancy Posts</h2><p class="meta">Publicly indexed hiring posts from LinkedIn personal profiles and company pages. These are leads, not verified vacancies.</p></div><span class="lead-label">LINKEDIN · UNVERIFIED</span></div>
+    <div class="section-heading"><div><h2>LinkedIn Vacancy Posts</h2><p class="meta">Publicly indexed LinkedIn hiring posts. Automatically scanned twice daily; leads remain unverified until checked.</p></div><span class="lead-label">LINKEDIN · UNVERIFIED</span></div>
     <div id="linkedinLeadsList"><div class="empty">Loading LinkedIn post leads...</div></div>
   </section>
 
@@ -372,11 +372,13 @@ async function loadLinkedInLeads() {
     if (!response.ok) throw new Error("No LinkedIn lead file");
     const data = await response.json();
     const leads = Array.isArray(data.candidates) ? data.candidates.slice(0, 30) : [];
+    const scanChecked = data.lastChecked ? new Date(data.lastChecked).toLocaleString() : "Not scanned yet";
+    const scanInfo = '<p class="meta">Last automatic scan: ' + escapeHTML(scanChecked) + ' · ' + Number(data.feedsChecked || 0) + ' public search feeds checked</p>';
     if (!leads.length) {
-      area.innerHTML = '<div class="empty">No publicly indexed LinkedIn vacancy posts found yet. New discoveries will appear here after the next scan.</div>';
+      area.innerHTML = scanInfo + '<div class="empty">No public LinkedIn posts matched the search feeds. Automatic scans run twice daily.</div>';
       return;
     }
-    area.innerHTML = leads.map(item => {
+    area.innerHTML = scanInfo + leads.map(item => {
       const url = safeUrl(item.postUrl || item.url);
       return '<article class="lead"><span class="lead-label">LinkedIn post · Unverified</span><h3>' + escapeHTML(item.title || "Hiring announcement") + '</h3><div class="meta">' + escapeHTML(item.company || "Company not confirmed") + ' · ' + escapeHTML(item.location || "Location not specified") + '<br>Posted: ' + escapeHTML(item.publishedAt || "Date not available") + '</div><p>' + escapeHTML(item.summary || item.reason || "Details require verification against the original employer notice.") + '</p>' + (url ? '<a href="' + url + '" target="_blank" rel="noopener noreferrer">View LinkedIn post ↗</a>' : '') + '</article>';
     }).join("");
