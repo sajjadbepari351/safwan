@@ -1,4 +1,4 @@
-name: LinkedIn public-post discovery
+name: Career Radar public vacancy discovery
 
 on:
   schedule:
@@ -9,13 +9,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: linkedin-public-post-discovery
+  group: career-radar-public-discovery
   cancel-in-progress: false
 
 jobs:
-  scan:
+  discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -23,16 +23,20 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Scan public search-index RSS feeds
+      - name: Discover public vacancy leads
         run: python scripts/scan_linkedin.py
-      - name: Commit updated LinkedIn leads
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool linkedin-leads.json > /dev/null
+          python -m json.tool pending-vacancies.json > /dev/null
+      - name: Commit refreshed discovery feeds
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add linkedin-leads.json
+          git add linkedin-leads.json pending-vacancies.json
           if git diff --cached --quiet; then
-            echo "No LinkedIn lead changes."
+            echo "No discovery-feed changes."
           else
-            git commit -m "Refresh public LinkedIn vacancy leads"
+            git commit -m "Refresh public vacancy discovery feeds"
             git push
           fi
