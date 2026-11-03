@@ -32,7 +32,7 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 <header class="site-header">
   <nav class="site-nav">
     <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
-    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
+    <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
   </nav>
   <div class="hero">
     <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
@@ -85,6 +85,8 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
       </div>
     </section>
   </div>
+
+  <section class="source-area" id="governmentJobs"><div class="section-heading"><div><h2>Government Jobs</h2><p class="meta">Government recruitment notices are listed separately from private-sector vacancies.</p></div><span class="lead-label">GOVERNMENT</span></div><div id="governmentJobsList"><div class="empty">Loading government vacancies...</div></div></section>
 
   <section class="source-area" id="linkedinLeads">
     <div class="section-heading"><div><h2>LinkedIn Vacancy Posts</h2><p class="meta">Publicly indexed hiring posts from LinkedIn personal profiles and company pages. These are leads, not verified vacancies.</p></div><span class="lead-label">LINKEDIN · UNVERIFIED</span></div>
@@ -347,6 +349,22 @@ function renderJobs() {
   }).join("");
 }
 
+
+async function loadGovernmentJobs() {
+  const area = document.getElementById("governmentJobsList");
+  try {
+    const response = await fetch("./government-vacancies.json?v=" + Date.now());
+    if (!response.ok) throw new Error("Unavailable");
+    const data = await response.json();
+    const jobs = Array.isArray(data.vacancies) ? data.vacancies.filter(v => v.verified === true) : [];
+    if (!jobs.length) { area.innerHTML = '<div class="empty">No active government vacancies listed.</div>'; return; }
+    area.innerHTML = jobs.map(v => {
+      const url = safeUrl(v.apply);
+      return '<article class="job"><h3>' + escapeHTML(v.title) + '</h3><strong>' + escapeHTML(v.company) + '</strong><div class="meta">Location: ' + escapeHTML(v.location) + '<br>Salary: ' + escapeHTML(v.salary) + '<br>Experience: ' + escapeHTML(v.experience) + '<br>Education: ' + escapeHTML(v.education) + '<br>Deadline: ' + escapeHTML(v.deadline) + '</div><span class="tag">Government · ' + escapeHTML(v.category) + '</span><p>' + escapeHTML(v.description) + '</p><a class="apply" href="' + url + '" target="_blank" rel="noopener noreferrer">Official application ↗</a></article>';
+    }).join("");
+  } catch (error) { area.innerHTML = '<div class="empty">Government vacancy file is not available.</div>'; }
+}
+
 async function loadLinkedInLeads() {
   const area = document.getElementById("linkedinLeadsList");
   try {
@@ -441,8 +459,10 @@ document.getElementById("experienceFilter").addEventListener("change", renderJob
 
 renderSources();
 loadVacancies();
+loadGovernmentJobs();
 loadLeads();
-setInterval(() => { loadVacancies(); loadLeads(); loadLinkedInLeads(); }, 5 * 60 * 1000);
+loadLinkedInLeads();
+setInterval(() => { loadVacancies(); loadGovernmentJobs(); loadLeads(); loadLinkedInLeads(); }, 5 * 60 * 1000);
 </script>
 
 </body>
