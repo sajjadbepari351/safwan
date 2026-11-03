@@ -1,8 +1,8 @@
-name: Frequent vacancy discovery
+name: Scheduled vacancy discovery and LinkedIn public leads
 
 on:
   schedule:
-    - cron: "*/15 * * * *" # Every 15 minutes (GitHub Actions schedule; may be delayed)
+    - cron: "0 2,14 * * *" # Twice daily: 08:00 and 20:00 Bangladesh time
   workflow_dispatch:
 
 permissions:
@@ -20,8 +20,19 @@ jobs:
         with:
           python-version: "3.x"
 
+      - name: Validate scanner syntax
+        run: python -m py_compile scripts/discover_jobs.py scripts/scan_linkedin.py
+
       - name: Collect RSS discovery leads
         run: python scripts/discover_jobs.py
+
+      - name: Collect public LinkedIn and job-board leads
+        run: python scripts/scan_linkedin.py
+
+      - name: Validate discovery JSON
+        run: |
+          python -m json.tool pending-vacancies.json > /dev/null
+          python -m json.tool linkedin-leads.json > /dev/null
 
       - name: Commit updated discovery list
         run: |
