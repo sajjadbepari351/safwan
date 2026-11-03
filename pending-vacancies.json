@@ -1,19 +1,8 @@
 {
-  "candidates": [
-    {
-      "title": "Executive – Supply Chain Department",
-      "company": "Corporate Station Bangladesh",
-      "location": "Khilgaon, Dhaka",
-      "salary": "BDT 25,000–40,000",
-      "experience": "2 years preferred; freshers encouraged",
-      "education": "BSc in any Engineering discipline (EEE or Mechanical preferred)",
-      "summary": "Support supply chain planning, local and international procurement, supplier coordination, import documentation, inventory tracking, reporting and process improvement.",
-      "source": "Publicly indexed LinkedIn job listing; hiring details attributed to Washiur Rahman",
-      "sourceUrl": "https://bd.linkedin.com/jobs/view/supply-chain-executive-at-corporate-station-bangladesh-4474202437",
-      "status": "pending_manual_verification",
-      "reason": "The indexed LinkedIn listing gives a Dhaka location, salary and fresher eligibility, but no application deadline or independently confirmed employer application route was found. IPE eligibility should also be confirmed because EEE/Mechanical are preferred."
-    }
-  ],
-  "lastChecked": "2026-11-03T09:21:00+06:00",
-  "feedsChecked": 7
+  "candidates": [],
+  "lastChecked": null,
+  "feedsChecked": 0,
+  "feedsAttempted": 0,
+  "feedSource": "Bing public RSS search index",
+  "scanErrors": []
 }
