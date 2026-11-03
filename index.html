@@ -166,6 +166,56 @@ footer{padding:35px 12px}
  .update-status-details{gap:8px 13px}
 }
 
+
+/* Visual refinement v2 — calm navy, teal and warm-neutral palette */
+:root{--navy:#142b45;--blue:#176b87;--ink:#1d2b3d;--muted:#68788d;--bg:#f5f7fa;--line:#e3e9ef;--accent:#0f8b8d;--accent-soft:#e8f5f4}
+body{background:#f5f7fa;color:#1d2b3d}
+.site-header{background:radial-gradient(ellipse at 88% 10%,#38bdf829,transparent 30%),radial-gradient(ellipse at 10% 100%,#0f8b8d30,transparent 36%),linear-gradient(118deg,#10243a 0%,#153c54 58%,#15566a 100%);padding-bottom:88px}
+.site-header:before{opacity:.09;background-size:90px 90px}
+.brand-mark{background:linear-gradient(145deg,#26a6a1,#176b87);border-color:#ffffff40}
+.nav-links a{color:#d5e3eb}.nav-links a:hover{color:#fff;background:#ffffff12}
+.update-nav{border-color:#8ddbd35c!important;background:#0f8b8d26!important;color:#d9fffa!important}
+.eyebrow{background:#ffffff10;border-color:#ffffff28;color:#d5f5f1}
+.pulse{background:#5ee0b5;box-shadow:0 0 0 4px #5ee0b522}
+.hero h1 span{background:linear-gradient(90deg,#70e1d4,#a5d9f2);-webkit-background-clip:text;background-clip:text}
+.hero p{color:#d0dce5}.hero-points span{background:#ffffff0d;border-color:#ffffff20;color:#e1ebf0}
+.hero-primary{color:#12334a;background:#f8fffe}.hero-secondary{border-color:#ffffff45;color:#e0f7f4}
+.container{max-width:1260px}
+.search{border-color:#dce5eb;box-shadow:0 13px 35px #17344a12}
+.search:focus,.filter:focus{border-color:#38a6a4;box-shadow:0 0 0 4px #0f8b8d18}
+.update-status,.panel,.job,.source,.detected-card{border-color:#e2e9ee;box-shadow:0 4px 18px #18364a08}
+.update-status{border-left:4px solid #168b8b}
+.update-status-title .clock{color:#168b8b}.update-status-main,.new-update-dept{color:#176b87}
+.new-update-dept{background:#eaf4f7}.new-update-verified{color:#14734f;background:#e5f5ed}.new-update-pending{color:#94601a;background:#fff4df}
+.update-count{background:#f7fafb;border-color:#e4eaef}.update-count b{background:#dff1ef;color:#126f70}
+.filter-heading{margin-top:31px}.filter-heading h2{font-size:16px;color:#1a3045}
+.filter{border-color:#dce5eb;background:#fff}
+.clear-filters:hover{border-color:#72b7b2;color:#126f70;background:#f0faf8}
+.layout{grid-template-columns:232px minmax(0,1fr);gap:25px}
+.panel{background:#fff;padding:19px}.panel h3{color:#607286;letter-spacing:1px}
+.category{padding:11px 12px;margin:3px 0;color:#4d6073}
+.category:hover,.category.active{background:#eaf5f4;color:#116e70}
+.count{background:#f0f4f6;color:#647789}.category.active .count{background:#d5eeeb;color:#116e70}
+.topline{margin-bottom:17px}.topline h2,.section-heading h2{color:#18334a;letter-spacing:-.45px}
+.job{border-radius:14px;padding:21px 23px;background:#fff}
+.job:hover{border-color:#b8d9d5;box-shadow:0 12px 28px #173e4b10}
+.job h3{color:#173b52}.job strong{color:#344e60}
+.tag{background:#eaf4f7;color:#176b87}
+.apply{background:linear-gradient(110deg,#168b8b,#176b87);box-shadow:0 5px 12px #168b8b20}
+.apply:hover{box-shadow:0 8px 18px #168b8b35}
+.applied-toggle.is-applied{background:#e8f6ef;border-color:#b7e5cd;color:#14734f}
+.source-area{margin-top:48px}.section-heading{margin-bottom:15px}.section-heading p{color:#6b7c8e}
+.detected-pill{background:#eaf4f7;color:#176b87}.detected-pill.pending,.lead-label{background:#fff3df;color:#94601a}
+.detected-card{border-radius:14px;background:#fff}
+.detected-card:hover{border-color:#b8d9d5;box-shadow:0 12px 28px #173e4b10}
+.detected-source,.source a,.lead a{color:#167b82}
+.source{border-radius:13px}.source:hover{border-color:#b8d9d5}
+.empty{border-color:#d3dfe6;background:#fbfcfd;color:#718195}
+.notice{background:#fdf8ec;border-color:#f0e2bd;color:#745b27}
+footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px}
+@media(min-width:1100px){.layout{grid-template-columns:240px minmax(0,1fr)}.panel{border-radius:15px}.job{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:start}.job h3,.job strong,.job .meta,.job .tag,.job p{grid-column:1}.job .apply,.job .applied-toggle{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin-top:0}.job .applied-toggle{grid-row:2;margin-top:8px}}
+@media(max-width:760px){.site-header{padding-bottom:70px}.layout{grid-template-columns:1fr;gap:16px}.panel{border-radius:13px}.source-area{margin-top:37px}}
+
 </style>
 </head>
 <body>
