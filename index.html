@@ -29,6 +29,10 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
 .update-status-details{display:flex;gap:10px 22px;flex-wrap:wrap;color:#64748b;font-size:11px}
 .update-status-details span{display:inline-flex;gap:5px;align-items:center}
 .update-status-note{margin-top:7px;color:#94a3b8;font-size:10px}
+.update-count{display:inline-flex!important;align-items:center;gap:9px;padding:7px 10px;border:1px solid #e2e8f0;border-radius:9px;background:#f8fafc;color:#475569}
+.update-count strong{font-size:11px;font-weight:650}
+.update-count b{display:inline-grid;place-items:center;min-width:23px;height:23px;padding:0 6px;border-radius:7px;background:#dbeafe;color:#1d4ed8;font-size:11px}
+#updateLeadSummary{margin-top:11px;color:#64748b;font-size:11px;line-height:1.6}
 @media(max-width:760px){.update-nav{font-size:10px!important;padding:7px 9px!important}.update-strip{font-size:11px;margin-top:16px}}
 @media(max-width:430px){.update-nav{display:none!important}.update-strip{max-width:100%;width:100%}}
 .hero{position:relative;z-index:1;max-width:1200px;margin:auto}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #ffffff30;background:#ffffff0d;border-radius:30px;padding:7px 13px;color:#dbeafe;font-size:10px;font-weight:800;letter-spacing:1.25px}.pulse{width:7px;height:7px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 4px #4ade8025}
@@ -49,25 +53,27 @@ a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
   <nav class="site-nav">
     <a class="brand" href="./"><span class="brand-mark">⌁</span><span>Career Radar BD</span></a>
     <div class="nav-links"><a href="#jobs">Find Jobs</a><a href="#governmentJobs">Government Jobs</a><a href="#leads">New Leads</a><a href="#linkedinLeads">LinkedIn Posts</a><a href="#sources">Employers</a><a href="#leads">Latest leads</a></div>
-    <a class="update-nav" href="#updateStatus" aria-label="See last website update time">◷ <span>Last Updated</span></a>
+    <a class="update-nav" href="#updateStatus" aria-label="See latest vacancy updates">✦ <span>New Updates</span></a>
   </nav>
   <div class="hero">
     <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
     <h1>Find your next move.<br><span>Build your career.</span></h1>
     <p>A focused job discovery platform for Bangladesh’s manufacturing and business professionals. Explore opportunities in Production, Industrial Engineering, Planning, Supply Chain and Operations.</p>
     <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div>
-    <div class="update-strip"><span class="update-icon">◷</span><span><strong>Last updated:</strong> <span id="headerLastUpdated">Checking update time…</span><br><small>Bangladesh Standard Time (UTC+6)</small></span></div>
   </div>
 </header>
 <main class="container">
   <div class="search-wrap"><span class="search-icon">⌕</span><input id="search" class="search" placeholder="Search job title, company, location or skill..."></div>
   <section class="update-status" id="updateStatus" aria-live="polite">
     <div class="update-status-head">
-      <div class="update-status-title"><span class="clock">◷</span> Last Updated</div>
-      <div class="update-status-main" id="mainLastUpdated">Checking update time…</div>
+      <div>
+        <div class="update-status-title"><span class="clock">✦</span> New Updates</div>
+        <div class="update-status-note">Verified vacancies currently listed by department, plus newly discovered leads awaiting verification.</div>
+      </div>
+      <div class="update-status-main" id="updateTotals">Loading updates…</div>
     </div>
-    <div class="update-status-details" id="updateDetails"><span>Loading update history…</span></div>
-    <div class="update-status-note">Times are shown in Bangladesh Standard Time. Vacancy database dates and automatic scan times are shown separately.</div>
+    <div class="update-status-details" id="updateDetails"><span>Loading department-wise vacancy counts…</span></div>
+    <div class="update-status-note" id="updateLeadSummary"></div>
   </section>
 
   <div class="filters">
@@ -449,48 +455,70 @@ async function loadLeads() {
   } catch (error) { area.innerHTML = '<div class="empty">Automatic discovery has not published its first scan yet.</div>'; }
 }
 
-function formatDhakaTime(value, dateOnly = false) {
-  if (!value) return "Not available";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return String(value);
-  const options = dateOnly
-    ? { timeZone: "Asia/Dhaka", day: "2-digit", month: "short", year: "numeric" }
-    : { timeZone: "Asia/Dhaka", day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", hour12: true };
-  return new Intl.DateTimeFormat("en-GB", options).format(date) + (dateOnly ? "" : " BDT");
+function classifyDepartment(item) {
+  const explicit = String(item.category || "").trim();
+  if (explicit) return explicit;
+  const text = [item.title, item.summary, item.description, item.company].join(" ").toLowerCase();
+  if (/supply chain|procurement|purchase|sourcing|store|inventory|warehouse|logistic/.test(text)) return "Supply Chain";
+  if (/industrial engineer|\\bie\\b|work study|line balan|productivity/.test(text)) return "Industrial Engineering";
+  if (/production|manufactur|plant|process engineer/.test(text)) return "Production";
+  if (/planning|ppc|demand forecast/.test(text)) return "Planning";
+  if (/operation|opex/.test(text)) return "Operations";
+  return "Other";
 }
 
 async function loadUpdateStatus() {
   const sources = [
-    { file: "./vacancies.json", label: "Private vacancies", field: "lastUpdated", dateOnly: true },
-    { file: "./government-vacancies.json", label: "Government vacancies", field: "lastUpdated", dateOnly: true },
-    { file: "./pending-vacancies.json", label: "New vacancy leads", field: "lastChecked", dateOnly: false },
-    { file: "./linkedin-leads.json", label: "LinkedIn scan", field: "lastChecked", dateOnly: false }
+    "./vacancies.json",
+    "./government-vacancies.json",
+    "./pending-vacancies.json",
+    "./linkedin-leads.json"
   ];
-  const results = await Promise.all(sources.map(async source => {
-    try {
-      const response = await fetch(source.file + "?v=" + Date.now());
-      if (!response.ok) throw new Error("Unavailable");
-      const data = await response.json();
-      const value = data[source.field];
-      return { ...source, value: value || null, date: value ? new Date(value) : null };
-    } catch {
-      return { ...source, value: null, date: null };
+  try {
+    const loaded = await Promise.all(sources.map(async file => {
+      const response = await fetch(file + "?v=" + Date.now());
+      if (!response.ok) throw new Error("Could not load " + file);
+      return response.json();
+    }));
+    const [privateData, governmentData, pendingData, linkedinData] = loaded;
+    const verified = [
+      ...(Array.isArray(privateData.vacancies) ? privateData.vacancies : []),
+      ...(Array.isArray(governmentData.vacancies) ? governmentData.vacancies : [])
+    ].filter(job => job.verified === true);
+    const departmentCounts = {};
+    verified.forEach(job => {
+      const department = classifyDepartment(job);
+      departmentCounts[department] = (departmentCounts[department] || 0) + 1;
+    });
+    const ordered = Object.entries(departmentCounts).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]));
+    const pending = Array.isArray(pendingData.candidates) ? pendingData.candidates : [];
+    const linkedin = Array.isArray(linkedinData.candidates) ? linkedinData.candidates : [];
+    const leadCounts = {};
+    [...pending, ...linkedin].forEach(lead => {
+      const department = classifyDepartment(lead);
+      leadCounts[department] = (leadCounts[department] || 0) + 1;
+    });
+    const totalEl = document.getElementById("updateTotals");
+    const detailEl = document.getElementById("updateDetails");
+    const leadEl = document.getElementById("updateLeadSummary");
+    if (totalEl) totalEl.textContent = verified.length + " verified vacancies";
+    if (detailEl) {
+      detailEl.innerHTML = ordered.length ? ordered.map(([name,count]) =>
+        '<span class="update-count"><strong>' + escapeHTML(name) + '</strong><b>' + count + '</b></span>'
+      ).join("") : '<span>No verified vacancies listed yet.</span>';
     }
-  }));
-  const timed = results.filter(x => x.date && !Number.isNaN(x.date.getTime()));
-  const latest = timed.filter(x => !x.dateOnly).sort((a,b) => b.date-a.date)[0]
-    || timed.sort((a,b) => b.date-a.date)[0];
-  const mainText = latest ? formatDhakaTime(latest.value, latest.dateOnly) : "Update time unavailable";
-  const header = document.getElementById("headerLastUpdated");
-  const main = document.getElementById("mainLastUpdated");
-  const details = document.getElementById("updateDetails");
-  if (header) header.textContent = mainText;
-  if (main) main.textContent = mainText;
-  if (details) {
-    details.innerHTML = results.map(item => {
-      const value = item.value ? formatDhakaTime(item.value, item.dateOnly) : "Not available";
-      return '<span><strong>' + escapeHTML(item.label) + ':</strong> ' + escapeHTML(value) + '</span>';
-    }).join("");
+    if (leadEl) {
+      const leadParts = Object.entries(leadCounts).sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0]))
+        .map(([name,count]) => escapeHTML(name) + ": " + count).join(" · ");
+      leadEl.textContent = "Unverified new leads: " + (pending.length + linkedin.length) +
+        (leadParts ? " (" + leadParts + ")" : "") +
+        " · Check the New Leads and LinkedIn Posts sections before applying.";
+    }
+  } catch (error) {
+    const totalEl = document.getElementById("updateTotals");
+    const detailEl = document.getElementById("updateDetails");
+    if (totalEl) totalEl.textContent = "Update summary unavailable";
+    if (detailEl) detailEl.textContent = "Could not load vacancy counts. Please refresh the page.";
   }
 }
 
