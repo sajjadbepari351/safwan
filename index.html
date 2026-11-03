@@ -216,6 +216,25 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 @media(min-width:1100px){.layout{grid-template-columns:240px minmax(0,1fr)}.panel{border-radius:15px}.job{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:start}.job h3,.job strong,.job .meta,.job .tag,.job p{grid-column:1}.job .apply,.job .applied-toggle{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin-top:0}.job .applied-toggle{grid-row:2;margin-top:8px}}
 @media(max-width:760px){.site-header{padding-bottom:70px}.layout{grid-template-columns:1fr;gap:16px}.panel{border-radius:13px}.source-area{margin-top:37px}}
 
+
+/* Clearer vacancy information hierarchy */
+.job{padding:23px 25px}
+.job h3{font-size:19px;line-height:1.35;margin-bottom:7px}
+.job>strong{display:block;font-size:14px;color:#176b87;margin-bottom:16px}
+.job-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:13px 0 17px}
+.job-fact{min-width:0;padding:11px 12px;background:#f6f9fb;border:1px solid #e5edf1;border-radius:9px}
+.job-fact span{display:block;color:#718295;font-size:9px;font-weight:750;letter-spacing:.75px;margin-bottom:5px}
+.job-fact strong{display:block;color:#263d50;font-size:12px;line-height:1.45;font-weight:650;overflow-wrap:anywhere}
+.job .tag{display:inline-flex;margin:0 0 15px}
+.job-description{padding-top:2px}
+.job-description h4{font-size:12px;letter-spacing:.55px;text-transform:uppercase;color:#176b87;margin:12px 0 6px}
+.job-description p{font-size:13px;line-height:1.7;color:#526579;margin:0 0 8px}
+.responsibility-list{margin:6px 0 15px;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+.responsibility-list li{position:relative;padding-left:18px;color:#43586b;font-size:12px;line-height:1.6}
+.responsibility-list li:before{content:"";position:absolute;left:1px;top:.58em;width:7px;height:7px;border-radius:50%;background:#269a91;box-shadow:0 0 0 3px #e5f3f1}
+.job .apply{margin-top:8px}
+@media(max-width:760px){.job{padding:18px}.job-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.responsibility-list{grid-template-columns:1fr}.job-fact{padding:10px}}
+
 </style>
 </head>
 <body>
@@ -522,16 +541,20 @@ function renderJobs() {
       <article class="job">
         <h3>${escapeHTML(v.title)}</h3>
         <strong>${escapeHTML(v.company)}</strong>
-        <div class="meta">
-          Location: ${escapeHTML(v.location || "Not specified")}<br>
-          Salary: ${escapeHTML(v.salary || "Not disclosed")}<br>
-          Experience: ${escapeHTML(v.experience || "Not specified")}<br>
-          Education: ${escapeHTML(v.education || "Not specified")}<br>
-          Deadline: ${escapeHTML(v.deadline || "Not disclosed")}<br>
-          Source: ${escapeHTML(v.source || "Original notice")}
+        <div class="job-facts">
+          <div class="job-fact"><span>LOCATION</span><strong>${escapeHTML(v.location || "Not specified")}</strong></div>
+          <div class="job-fact"><span>SALARY</span><strong>${escapeHTML(v.salary || "Not disclosed")}</strong></div>
+          <div class="job-fact"><span>EXPERIENCE</span><strong>${escapeHTML(v.experience || "Not specified")}</strong></div>
+          <div class="job-fact"><span>EDUCATION</span><strong>${escapeHTML(v.education || "Not specified")}</strong></div>
+          <div class="job-fact"><span>APPLICATION DEADLINE</span><strong>${escapeHTML(v.deadline || "Not disclosed")}</strong></div>
+          <div class="job-fact"><span>POSTED ON</span><strong>${escapeHTML(v.source || "Original notice")}</strong></div>
         </div>
         <span class="tag">${escapeHTML(v.category)}</span>
-        <p>${escapeHTML(v.description || v.summary || "")}</p>
+        <div class="job-description">
+          <h4>Role overview</h4>
+          <p>${escapeHTML(v.description || v.summary || "Refer to the original notice for the full role description.")}</p>
+          ${Array.isArray(v.responsibilities) && v.responsibilities.length ? '<h4>Key responsibilities</h4><ul class="responsibility-list">' + v.responsibilities.map(item => '<li>' + escapeHTML(item) + '</li>').join('') + '</ul>' : ''}
+        </div>
         <a class="apply" href="${applyUrl}"
            target="_blank" rel="noopener noreferrer">
            Apply / View Original Notice ↗
