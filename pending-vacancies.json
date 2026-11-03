@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-03T01:16:57.368107+00:00",
+  "lastChecked": "2026-11-03T02:20:58.935545+00:00",
   "feedsChecked": 58,
   "feedErrors": [],
   "note": "RSS results are discovery leads only. They are not verified vacancies and are never published to vacancies.json automatically.",
@@ -464,11 +464,11 @@
       "verified": false
     },
     {
-      "title": "405 Jobs - BD Jobs",
+      "title": "405 Jobs - Bdjobs.com",
       "feedUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wdUYzSmQxT083UGhKdWZ0R3RiU3NmSFpsbVBQRndwSmFjM3ZJMEo0UFRnYkZqbUVWbUxSRS1wQl9tZE9hVkhFekdUSy1fNnpqaWpycE1B?oc=5",
       "feedSource": "Google News RSS",
       "publishedAt": "Wed, 18 Feb 2026 14:49:20 GMT",
-      "summary": " 405 Jobs &nbsp;&nbsp; BD Jobs ",
+      "summary": " 405 Jobs &nbsp;&nbsp; Bdjobs.com ",
       "status": "pending_manual_verification",
       "verified": false
     },
