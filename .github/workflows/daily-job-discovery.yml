@@ -2,7 +2,7 @@ name: Scheduled vacancy discovery and LinkedIn public leads
 
 on:
   schedule:
-    - cron: "*/30 * * * *" # Every 30 minutes (GitHub Actions schedule; may be delayed)
+    - cron: "0 */6 * * *" # Every 6 hours (GitHub Actions schedule; may be delayed)
   push:
     branches: [main]
     paths:
