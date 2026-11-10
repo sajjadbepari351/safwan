@@ -374,7 +374,7 @@ function escapeHTML(value) {
 }
 
 function validVacancies() {
-  const today = new Date().toISOString().slice(0,10);
+  const today = getDhakaDate();
 
   return vacancies.filter(v => {
     const applyUrl = safeUrl(v.apply);
@@ -773,7 +773,7 @@ loadUpdateStatus();
 loadDetectedJobs();
 loadVacancies();
 loadGovernmentJobs();
-setInterval(() => { loadUpdateStatus(); loadDetectedJobs(); loadVacancies(); loadGovernmentJobs(); }, 5 * 60 * 1000);
+setInterval(() => { loadUpdateStatus(); loadDetectedJobs(); loadVacancies(); loadGovernmentJobs(); }, 6 * 60 * 60 * 1000);
 </script>
 
 </body>
