@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d8edf5" stop-opacity=".02"/><stop offset="1" stop-color="#8bbbc9" stop-opacity=".20"/></linearGradient>
+ <linearGradient id="steel" x2="0" y2="1"><stop stop-color="#a9d3df" stop-opacity=".26"/><stop offset="1" stop-color="#5c9cac" stop-opacity=".12"/></linearGradient>
+</defs>
+<g fill="url(#steel)" stroke="#b9dce5" stroke-opacity=".25" stroke-width="5">
+ <path d="M690 720V515h150v205zm170 0V445h210v275zm225 0V540h115v180zm140 0V395h180v325z"/>
+ <path d="M735 515V365h55v150zm340-70V300h48v145zm175-50V235h52v160zm190-1V290h46v104z"/>
+ <path d="M744 365h38v-90h-38zm342-65h30V205h-30zm175-65h36V125h-36zm190 55h32V190h-32z"/>
+ <path d="M640 720h800M680 620h720M680 555h720" fill="none"/>
+ <path d="M900 445v-75h170v75m-130-75v-65h90v65m-40 0v-55" fill="none"/>
+ <path d="M1225 395v-90h175v90m-145-90v-55h110v55" fill="none"/>
+ <path d="M790 275h-12v-85h-18v85m365-70h-15v-85h-20v85m200-80h-14V60h-20v65" fill="none"/>
+</g>
+<g stroke="#b6dbe4" stroke-opacity=".22" stroke-width="7" fill="none">
+ <path d="M0 760c260-75 430-42 650 4s430 48 950-30"/>
+ <path d="M820 720V470h-85V405h170v65h-85m390 250V430h-65V350h130v80h-65"/>
+ <path d="M965 515h90m-90 45h90m-90 45h90m235-160h95m-95 45h95m-95 45h95"/>
+</g>
+<g fill="#9bcbd6" opacity=".16">
+ <circle cx="1480" cy="180" r="90"/><circle cx="1370" cy="210" r="48"/>
+</g>
+<path d="M0 810c250-55 450-25 660 15 280 54 520 45 940-15v90H0z" fill="#75b5c5" opacity=".12"/>
+</svg>
