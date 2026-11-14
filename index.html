@@ -234,6 +234,35 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 @media(max-width:760px){
  .site-header{background-size:cover, 980px auto;background-position:center,right bottom}
 }
+
+/* Final hero art direction: high-contrast industrial skyline */
+.site-header{
+  isolation:isolate;
+  background-color:#0b1d31;
+  background-image:
+    linear-gradient(90deg,rgba(8,24,42,.99) 0%,rgba(10,34,55,.96) 31%,rgba(11,45,66,.70) 58%,rgba(12,58,75,.34) 100%),
+    url("./industry-background.svg"),
+    radial-gradient(ellipse at 82% 12%,#43c6c8 0%,transparent 35%),
+    linear-gradient(125deg,#0b1d31 0%,#123d56 58%,#176477 100%);
+  background-repeat:no-repeat;
+  background-position:center,right center,center,center;
+  background-size:cover, min(1450px,100%) 100%,cover,cover;
+}
+.site-header:before{
+  opacity:.12;
+  background-image:linear-gradient(90deg,transparent 0%,#a9eff0 1px,transparent 2px),linear-gradient(0deg,transparent 0%,#a9eff0 1px,transparent 2px);
+  background-size:58px 58px;
+  mask-image:linear-gradient(90deg,transparent 25%,#000 100%);
+}
+.site-header:after{border-color:#b5f3ed30;box-shadow:0 0 0 55px #b5f3ed12,0 0 0 110px #b5f3ed0b,0 0 0 165px #b5f3ed07}
+.hero{max-width:1200px}
+.hero h1{ text-shadow:0 3px 24px #06152655 }
+.hero .eyebrow{backdrop-filter:blur(8px);background:#d9ffff13;border-color:#a7f3ef55}
+.hero-points span{backdrop-filter:blur(7px);background:#d8ffff12;border-color:#a7f3ef45}
+@media(max-width:760px){
+ .site-header{background-position:center,right bottom,center,center;background-size:cover,1050px 82%,cover,cover}
+}
+
 </style>
 </head>
 <body>
