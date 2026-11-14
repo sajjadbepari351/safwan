@@ -1,24 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
 <defs>
- <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d8edf5" stop-opacity=".02"/><stop offset="1" stop-color="#8bbbc9" stop-opacity=".20"/></linearGradient>
- <linearGradient id="steel" x2="0" y2="1"><stop stop-color="#a9d3df" stop-opacity=".88"/><stop offset="1" stop-color="#5c9cac" stop-opacity=".72"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9f0ec" stop-opacity=".94"/><stop offset="1" stop-color="#54aebc" stop-opacity=".78"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5ffff" stop-opacity=".9"/><stop offset="1" stop-color="#70cbd0" stop-opacity=".65"/></linearGradient>
+ <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".42" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient>
 </defs>
-<g fill="url(#steel)" stroke="#b9dce5" stroke-opacity=".88" stroke-width="5">
- <path d="M690 720V515h150v205zm170 0V445h210v275zm225 0V540h115v180zm140 0V395h180v325z"/>
- <path d="M735 515V365h55v150zm340-70V300h48v145zm175-50V235h52v160zm190-1V290h46v104z"/>
- <path d="M744 365h38v-90h-38zm342-65h30V205h-30zm175-65h36V125h-36zm190 55h32V190h-32z"/>
- <path d="M640 720h800M680 620h720M680 555h720" fill="none"/>
- <path d="M900 445v-75h170v75m-130-75v-65h90v65m-40 0v-55" fill="none"/>
- <path d="M1225 395v-90h175v90m-145-90v-55h110v55" fill="none"/>
- <path d="M790 275h-12v-85h-18v85m365-70h-15v-85h-20v85m200-80h-14V60h-20v65" fill="none"/>
+<!-- industrial skyline concentrated on the right to preserve readable hero copy -->
+<g opacity=".96">
+ <path d="M610 780V570l145-82 145 82v210H610Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M900 780V455h265v325H900Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M1165 780V555l170-105 170 105v225h-340Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M665 570V390h54v180m60 0V350h55v220" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M972 455V270h58v185m86 0V215h58v240" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M1220 550V330h62v220m90 0V390h55v160" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M680 390h24V205h-24zm304-120h30V95h-30zm144-55h30V75h-30zm111 115h31V160h-31z" fill="#8dd4d7" stroke="#d5fffa" stroke-width="5"/>
+ <path d="M692 205h10m285-110h14m144-20h14m111 85h14" stroke="#d5fffa" stroke-width="8" stroke-linecap="round"/>
 </g>
-<g stroke="#b6dbe4" stroke-opacity=".82" stroke-width="7" fill="none">
- <path d="M0 760c260-75 430-42 650 4s430 48 950-30"/>
- <path d="M820 720V470h-85V405h170v65h-85m390 250V430h-65V350h130v80h-65"/>
- <path d="M965 515h90m-90 45h90m-90 45h90m235-160h95m-95 45h95m-95 45h95"/>
+<!-- factory windows -->
+<g fill="url(#glass)" opacity=".9">
+ <path d="M650 610h38v43h-38zm62 0h38v43h-38zm62 0h38v43h-38zm-124 78h38v43h-38zm62 0h38v43h-38zm62 0h38v43h-38z"/>
+ <path d="M940 500h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48zm-156 88h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48zm-156 88h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48z"/>
+ <path d="M1190 600h45v48h-45zm72 0h45v48h-45zm72 0h45v48h-45zm-144 80h45v48h-45zm72 0h45v48h-45zm72 0h45v48h-45z"/>
 </g>
-<g fill="#9bcbd6" opacity=".55">
- <circle cx="1480" cy="180" r="90"/><circle cx="1370" cy="210" r="48"/>
+<!-- conveyor, storage tanks and connecting pipework -->
+<g stroke="#c9fbf4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity=".88">
+ <path d="M535 780h1070M760 510l138-80 60 0m207 20 100-65 105 0"/>
+ <path d="M780 780V700h118v80m-90-80v-50h62v50"/>
+ <path d="M1335 780V700h95v80m-70-80v-55h45v55"/>
+ <path d="M1460 780V620h92v160m-72-160v-80h52v80"/>
 </g>
-<path d="M0 810c250-55 450-25 660 15 280 54 520 45 940-15v90H0z" fill="#75b5c5" opacity=".48"/>
+<!-- circular engineering motif -->
+<g transform="translate(1435 180)" stroke="#b9f5ef" stroke-width="8" opacity=".48">
+ <circle r="76"/><circle r="27"/><path d="M0-112v34M0 78v34M-112 0h34M78 0h34M-79-79l24 24m110 110 24 24M79-79 55-55M-55 55l-24 24"/>
+</g>
+<path d="M0 820c260-45 420-30 630 8 270 49 520 43 970-24v96H0z" fill="#9ae3df" opacity=".28"/>
 </svg>
