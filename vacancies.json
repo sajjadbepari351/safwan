@@ -1,6 +1,51 @@
 {
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-14",
   "vacancies": [
+    {
+      "title": "Executive, Supply Chain Management",
+      "company": "Dynasty Food and Beverage Industries (SAKURA Alkaline Water)",
+      "category": "Supply Chain",
+      "location": "Dhaka",
+      "salary": "BDT 20,000–22,000 per month",
+      "experience": "Minimum 1 year relevant experience; freshers are also encouraged",
+      "education": "Bachelor’s in Supply Chain Management, Business Administration, IPE or related field; IPE is explicitly accepted",
+      "deadline": "Not stated in the employer post",
+      "description": "Coordinate procurement, inventory, production planning and distribution; monitor stock availability; coordinate with suppliers, Production, Warehouse, Sales and Logistics; prepare supply-chain reports and support order fulfilment. IPE is explicitly accepted. Your manufacturing background is relevant, but the employer prefers FMCG/Food & Beverage experience. Salary is below the earlier BDT 30,000 target.",
+      "source": "Employer LinkedIn job post",
+      "sourceUrl": "https://bd.linkedin.com/jobs/view/executive-supply-chain-management-immediate-available-at-dynasty-food-and-beverage-industries-4471433383",
+      "apply": "https://bd.linkedin.com/jobs/view/executive-supply-chain-management-immediate-available-at-dynasty-food-and-beverage-industries-4471433383",
+      "verified": true
+    },
+    {
+      "title": "Executive, IPE",
+      "company": "Confidential client (recruited by Hrevora Bangladesh)",
+      "category": "Industrial Engineering",
+      "location": "Factory-based, anywhere in Bangladesh",
+      "salary": "Competitive; as per company policy",
+      "experience": "2–4 years of IPE or production experience",
+      "education": "B.Sc. in Industrial & Production Engineering (IPE)",
+      "deadline": "2026-11-15",
+      "description": "Conduct work, time and motion studies; support standard times, line balancing, production planning and productivity reporting; improve plant layout and material flow; drive 5S, Kaizen and waste reduction. Exact IPE degree match, but the 2–4 year experience requirement is above your current tenure; treat as a stretch application. Client identity is confidential until shortlisting.",
+      "source": "Hrevora Bangladesh – current openings",
+      "sourceUrl": "https://www.hrevora.com/careers",
+      "apply": "https://www.hrevora.com/careers",
+      "verified": true
+    },
+    {
+      "title": "Trainee Officer / Officer – Procurement",
+      "company": "Smile Food Products Limited",
+      "category": "Supply Chain",
+      "location": "Chattogram / Dhaka",
+      "salary": "Negotiable",
+      "experience": "Trainee Officer: fresh graduates encouraged; Officer: 1–3 years preferred",
+      "education": "Bachelor’s/Master’s in Business Administration, Supply Chain, Management, Electrical/Mechanical or relevant discipline; confirm IPE eligibility with HR",
+      "deadline": "2026-11-30",
+      "description": "Support procurement documentation, supplier sourcing, market-price monitoring, quotation analysis, purchase orders and stock coordination with Store, Warehouse and Finance. Fresh graduates are encouraged for Trainee Officer; 1–3 years preferred for Officer. IPE is not explicitly named, so confirm degree eligibility before applying.",
+      "source": "Bdjobs / 24onbd",
+      "sourceUrl": "https://www.24onbd.com/jobs/supply-chain-procurement/3f0f4daf",
+      "apply": "https://www.24onbd.com/jobs/supply-chain-procurement/3f0f4daf",
+      "verified": true
+    },
     {
       "title": "Executive / Sr. Executive – Industrial Engineering (IE)",
       "company": "Magpie Group (Magpie Composite Textile Ltd.)",
