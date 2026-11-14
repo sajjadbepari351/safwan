@@ -310,6 +310,122 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 .applied-toggle.is-applied{background:#e4f7ec;border-color:#a8dfbf;color:#167c59}
 @media(max-width:760px){.category{min-height:40px}.category-icon{width:27px;height:27px;flex-basis:27px}}
 
+
+/* Full-site colour refresh: richer surfaces, not a white page */
+:root{
+ --bg:#eaf1f5;--line:#d5e1e8;--ink:#193247;--muted:#5e7485;
+}
+html{background:#eaf1f5}
+body{
+ background:linear-gradient(180deg,#e7f0f4 0%,#f0f4f6 34%,#e9f0f3 100%);
+ color:#193247;
+}
+main.container{padding-top:22px;padding-bottom:42px}
+.search-wrap{margin-bottom:24px}
+.search{
+ background:#fafdff;border:1px solid #b9d2df;
+ box-shadow:0 12px 30px #163d5420;
+}
+.filter-heading{
+ padding:15px 18px;border-radius:13px;
+ background:linear-gradient(110deg,#e2eef7,#e5f4f0);
+ border:1px solid #cbdde3;
+}
+.filters{padding:0 2px}
+.filter-control{color:#34576b}
+.filter{background:#f8fcff;border-color:#c6d9e2}
+.update-status{
+ background:linear-gradient(125deg,#e1f2ef,#e7f1fa);
+ border:1px solid #b9dcd6;border-left:5px solid #168b8b;
+ box-shadow:0 8px 22px #174d5420;
+}
+.update-status-title{color:#145d60}
+.update-status-main{color:#176b87}
+.update-status-details{color:#456577}
+.update-count{background:#d8eceb;border-color:#b9d9d7;color:#245b60}
+.update-count b{background:#168b8b;color:#fff}
+.new-update-item{border-color:#c5ddda}
+.new-update-title{color:#173c52}
+.panel{
+ background:linear-gradient(160deg,#e2edf8,#e5f1f2);
+ border:1px solid #c4d8e1;
+ box-shadow:0 8px 24px #173d5420;
+}
+.panel h3{color:#345c70}
+.category{color:#36566b}
+.category:hover,.category.active{background:#d4e9f5;color:#155d85}
+.count{background:#d6e3eb;color:#3e6174}
+.category.active .count{background:#b9d9eb;color:#155d85}
+.job{
+ background:linear-gradient(120deg,#f4f9fc 0%,#eaf3f7 100%);
+ border:1px solid #c9dce5;border-left:4px solid #3c91a1;
+ box-shadow:0 7px 20px #173d5415;
+}
+.job:nth-child(3n+2){
+ background:linear-gradient(120deg,#f7f5fc 0%,#f0edf9 100%);
+ border-left-color:#8b6ac7;
+}
+.job:nth-child(3n){
+ background:linear-gradient(120deg,#f5faf5 0%,#eaf4ed 100%);
+ border-left-color:#4c9a70;
+}
+.job h3{color:#173b52}
+.job .meta{color:#526d7d}
+.job .tag{background:#dceef2;color:#176b87;border-color:#c1e0e5}
+.apply{background:linear-gradient(110deg,#087f78,#176b87)}
+.applied-toggle{background:#e5edf3;border-color:#bfd0dc;color:#36566b}
+.applied-toggle.is-applied{background:#d9f0e3;border-color:#9ed3b3;color:#176b4a}
+.detected-card{
+ background:linear-gradient(135deg,#f2edfc,#e9eafa);
+ border:1px solid #d3c9ed;border-top:4px solid #8062bb;
+ box-shadow:0 7px 20px #43316c12;
+}
+.detected-card h3{color:#493b70}
+.detected-card p,.detected-card .meta{color:#665b7b}
+.detected-pill{background:#e1eafa;color:#315b91;border-color:#c7d8ee}
+.detected-pill.pending{background:#fff0d9;color:#8c5a12}
+#closingTomorrow .job{
+ background:linear-gradient(120deg,#fff4e7,#ffeadb);
+ border-color:#f0cfad;border-left-color:#dc7a31;
+}
+#closingTomorrow .job h3{color:#864516}
+#governmentJobs .job{
+ background:linear-gradient(120deg,#eaf0ff,#e3eafb);
+ border-color:#c6d2f0;border-left-color:#536fbd;
+}
+#governmentJobs .job h3{color:#344e92}
+.lead{
+ background:linear-gradient(120deg,#fff5e8,#fff0df);
+ border:1px solid #f0d9b7;border-left:4px solid #d58a35;
+}
+.source{
+ background:linear-gradient(145deg,#e6f3f4,#e4edf7);
+ border:1px solid #c8dce3;
+ box-shadow:0 7px 18px #173d5412;
+}
+.source:nth-child(4n+2){background:linear-gradient(145deg,#f0eafa,#e9eafa)}
+.source:nth-child(4n+3){background:linear-gradient(145deg,#fff1e5,#f8e9df)}
+.source:nth-child(4n){background:linear-gradient(145deg,#e8efff,#e3eafa)}
+.source h3{color:#1c4055}
+.empty{
+ background:linear-gradient(135deg,#e7f0f5,#edf3f6);
+ border:1px dashed #b7ccd8;color:#526c7d;
+}
+.notice{
+ background:linear-gradient(110deg,#fff1d9,#fcebd8);
+ border:1px solid #ebd2a7;color:#76501d;
+}
+footer{
+ background:#dce7ec;color:#506b7b;
+ border-top:1px solid #c6d6de;
+}
+footer a{color:#3e6478!important}
+@media(max-width:760px){
+ main.container{padding-top:15px}
+ .panel{background:linear-gradient(160deg,#e2edf8,#e5f1f2)}
+ .filter-heading{padding:13px}
+}
+
 </style>
 </head>
 <body>
