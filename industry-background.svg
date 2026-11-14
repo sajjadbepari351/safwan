@@ -1,36 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
-<defs>
- <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9f0ec" stop-opacity=".94"/><stop offset="1" stop-color="#54aebc" stop-opacity=".78"/></linearGradient>
- <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5ffff" stop-opacity=".9"/><stop offset="1" stop-color="#70cbd0" stop-opacity=".65"/></linearGradient>
- <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".42" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient>
-</defs>
-<!-- industrial skyline concentrated on the right to preserve readable hero copy -->
-<g opacity=".96">
- <path d="M610 780V570l145-82 145 82v210H610Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M900 780V455h265v325H900Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M1165 780V555l170-105 170 105v225h-340Z" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M665 570V390h54v180m60 0V350h55v220" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M972 455V270h58v185m86 0V215h58v240" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M1220 550V330h62v220m90 0V390h55v160" fill="url(#metal)" stroke="#d5fffa" stroke-width="5"/>
- <path d="M680 390h24V205h-24zm304-120h30V95h-30zm144-55h30V75h-30zm111 115h31V160h-31z" fill="#8dd4d7" stroke="#d5fffa" stroke-width="5"/>
- <path d="M692 205h10m285-110h14m144-20h14m111 85h14" stroke="#d5fffa" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="none"/>
+<!-- Solid, sharply defined factory buildings -->
+<g fill="#176b78" stroke="#b7fff2" stroke-width="5" stroke-linejoin="round">
+ <path d="M330 650V410l130-75 130 75v240z"/>
+ <path d="M590 650V300h260v350z"/>
+ <path d="M850 650V420l140-85 140 85v230z"/>
+ <path d="M370 410V245h48v165m92 0V205h48v205"/>
+ <path d="M650 300V125h54v175m95 0V85h54v215"/>
+ <path d="M900 420V225h55v195m95 0V285h48v135"/>
+ <path d="M380 245h28V95h-28zm272-120h42V35h-42zm148-40h42V15h-42zm110 140h42V75h-42z"/>
 </g>
-<!-- factory windows -->
-<g fill="url(#glass)" opacity=".9">
- <path d="M650 610h38v43h-38zm62 0h38v43h-38zm62 0h38v43h-38zm-124 78h38v43h-38zm62 0h38v43h-38zm62 0h38v43h-38z"/>
- <path d="M940 500h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48zm-156 88h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48zm-156 88h48v55h-48zm78 0h48v55h-48zm78 0h48v55h-48z"/>
- <path d="M1190 600h45v48h-45zm72 0h45v48h-45zm72 0h45v48h-45zm-144 80h45v48h-45zm72 0h45v48h-45zm72 0h45v48h-45z"/>
+<!-- Large opaque windows -->
+<g fill="#d6fff7" stroke="#0e5264" stroke-width="3">
+ <path d="M355 455h48v55h-48zm75 0h48v55h-48zm75 0h48v55h-48zm-150 85h48v55h-48zm75 0h48v55h-48zm75 0h48v55h-48z"/>
+ <path d="M620 345h55v60h-55zm88 0h55v60h-55zm88 0h35v60h-35zm-176 92h55v60h-55zm88 0h55v60h-55zm88 0h35v60h-35zm-176 92h55v60h-55zm88 0h55v60h-55zm88 0h35v60h-35z"/>
+ <path d="M875 465h45v55h-45zm70 0h45v55h-45zm70 0h45v55h-45zm-140 85h45v55h-45zm70 0h45v55h-45zm70 0h45v55h-45z"/>
 </g>
-<!-- conveyor, storage tanks and connecting pipework -->
-<g stroke="#c9fbf4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity=".88">
- <path d="M535 780h1070M760 510l138-80 60 0m207 20 100-65 105 0"/>
- <path d="M780 780V700h118v80m-90-80v-50h62v50"/>
- <path d="M1335 780V700h95v80m-70-80v-55h45v55"/>
- <path d="M1460 780V620h92v160m-72-160v-80h52v80"/>
+<!-- Chimney cap highlights -->
+<g fill="#b7fff2">
+ <rect x="378" y="92" width="32" height="12"/><rect x="647" y="32" width="48" height="12"/>
+ <rect x="795" y="12" width="48" height="12"/><rect x="905" y="72" width="48" height="12"/>
 </g>
-<!-- circular engineering motif -->
-<g transform="translate(1435 180)" stroke="#b9f5ef" stroke-width="8" opacity=".48">
- <circle r="76"/><circle r="27"/><path d="M0-112v34M0 78v34M-112 0h34M78 0h34M-79-79l24 24m110 110 24 24M79-79 55-55M-55 55l-24 24"/>
-</g>
-<path d="M0 820c260-45 420-30 630 8 270 49 520 43 970-24v96H0z" fill="#9ae3df" opacity=".28"/>
+<!-- Ground and conveyor silhouette -->
+<path d="M250 650H1200V700H250Z" fill="#0b5264" stroke="#b7fff2" stroke-width="5"/>
+<path d="M270 625l150-80 125 0 110 80m145-80 130 0 90 80" fill="none" stroke="#d6fff7" stroke-width="12" stroke-linecap="square"/>
 </svg>
