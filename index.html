@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Career Radar BD | Bangladesh National Career & Job Directory</title>
-<meta name="description" content="Career Radar BD is an independent Bangladesh-wide career and vacancy directory covering private-sector, industrial, engineering, corporate and government opportunities across all eight divisions.">
+<title>Career Radar BD | Find Verified Jobs in Bangladesh</title>
+<meta name="description" content="Discover opportunities in Bangladesh across Production, Industrial Engineering, Planning, Operations and Supply Chain, with direct application links.">
 <meta name="theme-color" content="#10243d">
-<meta name="robots" content="index,follow">
 <style>:root{--navy:#10243d;--blue:#2563eb;--ink:#142238;--muted:#64748b;--bg:#f5f7fb;--line:#e5eaf1}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{transition:color .18s,background .18s,transform .18s,box-shadow .18s}
@@ -427,25 +426,6 @@ footer a{color:#3e6478!important}
  .filter-heading{padding:13px}
 }
 
-
-/* National platform identity and nationwide discovery */
-.national-coverage{
- display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
- margin:0 0 23px;padding:19px 21px;border:1px solid #b9d8d9;border-radius:15px;
- background:linear-gradient(112deg,#d9efed 0%,#e4eef8 58%,#f0eafa 100%);
- box-shadow:0 8px 22px #173d5412;
-}
-.coverage-intro{display:flex;flex-direction:column;gap:3px}
-.coverage-intro strong{font-size:15px;color:#16485a;letter-spacing:-.2px}
-.coverage-intro span{font-size:11px;color:#4f6d7c}
-.division-chips{display:flex;gap:7px;flex-wrap:wrap}
-.division-chips span{padding:6px 10px;border:1px solid #b8d5dc;border-radius:999px;background:#f7fcfd;color:#24596b;font-size:10px;font-weight:750}
-.filter-heading{background:linear-gradient(110deg,#d9ecee,#e4eafa)}
-.filter-control span{font-weight:750}
-.site-header{background-color:#10283d}
-footer{line-height:1.9}
-@media(max-width:760px){.national-coverage{padding:15px;gap:12px}.coverage-intro strong{font-size:14px}.division-chips{gap:6px}.division-chips span{font-size:9px;padding:5px 8px}}
-
 </style>
 </head>
 <body>
@@ -457,14 +437,13 @@ footer{line-height:1.9}
     <div class="nav-update-group"><a class="update-nav" href="#updateStatus" aria-label="See newly added vacancies">✦ <span>New Updates</span></a><span class="nav-last-updated" title="Latest database scan">◷ <span id="lastUpdatedAt">Checking…</span></span></div>
   </nav>
   <div class="hero">
-    <span class="eyebrow"><span class="pulse"></span> BANGLADESH-WIDE CAREER & VACANCY DIRECTORY</span>
-    <h1>Bangladesh-wide jobs.<br><span>Better career moves.</span></h1>
-    <p>Explore career opportunities from employers and institutions across Bangladesh. Discover industrial, engineering, production, operations, supply chain, corporate and public-sector vacancies—all in one independent job information directory.</p>
-    <div class="hero-points"><span>✓ Original-source checks</span><span>🇧🇩 All 8 divisions</span><span>🏢 Private & public sector</span><span>◷ Regular discovery updates</span></div><div class="hero-actions"><a class="hero-primary" href="#jobs">Explore vacancies <span>→</span></a><a class="hero-secondary" href="#detectedJobs">See newly detected jobs</a></div>
+    <span class="eyebrow"><span class="pulse"></span> BANGLADESH CAREER OPPORTUNITIES</span>
+    <h1>Find your next move.<br><span>Build your career.</span></h1>
+    <p>A focused job discovery platform for Bangladesh’s manufacturing and business professionals. Explore opportunities in Production, Industrial Engineering, Planning, Supply Chain and Operations.</p>
+    <div class="hero-points"><span>✓ Verified vacancy listings</span><span>↗ Direct application links</span><span>◷ Regular discovery updates</span></div><div class="hero-actions"><a class="hero-primary" href="#jobs">Explore vacancies <span>→</span></a><a class="hero-secondary" href="#detectedJobs">See newly detected jobs</a></div>
   </div>
 </header>
 <main class="container">
-  <section class="national-coverage" aria-label="National coverage"><div class="coverage-intro"><strong>One platform. Every division.</strong><span>Search opportunities across Bangladesh’s eight administrative divisions.</span></div><div class="division-chips"><span>Dhaka</span><span>Chattogram</span><span>Rajshahi</span><span>Khulna</span><span>Barishal</span><span>Sylhet</span><span>Rangpur</span><span>Mymensingh</span></div></section>
   <div class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" class="search" type="search" aria-label="Search vacancies" placeholder="Search by job title, company, location or skill..."><span class="search-hint">Press to search</span></div>
   <section class="update-status" id="updateStatus" aria-live="polite">
     <div class="update-status-head">
@@ -485,19 +464,15 @@ footer{line-height:1.9}
     <div id="detectedJobsList"><div class="empty">Loading newly detected jobs…</div></div>
   </section>
 
-  <div class="filter-heading"><div><h2>Find the right opportunity</h2><p>Filter published vacancies by division and experience level.</p></div><button type="button" id="clearFilters" class="clear-filters">Clear filters</button></div>
+  <div class="filter-heading"><div><h2>Refine your search</h2><p>Filter verified vacancies by preferred location and experience.</p></div><button type="button" id="clearFilters" class="clear-filters">Clear filters</button></div>
   <div class="filters">
-    <label class="filter-control"><span>Division</span><select id="locationFilter" class="filter">
-      <option value="">All Bangladesh</option>
-      <option value="dhaka">Dhaka Division</option>
-      <option value="chattogram">Chattogram Division</option>
-      <option value="rajshahi">Rajshahi Division</option>
-      <option value="khulna">Khulna Division</option>
-      <option value="barishal">Barishal Division</option>
-      <option value="sylhet">Sylhet Division</option>
-      <option value="rangpur">Rangpur Division</option>
-      <option value="mymensingh">Mymensingh Division</option>
-      <option value="other">Other / Not specified</option>
+    <label class="filter-control"><span>Location</span><select id="locationFilter" class="filter">
+      <option value="">All Locations</option>
+      <option value="Dhaka">Dhaka</option>
+      <option value="Gazipur">Gazipur</option>
+      <option value="Savar">Savar</option>
+      <option value="Narayanganj">Narayanganj</option>
+      <option value="Other">Other locations</option>
     </select></label>
 
     <label class="filter-control"><span>Experience</span><select id="experienceFilter" class="filter">
@@ -547,7 +522,7 @@ footer{line-height:1.9}
 </main>
 
 <footer>
-  Career Radar BD · Independent Bangladesh-wide job information directory · Not affiliated with listed employers
+  Career Radar BD · Independent job information directory · Not affiliated with listed employers
   <div style="margin-top:9px"><a style="color:#64748b;margin:0 8px" href="./policy.html">About & Disclaimer</a><a style="color:#64748b;margin:0 8px" href="./policy.html#privacy">Privacy</a><a style="color:#64748b;margin:0 8px" href="./policy.html#copyright">Copyright / Content Removal</a></div>
 </footer>
 
@@ -722,20 +697,11 @@ function renderJobs() {
       if(fresherAllowed && wanted && wanted[0]===0) expMatch=true;
     }
 
-    const divisionAreas = {
-      dhaka: ["dhaka","gazipur","narayanganj","tangail","kishoreganj","manikganj","munshiganj","narsingdi","faridpur","gopalganj","madaripur","rajbari","shariatpur","savar"],
-      chattogram: ["chattogram","chittagong","cumilla","comilla","cox's bazar","coxs bazar","feni","noakhali","lakshmipur","brahmanbaria","chandpur","rangamati","khagrachhari","khagrachari","bandarban"],
-      rajshahi: ["rajshahi","bogura","bogra","joypurhat","naogaon","natore","chapainawabganj","pabna","sirajganj"],
-      khulna: ["khulna","bagerhat","chuadanga","jashore","jessore","jhenaidah","kushtia","magura","meherpur","narail","satkhira"],
-      barishal: ["barishal","barisal","barguna","bhola","jhalokathi","patuakhali","pirojpur"],
-      sylhet: ["sylhet","habiganj","moulvibazar","sunamganj"],
-      rangpur: ["rangpur","dinajpur","gaibandha","kurigram","lalmonirhat","nilphamari","panchagarh","thakurgaon"],
-      mymensingh: ["mymensingh","jamalpur","netrokona","sherpur"]
-    };
-    const locationMatch = !location ||
+    const locationMatch =
+      !location ||
       (location === "other"
-        ? !Object.values(divisionAreas).flat().some(place => loc.includes(place))
-        : (divisionAreas[location] || [location]).some(place => loc.includes(place)));
+        ? !/dhaka|gazipur|savar|narayanganj/i.test(loc)
+        : loc.includes(location));
 
     return (
       (selectedCategory === "All" || (selectedCategory === "Management Trainee (MTO)" ? /\\bMTO\\b|Management Trainee/i.test(v.title || "") : v.category === selectedCategory)) &&
