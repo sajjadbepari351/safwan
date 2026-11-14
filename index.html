@@ -221,7 +221,20 @@ footer{color:#8a98a8}:focus-visible{outline:3px solid #48aaa5;outline-offset:3px
 /* Keep original card layout; shorten secondary vacancy text */
 .job .job-summary{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
-.brand-mark svg{width:27px;height:27px;display:block;color:#fff;}</style>
+.brand-mark svg{width:27px;height:27px;display:block;color:#fff;}
+/* Subtle industrial factory watermark in the hero background */
+.site-header{
+ background-image:
+  linear-gradient(90deg,rgba(16,36,58,.97) 0%,rgba(21,60,84,.88) 48%,rgba(21,86,106,.66) 100%),
+  url("./industry-background.svg");
+ background-repeat:no-repeat;
+ background-position:center, right center;
+ background-size:cover, min(1050px,78vw) auto;
+}
+@media(max-width:760px){
+ .site-header{background-size:cover, 760px auto;background-position:center,right bottom}
+}
+</style>
 </head>
 <body>
 
